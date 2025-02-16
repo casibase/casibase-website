@@ -3,7 +3,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Casibase · Open-source AI LangChain-like RAG (Retrieval-Augmented Generation) knowledge database with web UI and Enterprise SSO, supports OpenAI, Azure, LLaMA, Google Gemini, HuggingFace, Claude, Grok, etc.",
+  title: "Casibase · Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)",
   url: "https://casibase.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -16,7 +16,7 @@ module.exports = {
     locales: ["en", "zh", "fr", "de", "ko", "ru", "ja"],
   },
   themeConfig: {
-    metadata: [{name: "Casibase", content: "Open-source AI LangChain-like RAG (Retrieval-Augmented Generation) knowledge database with web UI and Enterprise SSO, supports OpenAI, Azure, LLaMA, Google Gemini, HuggingFace, Claude, Grok, etc."}],
+    metadata: [{name: "Casibase", content: "Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)"}],
     // algolia: {
     //   appId: "",
     //   apiKey: "",

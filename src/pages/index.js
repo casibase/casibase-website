@@ -17,8 +17,7 @@ function HomepageHeader() {
         <br />
         <p className="hero__subtitle" style={{margin: "0 auto", maxWidth: 700}}>
           <Translate>
-            🚀⚡️Open-source AI LangChain-like RAG (Retrieval-Augmented Generation) knowledge database with web UI and
-            Enterprise SSO, supports OpenAI, Azure, LLaMA, Google Gemini, HuggingFace, Claude, Grok, etc.
+            🚀⚡️Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)
           </Translate>
         </p>
         <br />
@@ -90,7 +89,7 @@ export default function Home() {
   return (
     <Layout
       title={"Casibase"}
-      description="⚡️Open-source AI LangChain-like RAG (Retrieval-Augmented Generation) knowledge database with web UI and Enterprise SSO⚡️, supports OpenAI, Azure, LLaMA, Google Gemini, HuggingFace, Claude, Grok, etc.">
+      description="⚡️Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
