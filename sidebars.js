@@ -76,6 +76,16 @@ module.exports = {
         "messages/overview",
       ],
     },
+    {
+      type: "category",
+      label: "Nodes",
+      link: {type: "generated-index"},
+      items: [
+        "node/overview",
+        "node/rdp",
+        "node/vnc",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "Walkthrough Guides",
