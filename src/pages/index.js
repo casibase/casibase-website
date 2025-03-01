@@ -6,7 +6,7 @@ import styles from "./index.module.scss";
 import HomepageFeatures from "../components/HomepageFeatures";
 // eslint-disable-next-line unused-imports/no-unused-imports
 import Translate, {translate} from "@docusaurus/Translate";
-import {UserList} from "@site/src/components/UserList";
+// eslint-disable-next-line unused-imports/no-unused-imports
 import {useWindowSize} from "@docusaurus/theme-common";
 
 function HomepageHeader() {
@@ -47,43 +47,43 @@ function HomepageHeader() {
   );
 }
 
-function Showcase() {
-  return (
-    <div className="hero text--center showcase">
-      <div className="container">
-        <h1><Translate>Who&apos;s using Casibase?</Translate></h1>
-        <p style={{
-          width: "50vw",
-          margin: "auto",
-        }}>
-          <Translate values={{
-            UsersPage: (
-              <Link to="/users">
-                <Translate>check out these apps</Translate>
-              </Link>
-            ),
-          }}>
-            {"Hundreds of projects are using Casibase, from established Fortune 500 companies to hot new startups.If you're curious to see what can be accomplished Casibase, {UsersPage}!"}
-          </Translate>
-        </p>
-        <br /><br />
-        <UserList />
-      </div>
-    </div>
-  );
-}
+// function Showcase() {
+//   return (
+//     <div className="hero text--center showcase">
+//       <div className="container">
+//         <h1><Translate>Who&apos;s using Casibase?</Translate></h1>
+//         <p style={{
+//           width: "50vw",
+//           margin: "auto",
+//         }}>
+//           <Translate values={{
+//             UsersPage: (
+//               <Link to="/users">
+//                 <Translate>check out these apps</Translate>
+//               </Link>
+//             ),
+//           }}>
+//             {"Hundreds of projects are using Casibase, from established Fortune 500 companies to hot new startups.If you're curious to see what can be accomplished Casibase, {UsersPage}!"}
+//           </Translate>
+//         </p>
+//         <br /><br />
+//         <UserList />
+//       </div>
+//     </div>
+//   );
+// }
 
-function OpenCollective() {
-  if (useWindowSize() === "mobile") {
-    return (
-      <iframe title="Sponsors" src="https://opencollective.com/casbin/banner.html" style={{width: "100%", height: "1100px", display: "block"}}></iframe>
-    );
-  } else {
-    return (
-      <iframe title="Sponsors" src="https://opencollective.com/casbin/banner.html" style={{width: "100%", height: "650px", display: "block"}}></iframe>
-    );
-  }
-}
+// function OpenCollective() {
+//   if (useWindowSize() === "mobile") {
+//     return (
+//       <iframe title="Sponsors" src="https://opencollective.com/casibase/banner.html" style={{width: "100%", height: "1100px", display: "block"}}></iframe>
+//     );
+//   } else {
+//     return (
+//       <iframe title="Sponsors" src="https://opencollective.com/casibase/banner.html" style={{width: "100%", height: "650px", display: "block"}}></iframe>
+//     );
+//   }
+// }
 
 export default function Home() {
   return (
@@ -93,8 +93,8 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <Showcase />
-        <OpenCollective />
+        {/* <Showcase />*/}
+        {/* <OpenCollective />*/}
       </main>
     </Layout>
   );
