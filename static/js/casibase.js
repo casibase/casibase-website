@@ -4,7 +4,7 @@
   j.src = "https://tcdn.casibase.org/casibase.js";
   j.onload = function() {
     w[c]("init", {
-      endpoint: "https://ai.casbin.com",
+      endpoint: "https://ai.casibase.com",
       themeColor: "rgb(89,54,213)",
     });
   };

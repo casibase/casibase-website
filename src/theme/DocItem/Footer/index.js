@@ -127,7 +127,7 @@ function EditMetaRow({editUrl, transUrl, authors}) {
 export default function DocItemFooter() {
   const {metadata} = useDoc();
   const {editUrl, tags} = metadata;
-  const authors = metadata.frontMatter.authors || ["casbin"];
+  const authors = metadata.frontMatter.authors || ["casibase"];
   const canDisplayTagsRow = tags.length > 0;
   const canDisplayEditMetaRow = !!(editUrl);
   const canDisplayFooter = canDisplayTagsRow || canDisplayEditMetaRow;

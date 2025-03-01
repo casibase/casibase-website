@@ -1,8 +1,8 @@
 ---
 title: Welcome
-author: Casbin Team
-author_url: https://github.com/casbin
-author_image_url: https://avatars.githubusercontent.com/casbin
+author: Casibase Team
+author_url: https://github.com/casibase
+author_image_url: https://avatars.githubusercontent.com/casibase
 tags: [casibase]
 ---
 
