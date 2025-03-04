@@ -69,7 +69,7 @@ Casibase supports many model providers, including:
 
 **Example**
 
-##### Add a OpenAI model provider
+##### Add an OpenAI model provider
 
 ![Casibase-model-select](/img/walkthrough-guides/casibase-model-select.png)
 
@@ -85,7 +85,7 @@ Some models don't support **streaming-output**. Known models that support stream
 
 After adding a model provider, you can use it to analyze and process data in Casibase using chatbots, question answering, and other AI capabilities.
 
-Return model provider list page:
+Return to the model provider list page:
 
 ![Casibase-providers-view](/img/walkthrough-guides/casibase-model-view.png)
 

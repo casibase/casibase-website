@@ -45,7 +45,7 @@ Casdoor supports many storage providers, including:
 - [MinIO](https://min.io/)
 - [Qiniu Cloud Kodo](https://www.qiniu.com/)
 - [Alibaba Cloud OSS](https://www.alibabacloud.com/product/oss)
-......
+...
 
 :::
 
@@ -84,7 +84,7 @@ Click the `Add` button to add a storage provider.
 
 Fill in the storage provider information and click the `Save & Exit` button.
 
-If Edit page is not displayed, please click the `Edit` button.
+If the Edit page is not displayed, please click the `Edit` button.
 
 You'll see the following page:
 
@@ -92,7 +92,7 @@ You'll see the following page:
 
 :::tip
 
-Storage providers comes from Casdoor. You can add a storage provider in Casdoor and then add it to Casibase.
+Storage providers come from Casdoor. You can add a storage provider in Casdoor and then add it to Casibase.
 
 Refer to [Step 2: Add a New Storage Provider](#step-2-add-a-new-storage-provider) for more information.
 
@@ -110,4 +110,4 @@ Save the configuration, return to the home page, and you'll see the file-tree of
 
 Now you can manage your data in Casibase.
 
-In the next chapter, we'll learn how to add a `AI model provider` to Casibase.
+In the next chapter, we'll learn how to add an `AI model provider` to Casibase.

@@ -31,9 +31,9 @@ module.exports = {
         "walkthrough-guides/deploy-casdoor-and-casibase",
         "walkthrough-guides/add-a-storage-provider",
         "walkthrough-guides/add-a-model-provider",
-        "walkthrough-guides/add-a-embedding-provider",
+        "walkthrough-guides/add-an-embedding-provider",
         "walkthrough-guides/add-a-store",
-        "walkthrough-guides/chat-with-ai",
+        "walkthrough-guides/chats-with-ai",
       ],
     },
     // {
