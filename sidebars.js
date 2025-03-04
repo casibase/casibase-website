@@ -25,6 +25,18 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Assets",
+      link: {type: "generated-index"},
+      items: [
+        "asset/overview",
+        "asset/rdp",
+        "asset/vnc",
+        "asset/database",
+        "asset/intranet",
+      ],
+    },
+    {
+      type: "category",
       label: "Walkthrough Guides",
       link: {type: "generated-index"},
       items: [
