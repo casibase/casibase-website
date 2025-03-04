@@ -1,5 +1,5 @@
 ---
-title: Chat with AI
+title: Chats with AI
 description: Implement AI chat functionality in your Casibase knowledge base system.
 keywords: [Casibase, AI Chat, Chatbot Implementation, Knowledge]
 authors: [kv-chiu]
@@ -29,13 +29,13 @@ Write a message and click the `Send` button to send it.
 
 ### Step 3: Knowledge Base Chat
 
-Addtionally, you can chat with the chatbot in the knowledge base.
+Additionally, you can chat with the chatbot in the knowledge base.
 
 There are some requirements for the knowledge base chat:
 
 - The knowledge base must have a store.
 - The store must have a model provider.
-- The store must have a embedding provider.
+- The store must have an embedding provider.
 - The store must have a storage provider.
 - The storage provider must have a readable document (e.g. a markdown file, docx file and pdf file).
 
@@ -61,14 +61,14 @@ Compare the results with **non-knowledge base chat**:
 
 :::caution
 
-The embedding rate is related two factors:
+The embedding rate is related to two factors:
 
-- The documents in the knowledge base.
-  - Documents number: The more documents, the longer the embedding time.
-  - Documents size: The larger the document size, the longer the embedding time.
-- The embedding provider.
-  - Api rate limit: The more api rate limit, the faster the embedding speed.
-  - Api concurrency: The more api concurrency, the faster the embedding speed.
+- The documents in the knowledge base:
+  - Number of documents: The more documents, the longer the embedding time.
+  - Size of documents: The larger the document size, the longer the embedding time.
+- The embedding provider:
+  - API rate limit: The more API rate limit, the faster the embedding speed.
+  - API concurrency: The more API concurrency, the faster the embedding speed.
 
 For example, if you use the [OpenAI API](https://platform.openai.com/docs/api-reference) as the embedding provider, the embedding rate is related to the [OpenAI API](https://platform.openai.com/docs/api-reference) rate limit and concurrency.
 

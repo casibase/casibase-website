@@ -116,7 +116,7 @@ function CasibaseFeatures() {
         <div className="row">
           <div className="col" style={{marginBlock: "auto"}}>
             <Translate>
-              {"Casibase is an open source AI knowledge base and dialogue system that combines the latest RAG (Retrieval Augmented Generation) technology, enterprise-grade Single Sign-On (SSO) functionality, and support for a wide range of mainstream AI models.Casibase is designed to provide enterprises and developers with a powerful, flexible, and easy-to-use knowledge management and intelligent dialogue platform."}
+              {"Casibase is an open source AI knowledge base and dialogue system that combines the latest RAG (Retrieval Augmented Generation) technology, enterprise-grade Single Sign-On (SSO) functionality, and support for a wide range of mainstream AI models. Casibase is designed to provide enterprises and developers with a powerful, flexible, and easy-to-use knowledge management and intelligent dialogue platform."}
             </Translate>
           </div>
           <div style={{marginInline: "auto"}}>
@@ -144,7 +144,7 @@ function CasibaseWalkthrough() {
                 </Link>
               ),
             }}>
-              {"Casibase provides some provider configurations, such as storage provider, model provider, embedding provider, etc. Add them to chat with AI easily, please visit 'Casibase Walkthrough Guide Please visit {useLink} for more details."}
+              {"Casibase provides various provider configurations, such as storage providers, model providers, embedding providers, etc. To chat with AI easily, please visit the {useLink} for more details."}
             </Translate>
           </div>
         </div>

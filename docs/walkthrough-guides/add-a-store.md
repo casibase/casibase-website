@@ -5,13 +5,13 @@ keywords: [Casibase, Add a Store, Data Storage, Knowledge Base]
 authors: [kv-chiu]
 ---
 
-We have add a storage provider, a model provider, and a embedding provider. Now we need to configure a store to use these providers.
+We have added a storage provider, a model provider, and an embedding provider. Now we need to configure a store to use these providers.
 
 :::caution
 
 This guide assumes that you have already deployed a Casibase knowledge base system. If you have not, please follow the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase.md) guide.
 
-Besides, this guide assumes that you have already added a storage provider, a model provider, and a embedding provider. If you have not, please follow the [Add a Storage Provider](./add-a-storage-provider.md), [Add a Model Provider](./add-a-model-provider.md), and [Add a Embedding Provider](./add-a-embedding-provider.md) guides.
+Besides, this guide assumes that you have already added a storage provider, a model provider, and an embedding provider. If you have not, please follow the [Add a Storage Provider](./add-a-storage-provider.md), [Add a Model Provider](./add-a-model-provider.md), and [Add a Embedding Provider](./add-an-embedding-provider.md) guides.
 
 :::
 
@@ -27,7 +27,7 @@ Click the `Stores` button on the home page and then click the `Add` button to ad
 
 Fill in the store details and click the `Save & Exit` button.
 
-This part we have done if you follow the [Add a Storage Provider](./add-a-storage-provider.md) guides.
+This part should have been completed if you followed the [Add a Storage Provider](./add-a-storage-provider.md) guides.
 
 ![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
 
@@ -35,7 +35,7 @@ Select the storage provider, model provider, and embedding provider you added be
 
 ![Casibase-stores-select](/img/walkthrough-guides/casibase-stores-select.png)
 
-Click the `Save & Exit` button and return stores list page:
+Click the `Save & Exit` button and return to the stores list page:
 
 ![Casibase-stores-view](/img/walkthrough-guides/casibase-stores-view.png)
 
@@ -43,15 +43,15 @@ Now, you can use the store to store knowledge base data, convert text to vectors
 
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
-## Support Multi-Store
+## Support Multi-store
 
 The multi-store mode provides users with different models, suggestions, and more within each distinct store.
 
-### Step 1: Enable Multi-Store
+### Step 1: Enable Multi-store
 
-First you should enable multi-repository mode in the built-in store.
+First, you should enable multi-store mode in the built-in store.
 
-Click the`Stores`button on the home page and then click the`store-built-in`button to enter the store-built-in store.
+Click the `Stores` button on the home page and then click the `store-built-in` button to enter the store-built-in store.
 
 ![Casibase-stores-form-builtIn](/img/walkthrough-guides/casibase-stores-form-builtIn.png)
 
@@ -59,7 +59,7 @@ Scroll down and find the `Can Select Store`field, tick it.
 
 ![Casibase-stores-multi-store-enable](/img/walkthrough-guides/casibase-stores-multi-store-enable.png)
 
-### Step 2: Add Usable Store
+### Step 2: Add Usable Stores
 
 The multi-store mode only provides usable stores. To make a store usable, you need to configure its storage provider, model provider, and embedding provider.
 

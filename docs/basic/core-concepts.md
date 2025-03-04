@@ -40,7 +40,7 @@ flowchart TD;
     Question --> Query_Prompt;
 ```
 
-## Provider
+## Providers
 
 Providers are the backbone of Casibase, offering essential services and integration with external systems. The Provider class definition is shown as follows:
 
@@ -63,12 +63,12 @@ type Provider struct {
 
 There are two primary types of providers in Casibase:
 
-- **Storage Provider:**The Storage Provider facilitates the storage and retrieval of data within Casibase. It supports various storage options, including:
+- **Storage Providers.** The Storage Providers facilitates the storage and retrieval of data within Casibase. It supports various storage options, including:
   - AWS
   - Azure
   - Local File System
 
-- **AI Provider:**The AI Provider is responsible for handling AI-related tasks and services in Casibase. It supports multiple AI models and technologies, including:
+- **AI Providers.** The AI Providers are responsible for handling AI-related tasks and services in Casibase. It supports multiple AI models and technologies, including:
   - OpenAI
   - ChatGLM
   - InternLM
@@ -134,6 +134,6 @@ Embedding is the process of transforming various types of data, such as text and
 
 - By embedding, the questions in chat and the knowledge files in storage will be turned into vectors and used in the next step of knowledge search.
 
-- Casibase's default embedding method is provided by OpenAI at a rate of up to three calls per minute. We propose to minimize the knowledge file coupling as much as possible to facilitate embedding and further processing.
+- Casibase's default embedding method is provided by OpenAI at a rate of up to three calls per minute. We recommend minimizing coupling between knowledge files to facilitate embedding and further processing.
 
 :::
