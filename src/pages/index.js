@@ -116,7 +116,7 @@ function CasibaseFeatures() {
         <div className="row">
           <div className="col" style={{marginBlock: "auto"}}>
             <Translate>
-              {"Casibase is an open source AI knowledge base and dialogue system that combines the latest RAG (Retrieval Augmented Generation) technology, enterprise-grade Single Sign-On (SSO) functionality, and support for a wide range of mainstream AI models.Casibase is designed to provide enterprises and developers with a powerful, flexible, and easy-to-use knowledge management and intelligent dialogue platform."}
+              {"Casibase is an open source AI knowledge base and dialogue system that combines the latest RAG (Retrieval Augmented Generation) technology, enterprise-grade Single Sign-On (SSO) functionality, and support for a wide range of mainstream AI models. Casibase is designed to provide enterprises and developers with a powerful, flexible, and easy-to-use knowledge management and intelligent dialogue platform."}
             </Translate>
           </div>
           <div style={{marginInline: "auto"}}>
@@ -128,7 +128,7 @@ function CasibaseFeatures() {
   );
 }
 
-function CasibaseWalkthrough() {
+function CasibaseGuide() {
   return (
     <div className={styles.coreConcepts}>
       <div className="container text--center">
@@ -139,12 +139,12 @@ function CasibaseWalkthrough() {
           <div className="col" style={{marginBlock: "auto"}}>
             <Translate values={{
               useLink: (
-                <Link to="/docs/category/walkthrough-guides">
-                  <Translate>Casibase Walkthrough Guide</Translate>
+                <Link to="/docs/category/the-basics">
+                  <Translate>Casibase Guide</Translate>
                 </Link>
               ),
             }}>
-              {"Casibase provides some provider configurations, such as storage provider, model provider, embedding provider, etc. Add them to chat with AI easily, please visit 'Casibase Walkthrough Guide Please visit {useLink} for more details."}
+              {"Casibase provides various provider configurations, such as storage providers, model providers, embedding providers, etc. To chat with AI easily, please visit the {useLink} for more details."}
             </Translate>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <CasibaseFeatures />
-        <CasibaseWalkthrough />
+        <CasibaseGuide />
         <IdentityManager />
         {/* <Showcase />*/}
         {/* <OpenCollective />*/}

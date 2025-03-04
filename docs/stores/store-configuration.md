@@ -1,21 +1,12 @@
 ---
-title: Add a Store
-description: Learn how to add a store to your Casibase knowledge base system.
-keywords: [Casibase, Add a Store, Data Storage, Knowledge Base]
+title: Store Configuration
+keywords: [Casibase, Store, Data Storage, Knowledge Base]
 authors: [kv-chiu]
 ---
 
-We have added a storage provider, a model provider, and an embedding provider. Now we need to configure a store to use these providers.
+After adding storage providers, model providers and embedding providers, we can configure the stores
 
-:::caution
-
-This guide assumes that you have already deployed a Casibase knowledge base system. If you have not, please follow the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase.md) guide.
-
-Besides, this guide assumes that you have already added a storage provider, a model provider, and an embedding provider. If you have not, please follow the [Add a Storage Provider](./add-a-storage-provider.md), [Add a Model Provider](./add-a-model-provider.md), and [Add a Embedding Provider](./add-an-embedding-provider.md) guides.
-
-:::
-
-### Step 1: Add a New Store
+## 1.Add a New Store
 
 Stores are used to integrate storage, model, and embedding providers into Casibase. You can add them by following these steps:
 
@@ -23,11 +14,9 @@ Click the `Stores` button on the home page and then click the `Add` button to ad
 
 ![Casibase-stores-add](/img/walkthrough-guides/casibase-stores-add.png)
 
-### Step 2: Fill in Store Details
+### Fill in Store Details
 
 Fill in the store details and click the `Save & Exit` button.
-
-This part should have been completed if you followed the [Add a Storage Provider](./add-a-storage-provider.md) guides.
 
 ![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
 
@@ -43,11 +32,11 @@ Now, you can use the store to store knowledge base data, convert text to vectors
 
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
-## Support Multi-store
+## 2.Support Multi-store
 
 The multi-store mode provides users with different models, suggestions, and more within each distinct store.
 
-### Step 1: Enable Multi-store
+### Enable Multi-store
 
 First, you should enable multi-store mode in the built-in store.
 
@@ -59,11 +48,11 @@ Scroll down and find the `Can Select Store`field, tick it.
 
 ![Casibase-stores-multi-store-enable](/img/walkthrough-guides/casibase-stores-multi-store-enable.png)
 
-### Step 2: Add Usable Stores
+### Add Usable Stores
 
 The multi-store mode only provides usable stores. To make a store usable, you need to configure its storage provider, model provider, and embedding provider.
 
-### Step 3: Select For Conversation
+### Select For Conversation
 
 Casibase provides a very convenient method for selecting a store.
 
