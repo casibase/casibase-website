@@ -1,0 +1,53 @@
+---
+title: Overview
+description: Providers Overview
+keywords: [Casibase, Provider]
+authors: [IsAurora6]
+---
+
+```mdx-code-block
+import styles from "../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+```
+
+Casibase is an open source AI knowledge base system designed to provide efficient and flexible knowledge management and dialogue solutions for enterprises. One of its core features is Providers, which allow users to integrate multiple AI models and storage services to enhance the functionality and performance of the system: Providers are classified into three main categories: Model Providers, Embedding Providers, and Storage Providers, where Model Providers and Embedding Providers are collectively referred to as AI Providers, which, together with Storage Providers, are responsible for handling the AI models and data storage, respectively.
+
+## 1. Model Providers
+
+Model Providers is a component in Casibase for integrating and managing AI models. It allows users to integrate various pre-trained AI models into the system for smarter knowledge processing and dialogue generation. With Model Provider, users can easily switch between different AI models, choosing the most appropriate model according to specific needs.
+
+Casibase supports a variety of popular AI models, including but not limited to:
+
+## Model Provider Types
+
++ Hugging Face: e.g. meta-llama/Llama-2-7b, THUDM/chatglm2-6b
++ OpenAI: e.g. gpt-3.5-turbo, gpt-4
++ Claude: e.g. claude-2, claude-instant-v1
++ Ernie: e.g. ERNIE-Bot, ERNIE-Bot-turbo
+
+## 2. Embedding Providers
+
+### Data vectorisation
+
+The main role of Embedding Providers is to transform various types of data (e.g., text, images, etc.) into dense vector representations. This transformation is a key step in data processing and analysis in Casibase, enabling data to be stored, retrieved and analysed in a more efficient manner.
+
+### Knowledge Retrieval
+
+By converting both the data in the knowledge base and the user's query into vectors, Embedding Providers enables the system to perform fast knowledge retrieval based on vector similarity. This greatly improves the efficiency and accuracy of knowledge base retrieval.
+
+### Flexible model support
+
+Embedding Providers support a variety of embedding models, users can choose the most suitable model according to their needs.
+
+## 3. Storage Providers
+
+We can configure the storage providers in Casdoor. and use it in Casibase, which is the component used to manage Casibase data storage and retrieval. It allows users to store data in different storage services and access the data through a unified interface. With Storage Providers, users can flexibly choose storage services to ensure data security and efficient access.
+supports two types of storage: Local and Cloud.
+
+### Local
+
+We support uploading files to the local system.
+
+### Cloud
+
+We support AWS S3, Azure Blob Storage, MinIO, Alibaba Cloud OSS, Tencent Cloud COS, and we are constantly adding more Cloud storage services.

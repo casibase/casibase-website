@@ -25,17 +25,70 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Walkthrough Guides",
+      label: "Deployment",
       link: {type: "generated-index"},
       items: [
-        "walkthrough-guides/deploy-casdoor-and-casibase",
-        "walkthrough-guides/add-a-storage-provider",
-        "walkthrough-guides/add-a-model-provider",
-        "walkthrough-guides/add-a-embedding-provider",
-        "walkthrough-guides/add-a-store",
-        "walkthrough-guides/chat-with-ai",
+        "deployment/deploy-casdoor-and-casibase",
       ],
     },
+    {
+      type: "category",
+      label: "Providers",
+      link: {type: "generated-index"},
+      items: [
+        "providers/overview",
+        "providers/model-providers",
+        "providers/embedding-providers",
+        "providers/storage-providers",
+      ],
+    },
+    {
+      type: "category",
+      label: "Stores",
+      link: {type: "generated-index"},
+      items: [
+        "stores/overview",
+        "stores/store-configuration",
+      ],
+    },
+    {
+      type: "category",
+      label: "Vectors",
+      link: {type: "generated-index"},
+      items: [
+        "vectors/overview",
+        "vectors/vectors-generation",
+      ],
+    },
+    {
+      type: "category",
+      label: "Chats",
+      link: {type: "generated-index"},
+      items: [
+        "chats/overview",
+      ],
+    },
+    {
+      type: "category",
+      label: "Messages",
+      link: {type: "generated-index"},
+      items: [
+        "messages/overview",
+      ],
+    },
+    // {
+    //   type: "category",
+    //   label: "Walkthrough Guides",
+    //   link: {type: "generated-index"},
+    //   items: [
+    //     "walkthrough-guides/deploy-casdoor-and-casibase",
+    //     "walkthrough-guides/add-a-storage-provider",
+    //     "walkthrough-guides/add-a-model-provider",
+    //     "walkthrough-guides/add-an-embedding-provider",
+    //     "walkthrough-guides/add-a-store",
+    //     "walkthrough-guides/chats-with-ai",
+    //   ],
+    // },
     // {
     //   type: "category",
     //   label: "",

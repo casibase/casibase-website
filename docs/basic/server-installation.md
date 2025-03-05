@@ -36,7 +36,7 @@ For **Chinese** users, in order to download the Go dependency packages successfu
 
 ### Database
 
-Casibase uses [XORM](https://xorm.io/) to talk to the database. Based on [Xorm Drivers Support](https://gitea.com/xorm/xorm#drivers-support), Casibase currently provides support for following databases:
+Casibase uses [XORM](https://xorm.io/) to talk to the database. Based on [Xorm Drivers Support](https://gitea.com/xorm/xorm#drivers-support), Casibase currently provides support for the following databases:
 
 - `MySQL`
 - `MariaDB`
@@ -69,7 +69,7 @@ git clone https://github.com/casibase/casibase
 
 Please refer to [Casdoor-SSO](/docs/basic/casdoor-sso) section to configure Casdoor.
 
-Remember your `clientId`、`clientSecret`、`organization`、`application` and so on in Casdoor configuration, we will use them later.
+Remember your `clientId`,`clientSecret`,`organization`,`application` and so on in Casdoor configuration, we will use them later.
 
 ### Configure Database
 
@@ -105,7 +105,7 @@ For PostgreSQL, make sure `dataSourceName` has non-empty `dbName` and leave the 
 
 #### CockroachDB
 
-You can also use cockroachdb with postgres driver. It has same configuration as postgreSQL.
+You can also use Cockroachdb with postgres driver. It has same configuration as postgreSQL.
 
   ```ini
   driverName = postgres
@@ -115,7 +115,7 @@ You can also use cockroachdb with postgres driver. It has same configuration as 
 
 :::info
 
-For CockroachDB, don't forget to add `serial_normalization=virtual_sequence` to the `dataSourceName` like the above example. otherwise you will get error regarding existed database, whenever the service started or restarted. Notice, this must be added before the database created.
+For CockroachDB, don't forget to add `serial_normalization=virtual_sequence` to the `dataSourceName` like the above example. otherwise you will get error regarding existed database, whenever the service starts or restarts. Notice, this must be added before the database created.
 
 :::
 
