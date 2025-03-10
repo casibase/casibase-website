@@ -1,8 +1,8 @@
 ---
-title: Add a Model Provider
+title: Add an AI Model Provider
 description: Learn how to add a model provider to enhance Casibase functionality.
 keywords: [Casibase, Model Provider, Integration]
-authors: [kv-chiu]
+authors: [kv-chiu, IsAurora6]
 ---
 
 This document is a step-by-step tutorial designed for beginners. It will guide you through the process of integrating a model provider with Casibase, our powerful knowledge base system.
@@ -15,7 +15,7 @@ If you're new to integrating model providers, don't worry. We've broken down the
 
 ### Step 1: Deploy Casdoor and Casibase
 
-Before you can add a model provider, make sure you have Casdoor and Casibase deployed. If you haven't done this yet, please refer to the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase) tutorial in our previous documentation.
+Before you can add an AI model provider, make sure you have Casdoor and Casibase deployed. If you haven't done, please refer to the [Deploy Casdoor and Casibase](../../deployment/deploy-casdoor-and-casibase.md) tutorial.
 
 ### Step 2: Add a New Model Provider
 

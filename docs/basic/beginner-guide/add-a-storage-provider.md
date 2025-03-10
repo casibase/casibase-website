@@ -2,7 +2,7 @@
 title: Add a Storage Provider
 description: Discover how to integrate a storage provider with Casibase.
 keywords: [Casibase, Storage Provider, Integration]
-authors: [kv-chiu]
+authors: [kv-chiu, IsAurora6]
 ---
 
 This document is a step-by-step tutorial designed for beginners. It will guide you through the process of integrating a storage provider with Casibase, our powerful knowledge base system.
@@ -15,7 +15,7 @@ If you're new to integrating storage providers, don't worry. We've broken down t
 
 ### Step 1: Deploy Casdoor and Casibase
 
-In the last chapter, we learned how to deploy Casdoor and Casibase. If you haven't done so already, please refer to the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase) tutorial.
+If you haven't done, please refer to the [Deploy Casdoor and Casibase](../../deployment/deploy-casdoor-and-casibase.md) tutorial.
 
 ### Step 2: Add a New Storage Provider
 
@@ -69,26 +69,6 @@ Casdoor supports many storage providers, including:
 After adding the storage provider, you can view the storage provider information.
 
 ![Casdoor-providers-view](/img/walkthrough-guides/casdoor-providers-view.png)
-
-### Step 3: Add a New Storage Provider to Casibase
-
-In Casibase, you can add a storage provider to manage your data. You can add a storage provider by clicking the `Providers - Add` button on the home page.
-
-#### Step 3.1: Add a storage provider
-
-Click the `Add` button to add a storage provider.
-
-![Casibase-stores-add](/img/walkthrough-guides/casibase-stores-add.png)
-
-#### Step 3.2: Fill in the storage provider information
-
-Fill in the storage provider information and click the `Save & Exit` button.
-
-If the Edit page is not displayed, please click the `Edit` button.
-
-You'll see the following page:
-
-![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
 
 :::tip
 
