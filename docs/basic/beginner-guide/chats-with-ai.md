@@ -11,7 +11,7 @@ This document is a step-by-step tutorial designed for beginners. It will guide y
 
 In previous sections, we have deployed Casdoor and Casibase, integrated a storage provider, a model provider, and a embedding provider with Casibase, and added a store to use these providers.
 
-Refer to the [Add a Store](./add-a-store.md) section of our previous documentation for more information about stores.
+Refer to the [Add a Store](add-a-store.md) section of our previous documentation for more information about stores.
 
 Now, let's implement AI chat functionality in Casibase.
 
@@ -80,4 +80,4 @@ In this guide, we have learned how to implement AI chat functionality in Casibas
 
 Now, you can chat with the chatbot in Casibase. Enjoy it!
 
-More information about Casibase can be found in the [Core Concepts](../basic/core-concepts) section of our documentation.
+More information about Casibase can be found in the [Core Concepts](../core-concepts) section of our documentation.

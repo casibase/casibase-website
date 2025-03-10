@@ -2,7 +2,7 @@
 title: Add an Embedding Provider
 description: Explore how to integrate an embedding provider with Casibase.
 keywords: [Casibase, Embedding Provider, Integration]
-authors: [kv-chiu]
+authors: [kv-chiu, IsAurora6]
 ---
 
 This document is a step-by-step tutorial designed for beginners. It will guide you through the process of integrating an embedding provider with Casibase, our powerful knowledge base system.
@@ -11,13 +11,13 @@ This document is a step-by-step tutorial designed for beginners. It will guide y
 
 Embedding is a technique used to represent words and documents as vectors. Embedding providers allow you to analyze and process data within your knowledge base system, making it more intelligent and efficient.
 
-Refer to the [Core Concepts](../basic/core-concepts) section of our previous documentation for more information about embedding.
+Refer to the [Core Concepts](../core-concepts) section of our previous documentation for more information about embedding.
 
 In Casibase, you can add an embedding provider by following these steps:
 
 ### Step 1: Deploy Casdoor and Casibase
 
-Before you can add an embedding provider, make sure you have Casdoor and Casibase deployed. If you haven't done this yet, please refer to the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase) tutorial in our previous documentation.
+Before you can add an embedding model provider, make sure you have Casdoor and Casibase deployed. If you haven't done, please refer to the [Deploy Casdoor and Casibase](../../deployment/deploy-casdoor-and-casibase.md) tutorial.
 
 ### Step 2: Add a New Embedding Provider
 
@@ -60,6 +60,6 @@ Return providers list page:
 
 Now, you can use the embedding provider to convert text to vectors.
 
-After adding an embedding provider, you can use it to retrieve similar documents in Casibase. For more information, please refer to the [Core Concepts](../basic/core-concepts) section of our previous documentation.
+After adding an embedding provider, you can use it to retrieve similar documents in Casibase. For more information, please refer to the [Core Concepts](../core-concepts) section of our previous documentation.
 
 In the next chapter, we will learn how to integrate storage providers, model providers, and embedding providers with Casibase.

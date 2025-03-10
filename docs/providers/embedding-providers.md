@@ -16,7 +16,7 @@ In Casibase, you can add an embedding provider by following these steps:
 
 Embedding providers are used to integrate embedding into Casibase. You can add them by following these steps:
 
-Click the `Providers` button on the home page.
+Click the `Providers` button on the page.
 
 ![Casibase-home-providers](/img/walkthrough-guides/casibase-home-providers.png)
 

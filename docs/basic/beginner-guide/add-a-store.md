@@ -2,16 +2,16 @@
 title: Add a Store
 description: Learn how to add a store to your Casibase knowledge base system.
 keywords: [Casibase, Add a Store, Data Storage, Knowledge Base]
-authors: [kv-chiu]
+authors: [kv-chiu, IsAurora6]
 ---
 
 We have added a storage provider, a model provider, and an embedding provider. Now we need to configure a store to use these providers.
 
 :::caution
 
-This guide assumes that you have already deployed a Casibase knowledge base system. If you have not, please follow the [Deploy Casdoor and Casibase](./deploy-casdoor-and-casibase.md) guide.
+This guide assumes that you have already deployed a Casibase knowledge base system. If you haven't done, please refer to the [Deploy Casdoor and Casibase](../../deployment/deploy-casdoor-and-casibase.md) tutorial.
 
-Besides, this guide assumes that you have already added a storage provider, a model provider, and an embedding provider. If you have not, please follow the [Add a Storage Provider](./add-a-storage-provider.md), [Add a Model Provider](./add-a-model-provider.md), and [Add a Embedding Provider](./add-an-embedding-provider.md) guides.
+Besides, this guide assumes that you have already added a storage provider, a model provider, and an embedding provider. If you have not, please follow the [Add a Storage Provider](add-a-storage-provider.md), [Add a AI Model Provider](add-a-model-provider.md), and [Add an Embedding Provider](add-an-embedding-provider.md) guides.
 
 :::
 
@@ -25,13 +25,9 @@ Click the `Stores` button on the home page and then click the `Add` button to ad
 
 ### Step 2: Fill in Store Details
 
-Fill in the store details and click the `Save & Exit` button.
-
-This part should have been completed if you followed the [Add a Storage Provider](./add-a-storage-provider.md) guides.
-
-![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
-
 Select the storage provider, model provider, and embedding provider you added before.
+
+Fill in the store details and click the `Save & Exit` button.
 
 ![Casibase-stores-select](/img/walkthrough-guides/casibase-stores-select.png)
 
