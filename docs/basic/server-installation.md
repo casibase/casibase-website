@@ -47,6 +47,17 @@ Casibase uses [XORM](https://xorm.io/) to talk to the database. Based on [Xorm D
 - `SQLite 3`
 - `TiDB`
 
+### guacd
+
+Casibase uses guacamole-server to provide remote desktop access. If you want to use this feature, you need to install
+guacamole-server first. If you haven't installed guacamole-server, please refer to [guacamole-server Installation](https://guacamole.apache.org/doc/gug/installing-guacamole.html).
+
+You can also run guacd in docker with the following command:
+
+```shell
+docker run -d --name guacd -p 4822:4822 guacamole/guacd
+```
+
 ## Download
 
 The source code of Casibase is hosted at GitHub: <https://github.com/casibase/casibase>. Both the Go backend code and React frontend code are inside the single repository.
@@ -217,6 +228,21 @@ cd web
 yarn install
 yarn build
 ```
+
+#### Nginx
+
+:::tip
+If you use nginx as a reverse proxy, you need to add the following configuration to the nginx configuration file:
+
+```bash
+location / {
+    *** your configuration ***
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+}
+```
+
+Because Casibase uses websocket to communicate with guacd.
 
 ## Preview
 
