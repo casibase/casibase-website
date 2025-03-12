@@ -13,7 +13,7 @@ module.exports = {
   projectName: "casibase-website", // Usually your repo name.
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "zh", "fr", "de", "ko", "ru", "ja"],
+    locales: ["en", "es", "fr", "de", "zh", "ja", "ko", "uk", "ar"],
   },
   themeConfig: {
     metadata: [{name: "Casibase", content: "Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)"}],

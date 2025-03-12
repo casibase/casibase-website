@@ -244,6 +244,8 @@ location / {
 
 Because Casibase uses websocket to communicate with guacd.
 
+:::
+
 ## Preview
 
 Visit: `http://localhost:13001` in your browser. Login into Casibase dashboard with the user account you have just registered in Casdoor:
