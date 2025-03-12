@@ -12,9 +12,9 @@ export default function DocPaginatorWrapper(props) {
       <Giscus
         id="comments"
         repo="casibase/casibase"
-        repoId="R_kgDOJm0jTw"
+        repoId="MDEwOlJlcG9zaXRvcnkyNjc3NDk0NTE"
         category="Docs comments"
-        categoryId="DIC_kwDOJm0jT84CX63U"
+        categoryId="DIC_kwDOD_WIS84CRIiB"
         mapping="url"
         strict="0"
         reactionsEnabled="1"
