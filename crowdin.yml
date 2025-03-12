@@ -1,4 +1,4 @@
-project_id: ''
+project_id: '770887'
 api_token_env: 'CROWDIN_PERSONAL_TOKEN'
 preserve_hierarchy: true
 files: [
