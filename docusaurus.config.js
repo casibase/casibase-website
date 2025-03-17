@@ -18,8 +18,8 @@ module.exports = {
   themeConfig: {
     metadata: [{name: "Casibase", content: "Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)"}],
     // algolia: {
-    //   appId: "",
-    //   apiKey: "",
+    //   appId: "appId",
+    //   apiKey: "apiKey",
     //   indexName: "casibase",
     //   contextualSearch: true,
     // },
