@@ -1,0 +1,36 @@
+---
+title: Overview
+description: Text Splitters Overview
+keywords: [Casibase, Text Splitter]
+authors: [IsAurora6]
+---
+
+```mdx-code-block
+import styles from "../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+```
+
+**Text Splitters** are a crucial component in building large language model (LLM) applications. Their primary role is to break long texts into multiple shorter segments, which facilitates subsequent tasks such as text embeddings, retrieval-augmented generation (RAG), and question-answering systems.
+
+In LLMs, text splitting is performed for several main reasons:
+
+- Optimizing Efficiency and Accuracy: By decomposing large blocks of text into smaller segments, the relevance and accuracy of the embeddings produced by the LLM can be optimized. Chunking helps ensure that the embedded content contains minimal noise while retaining semantic relevance. For instance, in semantic search, when indexing a document corpus, each document contains valuable information on specific topics. Applying an effective chunking strategy ensures that search results accurately capture the essence of a user's query.
+- Limiting the Context Window Size: When using models like GPT-4, there is a limit to the number of tokens that can be processed. For example, GPT-4 has a context window size limit of 32K tokens. While this limit is generally not an issue, it is important to consider chunk size from the beginning. If the text chunks are too large, information might be lost or not all content may be embedded in the context, which can affect the model’s performance and output.
+- Handling Long Documents: While embedding vectors for long documents can capture the overall context, they might overlook important details pertaining to specific topics, leading to outputs that are either imprecise or incomplete. Chunking enables better control over the extraction and embedding of information, thereby reducing the risk of information loss.
+
+Casibase currently offers multiple splitting methods, allowing users to apply different processing strategies for various text scenarios.
+
+## Default Text Splitter
+
+The default text splitter is designed to efficiently segment text based on token count and textual structure. Its splitting strategy includes:
+
+- Line Reading and Paragraph Recognition: The text is read line by line, with consecutive blank lines used to accurately determine paragraph breaks. It also sensitively identifies natural breakpoints through markers, ensuring logical and precise text segmentation.
+- Special Handling for Code Blocks: Code blocks enclosed by ``` symbols are treated separately. The number of lines within a code block determines whether it can stand alone as a segment. This mechanism preserves the integrity of code blocks while effectively preventing any single text segment from exceeding the token limit.
+- Maintaining Sentence Integrity: Throughout the splitting process, strict adherence to sentence integrity is maintained, ensuring that sentences are never divided. This feature guarantees that each text segment contains a complete unit of information. Regardless of the complexity of the text, segmentation is accurately performed at sentence boundaries, effectively avoiding ambiguity and information loss due to broken sentences.
+
+## Q&A Splitter
+
+The Q&A splitter focuses on the precise segmentation of question-and-answer formatted texts and offers the following core advantages:
+
+- Accurate Splitting of Q&A Units: It uses a line-by-line scanning mechanism to intelligently identify the structure of Q&A texts. By determining whether each line begins with “Q:” or “A:”, it precisely locates the boundaries between questions and answers, ensuring that each Q&A pair is completely segmented. This guarantees the independence and completeness of each Q&A unit, providing clean data for subsequent Q&A processing and analysis.
+- Clear and Logical Implementation: The code is simple and intuitive, making it easy to understand and maintain. By managing the state of the current Q&A pair and a flag indicating whether an answer is being collected, the process of text segmentation is clearly controlled, ensuring the correct pairing of each Q&A unit.
