@@ -93,6 +93,7 @@ After 2.2.1 and 2.2.2 have been added successfully, we can Configure Embedding P
 ![casibaseEmbedding](/img/blog/casibase-deepSeek-guideline/casibase-embedding.png)
 
 ##### 2.2.4 Add stores.
+
 In this step we organise all the information we added above (Storage provider, Model provider, Embedding provider), in the form we can fill in these three items and finally create a Stores.
 
 ### Step 3: Chatting using the DeepSeek model based on Casibase and Alibaba Cloud
