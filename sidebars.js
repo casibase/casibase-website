@@ -75,6 +75,14 @@ module.exports = {
     },
     {
       type: "category",
+      label: "TextSplitters",
+      link: {type: "generated-index"},
+      items: [
+        "textsplitters/overview",
+      ],
+    },
+    {
+      type: "category",
       label: "Chats",
       link: {type: "generated-index"},
       items: [
