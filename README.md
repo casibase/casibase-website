@@ -1,8 +1,8 @@
 # [casibase.org](https://casibase.org) [![Build and Deploy](https://github.com/casibase/casibase-website/actions/workflows/master.yml/badge.svg)](https://github.com/casibase/casibase-website/actions/workflows/master.yml)
 
-The configuration and documentation of casibase website: <https://casibase.org/>.
+The configuration and documentation of Casibase website: <https://casibase.org/>.
 
-casibase website is built using [Docusaurus](https://docusaurus.io/), you can get the PDF at [casibase.org/pdf](https://casibase.org/pdf) or [GitHub Action](https://github.com/casibase/casibase-website/actions/workflows/master.yml).
+Casibase website is built using [Docusaurus](https://docusaurus.io/), you can get the PDF at [casibase.org/pdf](https://casibase.org/pdf) or [GitHub Action](https://github.com/casibase/casibase-website/actions/workflows/master.yml).
 
 ## Get Started
 
