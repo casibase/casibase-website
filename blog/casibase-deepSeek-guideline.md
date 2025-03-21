@@ -3,7 +3,7 @@ title: Casibase + DeepSeek Integration Guide
 author: Casibase Team
 author_url: https://github.com/casibase
 author_image_url: https://avatars.githubusercontent.com/casibase
-tags: [casibase]
+tags: [Casibase]
 ---
 
 # 	Casibase + DeepSeek Integration Guide: Building an Efficient AI Knowledge Base and Dialogue System
