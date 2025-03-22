@@ -18,9 +18,9 @@ module.exports = {
   themeConfig: {
     metadata: [{name: "Casibase", content: "Open-Source LangChain-like AI Knowledge Database & Chat Bot with Admin UI and multi-model support (ChatGPT, Claude, Llama 3, DeepSeek R1, HuggingFace, etc.)"}],
     // algolia: {
-    //   appId: "appId",
-    //   apiKey: "apiKey",
-    //   indexName: "casibase",
+    //   appId: 'YOUR_APP_ID',
+    //   apiKey: 'YOUR_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
     //   contextualSearch: true,
     // },
     colorMode: {
@@ -48,6 +48,11 @@ module.exports = {
         {
           label: "Blog",
           to: "/blog",
+          position: "left",
+        },
+        {
+          href: "https://ai-admin.casibase.com/swagger/",
+          label: "RESTful API",
           position: "left",
         },
         {
@@ -95,6 +100,14 @@ module.exports = {
               label: "Overview",
               to: "/docs/overview",
             },
+            {
+              label: "Get Started",
+              to: "/docs/basic/server-installation",
+            },
+            {
+              label: "Casibase API",
+              href: "https://ai-admin.casibase.com/swagger/",
+            },
           ],
         },
         {
@@ -103,6 +116,10 @@ module.exports = {
             {
               label: "GitHub",
               href: "https://github.com/casibase/casibase",
+            },
+            {
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/search?q=casibase",
             },
             {
               label: "Discord",
