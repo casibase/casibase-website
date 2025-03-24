@@ -45,11 +45,11 @@ Only h2 and h3 will be in the TOC by default, so h1 is not recommended to use.
 
 ### h3
 
-content.
+content
 
 #### h4
 
-content.
+content
 
 ````
 
