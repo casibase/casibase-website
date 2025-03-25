@@ -84,7 +84,7 @@ function HomepageHeader() {
         </div>
         <br />
       </div>
-      <FrameMask className={styles.headerborder} src="https://ai.casibase.com" width="500" height="720" />
+      <FrameMask className={styles.headerborder} src="https://ai.casibase.com" width="550" height="720" />
     </header>
   );
 }
