@@ -8,7 +8,6 @@ authors: [dark-Qy]
 This document is a step-by-step tutorial designed for beginners. It will guide you through the process of integrating a text-to-speech provider with Casibase, our powerful knowledge base system.
 
 
-
 ## Introduction
 
 Text-to-Speech (TTS) is a technology that converts text into spoken voice output. TTS providers allow your Casibase applications to communicate with users through synthesized speech, enhancing the user experience and accessibility of your knowledge base system.
@@ -31,13 +30,10 @@ Click the `Add` button to add a Text-to-Speech provider.
 
 #### Fill in Text-to-Speech Provider Details
 
-Fill in the Text-to-Speech provider details:
+Fill in the embedding provider details and click the `Save & Exit` button.
 
-1. Select `Text-to-Speech` as the category
-2. Choose a provider type (currently only Alibaba Cloud is supported)
-3. Select the appropriate subtype (e.g., `cosyvoice-v1` for Alibaba Cloud)
-4. Configure authentication details
-5. Click the `Save & Exit` button
+![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-form.png)
+
 
 
 
@@ -46,7 +42,7 @@ Fill in the Text-to-Speech provider details:
 Casibase currently supports the following Text-to-Speech provider:
 
 - [Alibaba Cloud](https://www.alibabacloud.com/product/intelligent-speech-interaction)
-    - cosyvoice-v1 (with multiple voice options)
+  - cosyvoice-v1 (with multiple voice options)
 
 :::
 
@@ -56,34 +52,13 @@ When using Alibaba Cloud's `cosyvoice-v1`, you can choose from various voice opt
 
 - longwan
 - longcheng
-- longhua
-- longxiaochun
-- longxiaoxia
-- longxiaocheng
-- longxiaobai
-- longlaotie
-- longshu
-- longjing
-- longmiao
-- longyue
-- longyuan
-- longfei
-- longjielidou
-- longshuo
-- longtong
-- longxiang
-- loongstella
-- loongbella
+- ......
 
 ### Using Text-to-Speech in Stores
 
-After adding a Text-to-Speech provider, you can configure it in your store settings:
+After adding a Text-to-Speech provider, you can select this provider in your store settings and choose whether to enable TTS streaming.
 
-1. Navigate to the store edit page
-2. Select your configured TTS provider from the `Text-to-Speech provider` dropdown
-3. Enable TTS streaming if needed with the `Enable TTS streaming` toggle
-4. Save your store configuration
+![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-stream-mode.png)
 
 Now, your store can convert text responses to speech, providing a more interactive experience for users.
 
-For more information about configuring stores, please refer to the [Store Management](../basic/stores) section of our documentation.
