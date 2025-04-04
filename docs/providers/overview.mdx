@@ -44,6 +44,13 @@ Embedding Providers support a variety of embedding models, users can choose the 
 We can configure the storage providers in Casdoor. and use it in Casibase, which is the component used to manage Casibase data storage and retrieval. It allows users to store data in different storage services and access the data through a unified interface. With Storage Providers, users can flexibly choose storage services to ensure data security and efficient access.
 supports two types of storage: Local and Cloud.
 
+## 4. Text-to-Speech Providers
+
+Text-to-Speech (TTS) Providers is a component in Casibase that enables the conversion of text responses into natural-sounding speech. It allows the system to communicate with users through voice synthesis, enhancing the interactive experience of the knowledge base system.
+### Provider Support
+
+Currently, Casibase supports Alibaba Cloud's Text-to-Speech service, with various voice options available through the cosyvoice-v1 interface. The system is designed to be extensible, allowing for the integration of additional TTS providers in the future.
+
 ### Local
 
 We support uploading files to the local system.
@@ -51,3 +58,4 @@ We support uploading files to the local system.
 ### Cloud
 
 We support AWS S3, Azure Blob Storage, MinIO, Alibaba Cloud OSS, Tencent Cloud COS, and we are constantly adding more Cloud storage services.
+

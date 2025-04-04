@@ -29,6 +29,7 @@ module.exports = {
             "basic/beginner-guide/add-a-storage-provider",
             "basic/beginner-guide/add-a-model-provider",
             "basic/beginner-guide/add-an-embedding-provider",
+            "basic/beginner-guide/add-a-text-to-speech-provider",
             "basic/beginner-guide/add-a-store",
             "basic/beginner-guide/chats-with-ai",
           ],
@@ -53,6 +54,7 @@ module.exports = {
         "providers/model-providers",
         "providers/embedding-providers",
         "providers/storage-providers",
+        "providers/text-to-speech-providers",
       ],
     },
     {
