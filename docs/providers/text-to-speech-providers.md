@@ -30,15 +30,12 @@ Fill in the embedding provider details and click the `Save & Exit` button.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-form.png)
 
-
-
-
 :::tip
 
 Casibase currently supports the following Text-to-Speech provider:
 
 - [Alibaba Cloud](https://www.alibabacloud.com/product/intelligent-speech-interaction)
-    - cosyvoice-v1 (with multiple voice options)
+  - cosyvoice-v1 (with multiple voice options)
 
 :::
 
@@ -57,4 +54,3 @@ After adding a Text-to-Speech provider, you can select this provider in your sto
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-stream-mode.png)
 
 Now, your store can convert text responses to speech, providing a more interactive experience for users.
-

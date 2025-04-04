@@ -7,7 +7,6 @@ authors: [dark-Qy]
 
 This document is a step-by-step tutorial designed for beginners. It will guide you through the process of integrating a text-to-speech provider with Casibase, our powerful knowledge base system.
 
-
 ## Introduction
 
 Text-to-Speech (TTS) is a technology that converts text into spoken voice output. TTS providers allow your Casibase applications to communicate with users through synthesized speech, enhancing the user experience and accessibility of your knowledge base system.
@@ -34,9 +33,6 @@ Fill in the embedding provider details and click the `Save & Exit` button.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-form.png)
 
-
-
-
 :::tip
 
 Casibase currently supports the following Text-to-Speech provider:
@@ -61,4 +57,3 @@ After adding a Text-to-Speech provider, you can select this provider in your sto
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-stream-mode.png)
 
 Now, your store can convert text responses to speech, providing a more interactive experience for users.
-
