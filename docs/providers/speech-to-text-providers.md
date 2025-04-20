@@ -34,6 +34,6 @@ Fill in the speech-to-text provider details and click the `Save & Exit` button.
 Casibase currently supports the following Speech-to-Text provider:
 
 - [Alibaba Cloud](https://www.alibabacloud.com/product/intelligent-speech-interaction)
-    - paraformer-realtime-v1
+  - paraformer-realtime-v1
 
 :::
