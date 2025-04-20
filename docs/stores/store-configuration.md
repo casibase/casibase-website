@@ -20,7 +20,7 @@ Fill in the store details and click the `Save & Exit` button.
 
 ![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
 
-Select the storage provider, model provider, embedding provider, and text-to-speech provider you added before.
+Select the storage provider, model provider, embedding provider, text-to-speech provider and speech-to-text provider you added before.
 
 ![Casibase-stores-select](/img/walkthrough-guides/casibase-stores-select.png)
 
