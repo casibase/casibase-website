@@ -33,6 +33,18 @@ Fill in the speech-to-text provider details and click the `Save & Exit` button.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-speech-to-text-form.png)
 
+### Using Voice Recognition
+
+When you click the voice recognition button in your Casibase application, the following process occurs:
+
+1. The browser will request permission to access your microphone
+2. Once granted, the system will begin listening and automatically convert your speech to text
+3. After you finish speaking, the recognized text will be automatically sent as a message
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-speech-to-text-use.png)
+
+This feature enables hands-free interaction with your Casibase applications, making them more accessible and convenient to use.
+
 :::tip
 
 Casibase currently supports the following Speech-to-Text provider:
