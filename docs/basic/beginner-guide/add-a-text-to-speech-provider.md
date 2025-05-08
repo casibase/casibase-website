@@ -41,6 +41,13 @@ Casibase currently supports the following Text-to-Speech provider:
   - cosyvoice-v1 (with multiple voice options)
 
 :::
+#### Testing Your Text-to-Speech Provider
+You can test your TTS provider by clicking the `Read it out` button. This will allow you to enter text and hear the synthesized speech output.
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-text-to-speech-test.png)
+
+This testing feature allows you to verify your TTS configuration before implementing it in your applications, ensuring the voice quality and settings meet your requirements.
+
 
 #### Voice Options for Alibaba Cloud
 
