@@ -33,7 +33,6 @@ module.exports = {
             "basic/beginner-guide/add-a-speech-to-text-provider",
             "basic/beginner-guide/add-a-store",
             "basic/beginner-guide/chats-with-ai",
-            "basic/beginner-guide/configure-casibase-openai-api-compatibility",
           ],
         },
         "basic/casdoor-sso",
@@ -45,6 +44,16 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "deployment/deploy-casdoor-and-casibase",
+      ],
+    },
+    {
+      type: "category",
+      label: "How to Connect to Casibase",
+      link: {type: "generated-index"},
+      items: [
+        "connect/overview",
+        "connect/casibase-sdk",
+        "connect/casibase-openai-api-compatibility",
       ],
     },
     {
