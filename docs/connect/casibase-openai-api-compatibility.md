@@ -15,7 +15,7 @@ If you're looking to use your preferred chat UI with Casibase, this guide will w
 
 ### Step 1: Set Up Casibase with a Model Provider
 
-Before connecting an external UI, ensure you have Casibase properly set up with a model provider. If you haven't done this yet, please refer to the [Add an AI Model Provider](./add-a-model-provider.md) tutorial.
+Before connecting an external UI, ensure you have Casibase properly set up with a model provider. If you haven't done this yet, please refer to the [Add an AI Model Provider](../basic/beginner-guide/add-a-model-provider.md) tutorial.
 
 ### Step 2: Get Your OpenAI-compatible API Key
 
