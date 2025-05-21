@@ -33,6 +33,7 @@ module.exports = {
             "basic/beginner-guide/add-a-speech-to-text-provider",
             "basic/beginner-guide/add-a-store",
             "basic/beginner-guide/chats-with-ai",
+            "basic/beginner-guide/configure-casibase-openai-api-compatibility",
           ],
         },
         "basic/casdoor-sso",
