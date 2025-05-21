@@ -48,6 +48,16 @@ module.exports = {
     },
     {
       type: "category",
+      label: "How to Connect to Casibase",
+      link: {type: "generated-index"},
+      items: [
+        "connect/overview",
+        "connect/casibase-sdk",
+        "connect/casibase-openai-api-compatibility",
+      ],
+    },
+    {
+      type: "category",
       label: "Providers",
       link: {type: "generated-index"},
       items: [
