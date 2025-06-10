@@ -144,23 +144,12 @@ dbName = casibase
 
 Casibase supports custom configuration, you can modify the configuration file `conf/app.conf` to change the configuration.
 
-- Backend (conf/app.conf)
-
 ```ini
 casdoorEndpoint = <Your Casdoor endpoint>
 clientId = <Your Casdoor application's client ID>
 clientSecret = <Your Casdoor application's client secret>
 casdoorOrganization = <Your Casdoor organization name>
 casdoorApplication = <Your Casdoor application name>
-```
-
-- Frontend (web/src/Conf.js)
-
-```js
-serverUrl: "<Your Casdoor endpoint>"
-clientId: "<Your Casdoor application's client ID>" 
-appName: "<Your Casdoor application name>"
-organizationName: "<Your Casdoor organization name>"
 ```
 
 ## Run
