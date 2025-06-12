@@ -1,0 +1,34 @@
+---
+title: Overview
+description: ChainMaker Overview
+keywords: [Casibase, ChainMaker]
+authors: [IsAurora6]
+---
+
+```mdx-code-block
+import styles from "../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+```
+
+ChainMaker is a high-performance, enterprise-grade blockchain platform developed under the leadership of China. It is designed to provide secure, controllable, and scalable blockchain infrastructure for industries such as finance, government, and supply chain. ChainMaker supports multiple consensus mechanisms, smart contracts, privacy protection, and other features, meeting the needs of large-scale commercial applications. Its open-source, modular architecture allows developers to flexibly customize and extend functionalities according to actual business scenarios.
+
+When configuring a ChainMaker provider in Casibase, you need to fill in several key fields. Each field has a specific meaning and is required for the correct integration with the ChainMaker blockchain. The following list explains the purpose of each field:
+
+- `Name`: The unique identifier for this blockchain provider.
+- `Display name`: The display name shown in the UI for this provider.
+- `Category`: The type of service, e.g., Blockchain.
+- `Type`: The blockchain type, here it should be ChainMaker.
+- `orgId`: The organization ID in the ChainMaker network.
+- `ChainId`: The chain ID of the ChainMaker blockchain.
+- `AuthType`: The account mode. Currently, only `permissionedwithcert` is supported.
+- `User key`: The user's private key for authentication in the ChainMaker server.
+- `User cert`: The user's certificate for authentication in the ChainMaker server.
+- `Sign key`: The user's private key for signing transactions in the ChainMaker server.
+- `Sign cert`: The user's certificate for signing transactions in the ChainMaker server.
+- `Node address`: The address of the ChainMaker node to connect to.
+- `Contract name`: The name of the smart contract to interact with.
+- `Invoke method`: The method name to invoke on the contract.
+- `Browser URL`: The URL for viewing the blockchain in a browser.
+- `Chainmaker endpoint`: The API endpoint for the ChainMaker service. See: <https://github.com/casibase/chainmaker-server>
+
+Please make sure to fill in each field accurately according to your ChainMaker deployment information. This will ensure that Casibase can successfully connect and interact with your ChainMaker blockchain.

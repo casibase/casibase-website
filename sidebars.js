@@ -121,6 +121,15 @@ module.exports = {
         "node/vnc",
       ],
     },
+    {
+      type: "category",
+      label: "ChainMaker",
+      link: {type: "generated-index"},
+      items: [
+        "chainmaker/overview",
+        "chainmaker/chainmaker-configuration",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "Walkthrough Guides",
