@@ -38,3 +38,13 @@ Alternatively, you can check nodeAddr elsewhere, but note that the displayed por
 1.3.2 You can find the corresponding user certificate and key in ~\CasibaseChainMaker\sdk_configs\crypto-config\TestCMorg1\user\cmtestuser1. Fill in the provider fields accordingly.
 
 ![configuration-6.png](/img/chainmaker/configuration-6.png)
+
+### 1.4 Browser URL and ChainMaker endpoint
+
+The Browser URL refers to the URL of the ChainMaker management console, which allows for quick access from Casibase in the future:
+
+![configuration-8.png](/img/chainmaker/configuration-8.png)
+
+![configuration-9.png](/img/chainmaker/configuration-9.png)
+
+The ChainMaker endpoint refers to the IP and port of the ChainMaker server that Casibase needs to connect to, for example: 127.0.0.1:13900
