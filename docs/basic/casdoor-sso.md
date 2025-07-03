@@ -32,6 +32,14 @@ Follow these steps to setup Casdoor for casibase:
 
 ![configure-application](/img/configure-application.png)
 
+- Create a Certificate: In the Casdoor dashboard, choose Cert → Add, keep `Algorithm` as `RS256` (default), enter a name, and click Save.
+
+![create-cert](/img/create-cert.png)  
+
+- Bind the Certificate to the Application: Open the *Config* tab of your newly created Application, select the certificate you just created from the Cert dropdown, and click Save.
+
+![bind-cert](/img/bind-cert.png)
+
 - Add a member to the newly created organization
 
 ![add-user](/img/add-user-1.png)
