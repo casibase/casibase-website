@@ -67,6 +67,19 @@ module.exports = {
         "providers/storage-providers",
         "providers/text-to-speech-providers",
         "providers/speech-to-text-providers",
+        {
+          type: "category",
+          label: "Blockchain Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/blockchain/overview",
+          },
+          items: [
+            "providers/blockchain/chainmaker-configuration",
+            "providers/blockchain/ethereum-configuration",
+          ],
+        },
       ],
     },
     {
@@ -119,15 +132,6 @@ module.exports = {
         "node/overview",
         "node/rdp",
         "node/vnc",
-      ],
-    },
-    {
-      type: "category",
-      label: "ChainMaker",
-      link: {type: "generated-index"},
-      items: [
-        "chainmaker/overview",
-        "chainmaker/chainmaker-configuration",
       ],
     },
     // {
