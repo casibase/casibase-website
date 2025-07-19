@@ -1,0 +1,65 @@
+---
+title: BlockChain Providers
+description: BlockChain Overview
+keywords: [Casibase, BlockChain, Chain]
+authors: [FlySky-z]
+---
+
+```mdx-code-block
+import styles from "../../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+import DocCardList from '@theme/DocCardList';
+```
+
+## Introduction
+
+Blockchain technology provides an immutable and transparent ledger for data integrity verification. In Casibase, blockchain providers serve as a crucial security layer by uploading data to blockchain networks, ensuring that your knowledge base data cannot be tampered with or altered maliciously.
+
+By leveraging blockchain's decentralized and cryptographic properties, Casibase can guarantee data authenticity and provide audit trails for all data modifications. This is particularly important for organizations that need to maintain data integrity compliance or require verifiable proof of data authenticity.
+
+Refer to the [Core Concepts](../../basic/core-concepts) section of our previous documentation for more information about providers.
+
+In Casibase, you can add a blockchain provider by following these steps:
+
+## Add a New Blockchain Provider
+
+Blockchain providers are used to integrate blockchain data integrity features into Casibase. You can add them by following these steps:
+
+Click the `Providers` button on the page.
+
+![Casibase-home-providers](/img/walkthrough-guides/casibase-home-providers.png)
+
+### Add a Blockchain Provider
+
+Click the `Add` button to add a blockchain provider.
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
+
+#### Fill in Blockchain Provider Details
+
+Fill in the required configuration according to the blockchain you use, then click the `Save & Exit` button to save.
+
+More information about the configuration can be found below:
+
+<DocCardList />
+
+![Casibase-blockchain](/img/walkthrough-guides/casibase-blockchain-form.png)
+
+:::tip
+
+Casibase supports various blockchain networks for data integrity verification, including:
+
+- [ChainMaker](https://chainmaker.org.cn)
+  - [ChainMaker](https://chainmaker.org.cn)
+  - [Tencent Chainmaker](https://cloud.tencent.com/product/tbaas)
+- [Ethereum](https://ethereum.org)
+  - Private networks (compatible with Ethereum JSON-RPC)
+    - [Geth](https://geth.ethereum.org/docs/getting-started)
+    - [Ganache](https://archive.trufflesuite.com/ganache/)
+    - Other Ethereum JSON-RPC compatible chains
+
+:::
+
+Now, you can use the blockchain provider to ensure data integrity and prevent tampering.
+
+After adding a blockchain provider, you can use it in Casibase to create immutable data records. The data records will be committed to the blockchain, providing proof of authenticity and preventing any unauthorized tampering.
