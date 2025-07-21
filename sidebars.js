@@ -20,6 +20,7 @@ module.exports = {
         "basic/core-concepts",
         "basic/server-installation",
         "basic/try-with-docker",
+        "basic/public-api",
         {
           type: "category",
           label: "Beginner Guide",
@@ -36,6 +37,14 @@ module.exports = {
           ],
         },
         "basic/casdoor-sso",
+      ],
+    },
+    {
+      type: "category",
+      label: "Developer Guide",
+      link: {type: "generated-index"},
+      items: [
+        "developer-guide/swagger",
       ],
     },
     {
