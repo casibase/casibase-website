@@ -100,6 +100,7 @@ kubectl create secret generic casibase-config --from-file=app.conf=./app.conf
 ### Step 1: Prepare Configuration Files
 
 Ensure you have created both:
+
 - `app.conf` - Application configuration
 
 ### Step 2: Install with Configuration File
@@ -242,11 +243,13 @@ helm uninstall casibase
 ### Configuration-Related Issues
 
 **Problem**: Casdoor authentication not working
+
 - Verify `casdoorEndpoint` is accessible from the cluster
 - Check `clientId` and `clientSecret` are correct
 - Ensure `redirectPath` matches your Casdoor application configuration
 
 **Problem**: Configuration syntax errors
+
 ```bash
 # Validate YAML syntax before deployment
 helm template casibase oci://registry-1.docker.io/casbin/casibase-helm-chart -f custom-values.yaml --dry-run
@@ -263,6 +266,7 @@ helm template casibase oci://registry-1.docker.io/casbin/casibase-helm-chart -f 
 Using Helm to deploy Casibase on Kubernetes provides a robust, scalable solution for managing your knowledge base platform. The chart offers flexible configuration options to suit various deployment scenarios, from development environments to production clusters.
 
 Key benefits of this approach:
+
 - **Easy deployment and updates** through Helm commands
 - **Flexible configuration** through values files
 - **Kubernetes-native** scaling and management
