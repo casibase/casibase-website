@@ -97,7 +97,7 @@ Create `conf/app.conf`. You can copy it from [conf/app.conf](https://github.com/
 Then run
 
 ```bash
-docker run  -p 14000:14000 -v /folder/of/app.conf:/conf casbin/casibase:latest
+docker run  -p 14000:14000 -v /folder/of/app.conf:/conf/app.conf casbin/casibase:latest
 ```
 
 Anyway, just **mount the app.conf to /conf/app.conf** and start the container.
