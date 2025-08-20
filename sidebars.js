@@ -144,6 +144,18 @@ module.exports = {
         "node/vnc",
       ],
     },
+    {
+      type: "category",
+      label: "Cloud Resources",
+      link: {
+        type: "doc",
+        id: "cloud-resources/overview",
+      },
+      items: [
+        "cloud-resources/kubernetes-templates",
+        "cloud-resources/kubernetes-applications",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "Walkthrough Guides",
