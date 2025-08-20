@@ -12,11 +12,11 @@ In this chapter, you will learn how to configure and use a Kubernetes provider i
 
 When configuring a Kubernetes provider in Casibase, you need to fill in several key fields. Each field has a specific meaning and is required for the correct integration with your Kubernetes cluster. The following list explains the purpose of each field:
 
--   `Name`: The unique identifier for this private cloud provider.
--   `Display name`: The display name shown in the UI for this provider.
--   `Category`: The type of service; here it should be `Private Cloud`.
--   `Type`: The cloud-native platform type; here it should be `Kubernetes`.
--   `Config text`: The raw text content of your `kubeconfig` file, which contains the credentials and endpoint information needed to connect to your Kubernetes cluster.
+- `Name`: The unique identifier for this private cloud provider.
+- `Display name`: The display name shown in the UI for this provider.
+- `Category`: The type of service; here it should be `Private Cloud`.
+- `Type`: The cloud-native platform type; here it should be `Kubernetes`.
+- `Config text`: The raw text content of your `kubeconfig` file, which contains the credentials and endpoint information needed to connect to your Kubernetes cluster.
 
 Please make sure to fill in each field accurately. The `Config text` is crucial for establishing a successful connection.
 
@@ -35,9 +35,11 @@ kubectl config view --raw > kubeconfig.yaml
 This command will save the complete, flattened configuration into a file named `kubeconfig.yaml` in your current directory. You can then open this file to copy its contents.
 
 You can test your configuration file with a command that checks for pods across all namespaces. This is a more reliable test to confirm connectivity.
+
 ```bash
 kubectl --kubeconfig=./kubeconfig.yaml get pods -A
 ```
+
 If this command runs successfully (even if it just lists pods from system namespaces), you are ready to proceed.
 
 ### 2.2 Fill in the Provider Details
@@ -52,8 +54,8 @@ After you have filled in the details and saved the provider, you can verify if t
 
 Navigate to the **Cloud Resources** > **Applications** section within Casibase. Here, you will see a list of your configured providers. Check the status of the Kubernetes provider you just added.
 
--   **Active**: If the status is `Active`, Casibase has successfully connected to your Kubernetes cluster.
--   **Inactive**: If the status is `Inactive`, there was an issue with the connection. Please double-check the content of your `Config text` and ensure that there is network connectivity between Casibase and your Kubernetes cluster's API server.
+- **Active**: If the status is `Active`, Casibase has successfully connected to your Kubernetes cluster.
+- **Inactive**: If the status is `Inactive`, there was an issue with the connection. Please double-check the content of your `Config text` and ensure that there is network connectivity between Casibase and your Kubernetes cluster's API server.
 
 ![Provider Status Verification](/img/kubernetes/k8s-status-active.png)
 
