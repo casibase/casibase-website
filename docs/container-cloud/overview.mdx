@@ -1,0 +1,51 @@
+---
+title: Overview
+description: Container Cloud Overview
+keywords: [Casibase, Private Cloud, Kubernetes, K8s, Cloud Resources]
+authors: [Dark-Qy]
+---
+
+```mdx-code-block
+import styles from "../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+import DocCardList from '@theme/DocCardList';
+```
+
+Once you have successfully connected Casibase to your private cloud providers (like Kubernetes), this section will guide you on how to manage cloud-native resources directly through the Casibase interface.
+
+Casibase provides a powerful system based on Docker and Kubernetes, designed for individuals and organizations to build their own dedicated container cloud environment. Built on the Casbin permission management engine, it implements fine-grained access control policies for secure and controllable private cloud operations.
+
+## Core Concepts
+
+Casibase utilizes a streamlined two-part system for managing container deployments:
+
+### 1. **Templates**: Reusable Application Blueprints
+Templates are pre-configured Kubernetes manifests that serve as blueprints for your applications. Each template contains:
+- **Base Configuration**: Complete Kubernetes resources (Deployments, Services, ConfigMaps, etc.) required to run an application
+- **Customizable Parameters**: Configurable fields that can be modified during deployment
+- **Version Management**: Template versioning for consistent deployments across environments
+
+### 2. **Applications**: Live Application Instances
+Applications are running instances created from templates. They represent actual workloads deployed to your Kubernetes cluster:
+- **Parameter Customization**: Override template defaults with specific configurations (replicas, image versions, resource limits)
+- **Namespace Isolation**: Each application runs in its own dedicated namespace for security and organization
+- **Lifecycle Management**: Complete application lifecycle control from deployment to termination
+
+## Key Features
+
+**Declarative Application Orchestration**: Transform from resource-level management to application-level management, simplifying complex multi-resource deployments into simple "select template → configure → deploy" workflows.
+
+**Service Governance Integration**: Built-in support for service mesh and gateway templates (Istio, Linkerd, Nginx Ingress) enabling one-click deployment of microservice governance capabilities including service discovery, circuit breaking, and rate limiting.
+
+**Enhanced Platform Visualization**:
+- **Application Dashboard**: Monitor and manage all your deployed applications with real-time status updates
+- **Resource Insights**: Deep visibility into underlying Kubernetes resources, logs, and events for each application
+
+**Kustomize-Powered Flexibility**: Leverages Kubernetes-native Kustomize for configuration management, ensuring consistency across development, testing, and production environments while maintaining the ability to customize deployments per environment.
+
+This approach helps you standardize your infrastructure, ensure deployment consistency, and streamline the process of launching and managing containerized services. It eliminates the complexity of manual Kubernetes resource orchestration while maintaining full control over your applications.
+
+Please proceed to the following sections to learn more about managing templates and applications:
+
+-   [**Kubernetes Templates**](./kubernetes-templates)
+-   [**Kubernetes Applications**](./kubernetes-applications)

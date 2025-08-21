@@ -22,6 +22,7 @@ module.exports = {
         "basic/try-with-docker",
         "basic/try-with-helm",
         "basic/public-api",
+        "basic/container-cloud",
         {
           type: "category",
           label: "Beginner Guide",
@@ -148,24 +149,22 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Container Cloud",
+      link: {type: "generated-index"},
+      items: [
+        "container-cloud/overview",
+        "container-cloud/kubernetes-templates",
+        "container-cloud/kubernetes-applications",
+      ],
+    },
+    {
+      type: "category",
       label: "Nodes",
       link: {type: "generated-index"},
       items: [
         "node/overview",
         "node/rdp",
         "node/vnc",
-      ],
-    },
-    {
-      type: "category",
-      label: "Cloud Resources",
-      link: {
-        type: "doc",
-        id: "cloud-resources/overview",
-      },
-      items: [
-        "cloud-resources/kubernetes-templates",
-        "cloud-resources/kubernetes-applications",
       ],
     },
     // {
