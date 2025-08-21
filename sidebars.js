@@ -90,6 +90,18 @@ module.exports = {
             "providers/blockchain/ethereum-configuration",
           ],
         },
+        {
+          type: "category",
+          label: "Private Cloud Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/private-cloud/overview",
+          },
+          items: [
+            "providers/private-cloud/kubernetes-configuration",
+          ],
+        },
       ],
     },
     {
