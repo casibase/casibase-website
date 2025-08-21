@@ -11,6 +11,9 @@
         },
         {
             "pattern": "^https://[\\w.]*openai.com"
+        },
+        {
+            "pattern": "^https://[\\w.]*claude.ai"
         }
     ]
 }
