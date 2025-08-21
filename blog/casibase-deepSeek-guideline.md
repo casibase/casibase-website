@@ -6,7 +6,7 @@ author_image_url: https://avatars.githubusercontent.com/casibase
 tags: [Casibase]
 ---
 
-# 	Casibase + DeepSeek Integration Guide: Building an Efficient AI Knowledge Base and Dialogue System
+#    Casibase + DeepSeek Integration Guide: Building an Efficient AI Knowledge Base and Dialogue System
 
 In today's digital age, there is a growing demand for efficient knowledge management and intelligent Q&A systems for businesses and individuals. With the rapid development of AI technology, people are looking for smarter and more efficient solutions to improve information processing, optimise workflow and enhance user experience.
 
@@ -16,26 +16,27 @@ Meanwhile, recently released advanced AI models such as **DeepSeek R1** have att
 
 In this article, we will discuss how to efficiently integrate Casibase with DeepSeek R1 to build an AI knowledge base and dialogue system with high performance, security, and powerful features. We will introduce the key steps from environment setup to real-world application, and analyse how to leverage the enterprise-grade features of Casibase and the power of DeepSeek R1 to achieve accurate and efficient intelligent Q&A and knowledge management.
 
-## What is Casibase:
+## What is Casibase
 
 Casibase is an open source AI knowledge base and dialogue system that combines the latest RAG (Retrieval Augmented Generation) technology, enterprise-grade [Single sign-on](https://so.csdn.net/so/search?q=单点登录&spm=1001.2101.3001.7020) (SSO) functionality, and support for a wide range of mainstream AI models. As a LangChain-like system, Casibase aims to provide a powerful, flexible and easy-to-use knowledge management and intelligent dialogue platform for enterprises and developers.
 
 Currently, Casibase supports language models such as OpenAI-based GPT series, Gemini, Claude, Moonshot, DeepSeek, etc., as well as OpenAI-based embedding models, Hugging Face's sentence-transformers, Cohere, Qwen, and other models. Hugging Face, Cohere, Qwen, and other embedding models. This wide range of model support allows users to choose the most suitable AI model according to their needs and preferences, and also facilitates the integration of new models in the future.
 
-### Casibase Online Demo:
+### Casibase Online Demo
 
 Casibase offers several online demo sites, including a chatbot demo and an administration interface demo, allowing users to experience the system's functionality visually.
 
 - Chatbot demo: [https://demo.casibase.com](https://demo.casibase.com/)
 - Management UI Demo: [https://demo-admin.casibase.com](https://demo-admin.casibase.com/)
 
-## Casibase integration with the DeepSeek series of models:
+## Casibase integration with the DeepSeek series of models
 
 Using DeepSeek in Casibase is very easy, by building Casibase and making some simple configurations, you can talk to DeepSeek R1, DeepSeek V3 and a bunch of Deepseek and its enhancements supported by other platforms such as AlibabaCloud. Avoid complex configurations for local deployments.
 
 ### Step 1: Casibase environment deployment
 
-#### 1.1 **Deployment of Casdoor**.
+#### 1.1 **Deployment of Casdoor**
+
 Since the powerful enterprise SSO authentication, authentication and other functions provided by Casibase are done based on Casdoor. Therefore, installing Casdoor is a prerequisite for using Casibase.
 
 ***Casdoor is a robust authentication system that provides a safe and secure login experience.***
@@ -46,7 +47,7 @@ You can refer to the official Casdoor documentation to complete the Casdoor envi
 
 ### Step 2: Casibase Basic Configuration
 
-#### 2.1 **Configuring Casdoor**:
+#### 2.1 **Configuring Casdoor**
 
 You need to complete three steps in the deployed Casdoor to support the presence of users accessing Casibase, i.e., Configure Organizations->Configure Apply under Authentication->Configure user. do the following:
 
@@ -70,9 +71,9 @@ Creating a user for the created Apply is the final preparation for subsequent lo
 
 ![addUser](/img/blog/casibase-deepSeek-guideline/add-user.png)
 
-### 2.2 **Configuring Casibase**：
+### 2.2 **Configuring Casibase**
 
-With the above configuration, we already have access to casibase, next, after logging in, we will configure it for AI chat, deploying a DeepSeek r1 based on the AlibabaCloud Big Model Service Platform (https://help.aliyun.com/zh/model-studio/) supported model.
+With the above configuration, we already have access to casibase, next, after logging in, we will configure it for AI chat, deploying a DeepSeek r1 based on the AlibabaCloud Big Model Service Platform (<https://help.aliyun.com/zh/model-studio/>) supported model.
 
 ##### 2.2.1 Configure Storage Provider
 
@@ -92,7 +93,7 @@ After 2.2.1 and 2.2.2 have been added successfully, we can Configure Embedding P
 
 ![casibaseEmbedding](/img/blog/casibase-deepSeek-guideline/casibase-embedding.png)
 
-##### 2.2.4 Add stores.
+##### 2.2.4 Add stores
 
 In this step we organise all the information we added above (Storage provider, Model provider, Embedding provider), in the form we can fill in these three items and finally create a Stores.
 
@@ -105,4 +106,3 @@ In this step we organise all the information we added above (Storage provider, M
 In this guide, we learned how to implement AI chat functionality in Casibase using DeepSeek. Now you can chat with chatbots in Casibase.
 
 For more details, you can refer to [Casibase Docs](https://casibase.org/zh/docs/overview).
-

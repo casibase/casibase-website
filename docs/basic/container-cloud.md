@@ -17,10 +17,11 @@ In the world of modern software, Kubernetes has become the standard for running 
 * **ConfigMaps** and **Secrets** to handle configuration and sensitive data.
 
 Managing these individual components manually is often called a "resource-centric" approach. This approach presents several challenges:
-1.  **High Learning Curve**: Users must have a deep understanding of various Kubernetes resources and how they interact.
-2.  **Operational Burden**: Manually creating, updating, and deleting these resources is tedious and prone to human error.
-3.  **Lack of Atomicity**: There is no way to treat the entire "WordPress application" as a single, atomic unit. You cannot simply "install" or "uninstall" it with one action.
-4.  **Inconsistency**: Ensuring that the application is deployed identically across development, testing, and production environments is difficult.
+
+1. **High Learning Curve**: Users must have a deep understanding of various Kubernetes resources and how they interact.
+2. **Operational Burden**: Manually creating, updating, and deleting these resources is tedious and prone to human error.
+3. **Lack of Atomicity**: There is no way to treat the entire "WordPress application" as a single, atomic unit. You cannot simply "install" or "uninstall" it with one action.
+4. **Inconsistency**: Ensuring that the application is deployed identically across development, testing, and production environments is difficult.
 
 ## The Casibase Approach: From Managing Resources to Managing Applications
 
