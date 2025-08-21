@@ -20,13 +20,17 @@ Casibase provides a powerful system based on Docker and Kubernetes, designed for
 Casibase utilizes a streamlined two-part system for managing container deployments:
 
 ### 1. **Templates**: Reusable Application Blueprints
+
 Templates are pre-configured Kubernetes manifests that serve as blueprints for your applications. Each template contains:
+
 - **Base Configuration**: Complete Kubernetes resources (Deployments, Services, ConfigMaps, etc.) required to run an application
 - **Customizable Parameters**: Configurable fields that can be modified during deployment
 - **Version Management**: Template versioning for consistent deployments across environments
 
 ### 2. **Applications**: Live Application Instances
+
 Applications are running instances created from templates. They represent actual workloads deployed to your Kubernetes cluster:
+
 - **Parameter Customization**: Override template defaults with specific configurations (replicas, image versions, resource limits)
 - **Namespace Isolation**: Each application runs in its own dedicated namespace for security and organization
 - **Lifecycle Management**: Complete application lifecycle control from deployment to termination
@@ -38,6 +42,7 @@ Applications are running instances created from templates. They represent actual
 **Service Governance Integration**: Built-in support for service mesh and gateway templates (Istio, Linkerd, Nginx Ingress) enabling one-click deployment of microservice governance capabilities including service discovery, circuit breaking, and rate limiting.
 
 **Enhanced Platform Visualization**:
+
 - **Application Dashboard**: Monitor and manage all your deployed applications with real-time status updates
 - **Resource Insights**: Deep visibility into underlying Kubernetes resources, logs, and events for each application
 
@@ -47,5 +52,5 @@ This approach helps you standardize your infrastructure, ensure deployment consi
 
 Please proceed to the following sections to learn more about managing templates and applications:
 
--   [**Kubernetes Templates**](./kubernetes-templates)
--   [**Kubernetes Applications**](./kubernetes-applications)
+- [**Kubernetes Templates**](./kubernetes-templates)
+- [**Kubernetes Applications**](./kubernetes-applications)
