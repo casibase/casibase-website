@@ -22,6 +22,7 @@ module.exports = {
         "basic/try-with-docker",
         "basic/try-with-helm",
         "basic/public-api",
+        "basic/container-cloud",
         {
           type: "category",
           label: "Beginner Guide",
@@ -144,6 +145,16 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "messages/overview",
+      ],
+    },
+    {
+      type: "category",
+      label: "Container Cloud",
+      link: {type: "generated-index"},
+      items: [
+        "container-cloud/overview",
+        "container-cloud/kubernetes-templates",
+        "container-cloud/kubernetes-applications",
       ],
     },
     {
