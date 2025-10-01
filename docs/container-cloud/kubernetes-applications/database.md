@@ -1,6 +1,5 @@
 ---
 title: Creating Databases with KubeBlocks
-description: Learn how to create and manage databases on Kubernetes using KubeBlocks.
 keywords: [Casibase, Private Cloud, Kubernetes, K8s, Application, Database, KubeBlocks, High Availability]
 authors: [Flysky-z]
 ---
