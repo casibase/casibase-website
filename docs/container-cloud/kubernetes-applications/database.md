@@ -41,6 +41,7 @@ helm repo update
 # Update the namespace to an appropriate value for your environment (e.g. kb-system)
 helm install snapshot-controller piraeus-charts/snapshot-controller -n kb-system --create-namespace
 ```
+
 Then, verify the installation:
 
 ```bash
@@ -81,7 +82,7 @@ kubectl create -f https://github.com/apecloud/kubeblocks/releases/download/v1.0.
     helm repo update
     ```
 
-2.  **Install KubeBlocks:**
+2. **Install KubeBlocks:**
     This command installs the KubeBlocks chart into the `kb-system` namespace.
 
     ```bash
@@ -106,7 +107,7 @@ Currently supported databases include:
 
 ### Example: Creating a Demo MySQL Cluster
 
-1.  **Create a file named `my-mysql-cluster.yaml`:**
+1. **Create a file named `my-mysql-cluster.yaml`:**
 
     ```yaml
     apiVersion: apps.kubeblocks.io/v1
@@ -145,7 +146,7 @@ Currently supported databases include:
                     storage: 20Gi
     ```
 
-2.  **Apply the manifest to create the cluster:**
+2. **Apply the manifest to create the cluster:**
 
     ```bash
     kubectl apply -f my-mysql-cluster.yaml
