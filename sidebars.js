@@ -154,7 +154,18 @@ module.exports = {
       items: [
         "container-cloud/overview",
         "container-cloud/kubernetes-templates",
-        "container-cloud/kubernetes-applications",
+        {
+          type: "category",
+          label: "Applications",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "container-cloud/kubernetes-applications/overview",
+          },
+          items: [
+            "container-cloud/kubernetes-applications/database",
+          ],
+        },
       ],
     },
     {
