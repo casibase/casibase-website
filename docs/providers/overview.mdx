@@ -10,7 +10,7 @@ import styles from "../styles.module.css";
 import CasdoorCard from "@site/src/components/CasdoorCard";
 ```
 
-Casibase is an open source AI knowledge base system designed to provide efficient and flexible knowledge management and dialogue solutions for enterprises. One of its core features is Providers, which allow users to integrate multiple AI models and storage services to enhance the functionality and performance of the system: Providers are classified into three main categories: Model Providers, Embedding Providers, and Storage Providers, where Model Providers and Embedding Providers are collectively referred to as AI Providers, which, together with Storage Providers, are responsible for handling the AI models and data storage, respectively.
+Casibase is an open source AI knowledge base system designed to provide efficient and flexible knowledge management and dialogue solutions for enterprises. One of its core features is Providers, which allow users to integrate multiple AI models, storage services, and enterprise communication platforms to enhance the functionality and performance of the system. Providers are classified into several main categories: Model Providers, Embedding Providers, Storage Providers, Text-to-Speech Providers, Speech-to-Text Providers, and Bot Providers, where Model Providers and Embedding Providers are collectively referred to as AI Providers.
 
 ## 1. Model Providers
 
@@ -63,3 +63,19 @@ We support uploading files to the local system.
 ### Cloud
 
 We support AWS S3, Azure Blob Storage, MinIO, Alibaba Cloud OSS, Tencent Cloud COS, and we are constantly adding more Cloud storage services.
+
+## 6. Bot Providers
+
+Bot Providers enable Casibase to integrate with enterprise chat platforms and messaging services, allowing AI-powered chatbots to interact directly with users through these platforms. This brings your AI knowledge base capabilities to where your team already communicates.
+
+### Platform Support
+
+Currently, Casibase supports WeCom (WeChat Work) Bot, Tencent's enterprise communication and office collaboration platform. The WeCom Bot provider allows you to create AI-powered bots that can interact with employees directly in WeCom.
+
+### Key Features
+
++ **Seamless Integration**: Connect with enterprise messaging platforms
++ **Real-time Responses**: Provide instant AI-powered answers to user queries
++ **Streaming Support**: Progressive response delivery for better user experience
++ **Secure Communication**: All communications are encrypted and authenticated
++ **Knowledge Base Access**: Leverage your existing Casibase stores and AI models
