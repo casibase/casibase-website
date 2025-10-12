@@ -116,6 +116,15 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Forms",
+      link: {type: "generated-index"},
+      items: [
+        "forms/overview",
+        "forms/form-configuration",
+      ],
+    },
+    {
+      type: "category",
       label: "Vectors",
       link: {type: "generated-index"},
       items: [
