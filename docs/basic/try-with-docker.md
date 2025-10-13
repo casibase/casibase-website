@@ -57,13 +57,64 @@ admin
 
 Create a `conf/app.conf` directory in the same directory level as the `docker-compose.yml` file. Then, copy [app.conf](https://github.com/casibase/casibase/blob/master/conf/app.conf) from Casibase. For more details about `app.conf`, you can see [Via Ini file](/docs/basic/server-installation#via-ini-file).
 
-Create a separate database using docker-compose:
+Below is a minimal but complete `docker-compose.yml` example that starts a MySQL database and the Casibase service. It configures Casibase to connect to the database using MySQL. Save this file as `docker-compose.yml` (next to a `conf` folder if you want to mount a custom `app.conf`).
 
-```bash
-docker-compose up
+```yaml
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: casibase
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306" # optional: expose DB to host
+
+  casibase:
+    image: casbin/casibase:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      # Use MySQL driver and point to the db service (service name = host)
+      - driverName=mysql
+      - dataSourceName=root:123456@tcp(db:3306)/
+    ports:
+      - "14000:14000"
+    volumes:
+      # optional: mount your configuration
+      - ./conf/app.conf:/conf/app.conf
+
+volumes:
+  db_data:
 ```
 
-That's it! :small_airplane:
+What does the above compose file do:
+
+* The Casibase container connects to the database using the Compose service name `db` (i.e. `db:3306`). When both services run in the same Docker network (default for compose), using the service name as host is the simplest and most reliable approach.
+* The `dataSourceName` above uses the MySQL root account for simplicity. For production use please create a dedicated DB user and a strong password.
+* Mounting `./conf/app.conf` into `/conf/app.conf` is optional. If you prefer environment variables, you can remove the mount and rely on the `driverName` and `dataSourceName` variables.
+* If both `app.conf` and environment variables are provided, the environment variables take precedence and will override the corresponding settings in app.conf.
+
+:::note
+**Casdoor**: By default Casibase uses the hosted Casdoor instance at `https://door.casdoor.com` for user authentication. If you need to manage users, applications, or customize the authentication flow, you must deploy your own Casdoor instance and update Casibase's `app.conf` (or the equivalent environment variables) to point to your Casdoor server. You can look at **[Casdoor configuration](/docs/basic/server-installation#configure-casdoor)** for more details.
+
+**`RUNNING_IN_DOCKER`**: By default `RUNNING_IN_DOCKER` is enabled in docker image. When enabled, Casibase replaces `localhost` with the Docker bridge address (for example, `host.docker.internal` or the equivalent bridge hostname) so that the container can reach services running on the host.
+:::
+
+Bring up the services:
+
+```bash
+docker-compose up -d
+```
+
+Check logs (follow):
+
+```bash
+docker-compose logs -f casibase
+```
 
 Visit [**http://localhost:14000**](http://localhost:14000) in your browser. Log into the Casibase dashboard with the default global admin account: `built-in/admin`
 
@@ -72,7 +123,11 @@ admin
 123
 ```
 
-*Note: If you dig deeper into the docker-compose.yml file, you may be puzzled by the environment variable we created called "RUNNING_IN_DOCKER". When the database 'db' is created via docker-compose, it is available on your PC's localhost but not the localhost of the Casibase container. To prevent you from running into troubles caused by modifying app.conf, which can be quite difficult for a new user, we provided this environment variable and pre-assigned it in the docker-compose.yml. When this environment variable is set to true, localhost will be replaced with host.docker.internal so that Casibase can access the database.*
+Stop and remove containers and volumes (data removed):
+
+```bash
+docker-compose down -v
+```
 
 ### **Option-3**: Try directly with the standard image
 
