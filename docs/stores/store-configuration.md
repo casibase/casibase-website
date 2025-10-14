@@ -32,29 +32,13 @@ Now, you can use the store to store knowledge base data, convert text to vectors
 
 ### Vector Stores
 
-The **Vector stores** field allows a store to use vectors from other stores in addition to its own vectors. This feature enables you to combine knowledge from multiple stores when searching for relevant information during conversations.
+Sometimes you need one store to search through knowledge from multiple other stores. For example, you might have separate stores for different topics or departments, but want a main store that can answer questions by searching across all of them. The **Vector stores** field makes this possible by letting a store use vectors from other stores in addition to its own.
 
-**Use Cases:**
-
-- **Cross-store Knowledge Retrieval**: When one store needs to access knowledge base data from multiple other stores
-- **Centralized Knowledge Access**: Create a main store that can search across all your specialized knowledge bases
-- **Knowledge Sharing**: Allow different stores to share vector data without duplicating content
-
-**How to Configure:**
-
-1. Navigate to the store edit page for the store you want to configure
-2. Find the **Vector stores** field
-3. Select one or more stores from the dropdown list (you can select multiple stores)
-4. Save your changes
-
-When you chat with this store, it will search for relevant information from:
-
-- Its own vectors
-- Vectors from all the stores you selected in the **Vector stores** field
+To configure this, navigate to the store edit page and find the **Vector stores** field. You can select one or more stores from the dropdown list. When you chat with this store, it will automatically search through both its own vectors and the vectors from all the stores you selected. This way, you can create a centralized knowledge hub without duplicating content across multiple stores.
 
 :::tip
 
-The store will automatically use its own vectors. You only need to add additional stores in the **Vector stores** field if you want to search across multiple knowledge bases.
+The store always uses its own vectors automatically. You only need to specify additional stores in the **Vector stores** field when you want to search across multiple knowledge bases.
 
 :::
 
