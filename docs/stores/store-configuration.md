@@ -30,6 +30,18 @@ Click the `Save & Exit` button and return to the stores list page:
 
 Now, you can use the store to store knowledge base data, convert text to vectors, and chat with the chatbot.
 
+### Vector Stores
+
+Sometimes you need one store to search through knowledge from multiple other stores. For example, you might have separate stores for different topics or departments, but want a main store that can answer questions by searching across all of them. The **Vector stores** field makes this possible by letting a store use vectors from other stores in addition to its own.
+
+To configure this, navigate to the store edit page and find the **Vector stores** field. You can select one or more stores from the dropdown list. When you chat with this store, it will automatically search through both its own vectors and the vectors from all the stores you selected. This way, you can create a centralized knowledge hub without duplicating content across multiple stores.
+
+:::tip
+
+The store always uses its own vectors automatically. You only need to specify additional stores in the **Vector stores** field when you want to search across multiple knowledge bases.
+
+:::
+
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
 ## 2.Support Multi-store
