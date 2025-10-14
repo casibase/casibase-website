@@ -90,4 +90,21 @@ Save the configuration, return to the home page, and you'll see the file-tree of
 
 Now you can manage your data in Casibase.
 
+:::info Document Format Support
+
+Casibase supports various document formats including:
+
+- Plain text (`.txt`)
+- Markdown (`.md`)
+- Microsoft Word (`.docx`)
+- PDF (`.pdf`)
+
+For improved parsing of Word documents, consider installing [markitdown](https://github.com/microsoft/markitdown) (optional). When markitdown is available, Casibase will automatically use it to provide better text extraction and format handling. Install it with:
+
+```shell
+pip install markitdown
+```
+
+:::
+
 In the next chapter, we'll learn how to add an `AI model provider` to Casibase.

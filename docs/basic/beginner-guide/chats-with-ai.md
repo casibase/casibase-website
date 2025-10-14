@@ -39,6 +39,12 @@ There are some requirements for the knowledge base chat:
 - The store must have a storage provider.
 - The storage provider must have a readable document (e.g. a markdown file, docx file and pdf file).
 
+:::tip
+
+Casibase supports various document formats including `.txt`, `.md`, `.docx`, and `.pdf`. For improved parsing of Word documents (`.docx`), consider installing [markitdown](https://github.com/microsoft/markitdown) using `pip install markitdown`. When markitdown is available, Casibase will automatically use it for better text extraction and format handling.
+
+:::
+
 Once you have met these requirements, you can return to the `Stores` page and click the `Refresh Vectors` button to embedding the knowledge base data.
 
 ![Casibase-stores-refresh-button](/img/walkthrough-guides/casibase-stores-refresh-button.png)

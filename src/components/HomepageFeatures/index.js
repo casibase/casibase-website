@@ -26,7 +26,7 @@ const FeatureList = [
     description: (
       <>
         <Translate>
-          Supports multiple document formats including txt, markdown, docx, pdf with intelligent parsing, and features an embedded AI assistant for real-time online chat and manual session handover.
+          Supports multiple document formats including txt, markdown, docx, pdf with intelligent parsing (enhanced by markitdown for better accuracy), and features an embedded AI assistant for real-time online chat and manual session handover.
         </Translate>
       </>
     ),

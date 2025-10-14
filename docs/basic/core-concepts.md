@@ -67,6 +67,8 @@ There are two primary types of providers in Casibase:
   - AWS
   - Azure
   - Local File System
+  
+  Storage providers work with multiple document formats (`.txt`, `.md`, `.docx`, `.pdf`). For enhanced document parsing, Casibase can optionally use [markitdown](https://github.com/microsoft/markitdown) to provide better text extraction from Word documents and other formats.
 
 - **AI Providers.** The AI Providers are responsible for handling AI-related tasks and services in Casibase. It supports multiple AI models and technologies, including:
   - OpenAI

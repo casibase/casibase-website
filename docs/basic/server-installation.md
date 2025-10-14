@@ -58,6 +58,29 @@ You can also run guacd in docker with the following command:
 docker run -d --name guacd -p 4822:4822 guacamole/guacd
 ```
 
+### markitdown (Optional)
+
+Casibase supports enhanced document parsing using [markitdown](https://github.com/microsoft/markitdown), a Microsoft utility that converts various document formats to Markdown. When markitdown is installed, Casibase will automatically use it to provide improved parsing for `.docx` files and other document formats.
+
+**Benefits of using markitdown:**
+
+- Better handling of complex document structures
+- Improved text extraction from Word documents
+- Enhanced support for various character encodings (including UTF-8 and GBK)
+- More accurate conversion of formatted text
+
+**Installation:**
+
+```shell
+pip install markitdown
+```
+
+:::tip
+
+markitdown is optional. If not installed, Casibase will use its built-in parser for `.docx` files. However, we recommend installing markitdown for better document parsing quality.
+
+:::
+
 ## Download
 
 The source code of Casibase is hosted at GitHub: <https://github.com/casibase/casibase>. Both the Go backend code and React frontend code are inside the single repository.
