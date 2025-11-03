@@ -1,7 +1,6 @@
 ---
 title: Scan Providers
 keywords: [Casibase, Scan Provider, Security Scanning, Network Scanning]
-authors: [Copilot]
 ---
 
 ## Introduction
