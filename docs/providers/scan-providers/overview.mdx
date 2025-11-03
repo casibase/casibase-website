@@ -1,0 +1,55 @@
+---
+title: Scan Providers
+description: Network and security scanning providers
+keywords: [Casibase, Scan, Network Scan, Security Audit, Nmap, OS Patch]
+authors: [casibase]
+---
+
+```mdx-code-block
+import styles from "../../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+import DocCardList from '@theme/DocCardList';
+```
+
+## Introduction
+
+Scan Providers enable automated network discovery, security auditing, and system assessment in Casibase. These providers integrate specialized scanning tools to analyze infrastructure assets and identify security issues.
+
+By configuring scan providers, you can perform network reconnaissance, detect open ports and running services, assess patch status, and identify missing security updates across your infrastructure. The results are captured in both raw and structured formats for detailed analysis.
+
+Refer to the [Core Concepts](../../basic/core-concepts) section of our previous documentation for more information about providers.
+
+## Add a New Scan Provider
+
+Scan providers are used to integrate network and security scanning capabilities into Casibase. You can add them by following these steps:
+
+Click the `Providers` button on the page.
+
+![Casibase-home-providers](/img/walkthrough-guides/casibase-home-providers.png)
+
+### Add a Scan Provider
+
+Click the `Add` button to add a new scan provider.
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
+
+#### Fill in Scan Provider Details
+
+Fill in the required configuration, setting the Category to "Scan" and selecting the appropriate Type (Nmap or OS Patch). Then click the `Save & Exit` button to save.
+
+More information about each scan provider type can be found below:
+
+<DocCardList />
+
+:::tip
+
+Casibase supports multiple scan provider types:
+
+- **Nmap**: Network discovery and security auditing through port scanning, service detection, and OS fingerprinting
+- **OS Patch**: System security assessment by checking for missing patches and available updates
+
+:::
+
+Now you can use scan providers to assess your infrastructure security and maintain visibility into your network assets.
+
+After adding a scan provider, you can create scans to execute network discovery or security assessments against your infrastructure assets, with results stored for historical analysis.

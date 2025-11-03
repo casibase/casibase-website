@@ -78,8 +78,19 @@ module.exports = {
         "providers/storage-providers",
         "providers/text-to-speech-providers",
         "providers/speech-to-text-providers",
-        "providers/nmap-scan-provider",
-        "providers/os-patch-scan-provider",
+        {
+          type: "category",
+          label: "Scan Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/scan-providers/overview",
+          },
+          items: [
+            "providers/scan-providers/nmap-scan-provider",
+            "providers/scan-providers/os-patch-scan-provider",
+          ],
+        },
         {
           type: "category",
           label: "Blockchain Providers",
