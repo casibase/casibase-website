@@ -9,6 +9,10 @@ authors: [hsluoyz]
 
 Graphs in Casibase provide visual representation of relationships and connections between entities. The interactive graph interface allows you to explore complex data structures through an intuitive node-and-link visualization.
 
+## Asset Graph Transformation
+
+Casibase can automatically generate graphs from cloud infrastructure assets. When you have assets defined (such as virtual machines, containers, or network resources), use the asset-to-graph transformation feature to visualize their relationships. The system analyzes asset properties to create nodes and establishes links based on resource dependencies and connections. This provides instant visibility into your infrastructure topology without manual graph definition.
+
 ## Creating a Graph
 
 Navigate to the Graphs section and click `Add` to create a new graph. Configure the graph with:
@@ -46,11 +50,22 @@ Graphs use a JSON format with two main components:
 
 The graph visualization provides several interactive capabilities:
 
-**Node Selection**: Click any node to view its details in a floating panel. Selected nodes are highlighted with a distinct visual style showing related information.
+**Node Selection**: Click any node to view its details in a floating panel. Selected nodes are highlighted with a distinct visual style. The detail panel displays node metadata including all custom properties defined in the asset or node configuration.
 
 **Canvas Navigation**: Drag anywhere on the canvas to pan the view. The graph supports full directional movement for exploring large networks.
 
 **Visual Feedback**: Nodes display custom icons and labels. Links connect at node edges rather than centers for cleaner visualization.
+
+### Layout Controls
+
+Graphs support multiple layout algorithms to organize nodes:
+
+- **Force-directed layout**: Nodes automatically arrange based on their connections, creating organic-looking graphs where connected nodes pull together while maintaining spacing.
+- **None layout**: Positions nodes based on provided coordinates, useful when you want manual control over the exact placement.
+
+### Density Control
+
+For graphs with many nodes, use the density slider to adjust node spacing. Higher density brings nodes closer together for a compact view, while lower density spreads them out for better readability. This is particularly useful when working with auto-generated graphs from cloud infrastructure.
 
 ## Graph Editing
 
@@ -68,7 +83,7 @@ Each node can have custom properties:
 - **Label**: Text displayed below the node
 - **Properties**: Additional metadata shown in the detail panel
 
-When viewing node details, property values are displayed in an organized format. Long text values are automatically truncated with ellipsis for readability.
+When viewing node details, the panel shows comprehensive information about the selected node. For asset-derived graphs, this includes all metadata from the original asset such as IP addresses, resource IDs, locations, and other cloud-specific properties. Property values are displayed in an organized format with proper label formatting. Long text values are automatically truncated with ellipsis for readability.
 
 ## Error Handling
 

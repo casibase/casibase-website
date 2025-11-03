@@ -19,7 +19,24 @@ Nmap performs comprehensive network analysis by probing target systems. Port dis
 
 From the Scans page, create a new scan and select the Nmap provider. Choose your target by selecting an asset from your inventory or entering an IP address manually for ad-hoc scanning.
 
-The provider edit page includes a test widget for verifying functionality. Enter a target, click "Test", and view the scan results immediately. This helps confirm the provider is working correctly before running production scans.
+### Command Templates
+
+The provider edit page includes command templates for common scan types. Select a template from the dropdown to quickly configure your scan:
+
+- **Ping Scan**: Quick host discovery without port scanning
+- **Quick Scan**: Fast scan of common ports with service detection
+- **Intense Scan**: Comprehensive scan with OS detection and script scanning
+- **Port Scan**: Scan specific port ranges
+- **OS Detection**: Identify target operating system
+- **Version Detection**: Detect service versions on open ports
+- **Stealth Scan**: Lower visibility SYN scan
+- **UDP Scan**: Scan UDP ports instead of TCP
+
+### Custom Commands
+
+You can customize the Nmap command to meet specific requirements. The command field supports the `%s` placeholder for the target IP address. For example, `-sV -p 1-1000 %s` scans ports 1-1000 with version detection. The command input validates input to prevent command injection by rejecting shell metacharacters such as `;`, `&`, `|`, `$`, and backticks.
+
+The test widget allows you to verify functionality before running scans. Enter a target, optionally modify the command, click "Scan", and view results immediately.
 
 ## Scan Results
 
