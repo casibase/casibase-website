@@ -34,7 +34,7 @@ The provider edit page includes command templates for common scan types. Select 
 
 ### Custom Commands
 
-You can customize the Nmap command to meet specific requirements. The command field supports the `%s` placeholder for the target IP address. For example, `-sV -p 1-1000 %s` scans ports 1-1000 with version detection. The command input validates against dangerous characters to prevent command injection.
+You can customize the Nmap command to meet specific requirements. The command field supports the `%s` placeholder for the target IP address. For example, `-sV -p 1-1000 %s` scans ports 1-1000 with version detection. The command input validates input to prevent command injection by rejecting shell metacharacters such as `;`, `&`, `|`, `$`, and backticks.
 
 The test widget allows you to verify functionality before running scans. Enter a target, optionally modify the command, click "Scan", and view results immediately.
 
