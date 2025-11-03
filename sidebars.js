@@ -80,6 +80,19 @@ module.exports = {
         "providers/speech-to-text-providers",
         {
           type: "category",
+          label: "Scan Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/scan-providers/overview",
+          },
+          items: [
+            "providers/scan-providers/nmap-scan-provider",
+            "providers/scan-providers/os-patch-scan-provider",
+          ],
+        },
+        {
+          type: "category",
           label: "Blockchain Providers",
           collapsed: true,
           link: {
@@ -166,6 +179,14 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "messages/overview",
+      ],
+    },
+    {
+      type: "category",
+      label: "Scans",
+      link: {type: "generated-index"},
+      items: [
+        "scans/overview",
       ],
     },
     {

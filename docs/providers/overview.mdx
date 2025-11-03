@@ -76,4 +76,10 @@ Cloud Providers enable Casibase to connect to and manage infrastructure across p
 
 ## 7. Scan Providers
 
-Scan Providers perform network and security scanning operations. The Nmap scan provider enables network discovery and security auditing by scanning IP ranges and detecting open ports, services, and system information on network hosts.
+Scan Providers perform network discovery, security auditing, and system assessment operations. Casibase integrates specialized scanning tools that analyze infrastructure assets, detect vulnerabilities, and assess system configurations.
+
+**Nmap Scan Provider** conducts network reconnaissance by scanning IP addresses and port ranges. It identifies open ports, running services, service versions, and operating system details. The provider returns structured JSON results showing discovered hosts, accessible services, and potential security concerns.
+
+**OS Patch Provider** evaluates system patch status and identifies missing security updates. It checks installed software versions against known vulnerabilities and recommends necessary patches to maintain system security.
+
+Scan providers work with the Scan object to execute operations against target assets. Results are captured in both raw and structured formats, enabling detailed analysis through the web interface.

@@ -1,0 +1,44 @@
+---
+title: Scans
+description: Network and security scanning in Casibase
+keywords: [Casibase, Scan, Network Scan, Security Audit, Nmap, OS Patch]
+authors: [casibase]
+---
+
+Scans in Casibase enable network discovery, security auditing, and system assessment across your infrastructure. The scan feature provides automated scanning capabilities for assets like virtual machines and network hosts, delivering structured results for analysis.
+
+## What is a Scan?
+
+A Scan represents a scanning operation executed against a target asset. Each scan instance records the target, provider used, execution time, and results. Scans can be triggered manually or configured to run on demand against assets in your infrastructure.
+
+## Scan Workflow
+
+Start by navigating to the Scans page and creating a new scan instance. You'll need to configure the target selection, choose a scan provider like Nmap or OS Patch, and set any necessary scan parameters.
+
+When selecting your target, you can use **Asset Mode** to pick an existing asset from your inventory, or **Manual Mode** to enter an IP address or hostname directly. For Virtual Machine assets, the system automatically uses the public IP address from the asset properties.
+
+Click the "Start" button to initiate the scan. The scan provider performs the configured operation against your target and returns results. These results appear in two formats: a **Structured View** with organized tables and formatted data, and the **Raw Output** showing complete text from the scan tool. Both formats are stored in the database for historical reference.
+
+## Scan Providers
+
+Casibase supports multiple scan provider types, each optimized for specific scanning tasks.
+
+The **Nmap Scan Provider** performs network discovery and security auditing by scanning ports, detecting services, and identifying system information. It handles port scanning with customizable ranges, service version detection, operating system fingerprinting, and network topology mapping. Results come back as structured JSON containing host information, open ports, detected services, and system details, which the web interface renders in organized tables.
+
+The **OS Patch Provider** checks system patch status and identifies missing security updates. It assesses system updates, detects security patches, checks package versions, and provides update recommendations. Results include patch status information, available updates, and security recommendations in a structured format for quick review.
+
+## Scan Configuration
+
+When configuring a scan in the provider edit page, you can test the provider functionality directly. The scan configuration widget lets you switch between Asset and Manual Input modes for target selection, execute test scans to verify provider configuration, and view scan output before saving configurations.
+
+## API Integration
+
+Scans support programmatic access through REST APIs. Use `GET /get-scans` to retrieve all scans with pagination, or `GET /get-scan` to fetch a specific scan by ID. The `POST /add-scan` endpoint creates a new scan, while `POST /update-scan` modifies scan configuration and `POST /delete-scan` removes a scan.
+
+The `POST /scan-asset` API performs on-demand scanning and returns results without creating a persistent scan record, making it useful for quick assessments.
+
+## Working with Scans
+
+For cloud-based virtual machines, Asset Mode automatically resolves the correct public IP address, ensuring scans reach the intended target even as infrastructure changes. Schedule regular scans to maintain visibility into your security posture, but consider the impact on target systems when determining frequency.
+
+When analyzing results, review both the structured and raw formats. The structured view provides quick insights, while raw output offers complete details for in-depth analysis. Choose Nmap for network discovery and port scanning, or OS Patch for security update assessment depending on what you need to learn about your systems.
