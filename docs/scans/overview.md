@@ -13,108 +13,32 @@ A Scan represents a scanning operation executed against a target asset. Each sca
 
 ## Scan Workflow
 
-The scanning process follows these steps:
+Start by navigating to the Scans page and creating a new scan instance. You'll need to configure the target selection, choose a scan provider like Nmap or OS Patch, and set any necessary scan parameters.
 
-**1. Create a Scan**
+When selecting your target, you can use **Asset Mode** to pick an existing asset from your inventory, or **Manual Mode** to enter an IP address or hostname directly. For Virtual Machine assets, the system automatically uses the public IP address from the asset properties.
 
-Navigate to the Scans page and create a new scan instance by configuring:
-
-- Target selection (asset or manual IP input)
-- Scan provider (e.g., Nmap, OS Patch)
-- Scan parameters
-
-**2. Select Target**
-
-Choose your scan target using one of two modes:
-
-- **Asset Mode**: Select an existing asset from your asset inventory
-- **Manual Mode**: Enter a target IP address or hostname directly
-
-For Virtual Machine assets, the scan automatically uses the public IP address from the asset properties.
-
-**3. Execute Scan**
-
-Click the "Start" button to initiate the scan. The scan provider performs the configured scanning operation against the target and returns results.
-
-**4. View Results**
-
-Scan results are displayed in two formats:
-
-- **Structured View**: Provider-specific rendering with organized tables and formatted data
-- **Raw Output**: Complete text output from the scan tool
-
-Results are stored in the database for historical reference and analysis.
+Click the "Start" button to initiate the scan. The scan provider performs the configured operation against your target and returns results. These results appear in two formats: a **Structured View** with organized tables and formatted data, and the **Raw Output** showing complete text from the scan tool. Both formats are stored in the database for historical reference.
 
 ## Scan Providers
 
 Casibase supports multiple scan provider types, each optimized for specific scanning tasks.
 
-### Nmap Scan Provider
+The **Nmap Scan Provider** performs network discovery and security auditing by scanning ports, detecting services, and identifying system information. It handles port scanning with customizable ranges, service version detection, operating system fingerprinting, and network topology mapping. Results come back as structured JSON containing host information, open ports, detected services, and system details, which the web interface renders in organized tables.
 
-The Nmap provider performs network discovery and security auditing by scanning ports, detecting services, and identifying system information.
-
-**Capabilities:**
-
-- Port scanning with customizable ranges
-- Service version detection
-- Operating system fingerprinting
-- Network topology mapping
-
-**Result Format:**
-The Nmap provider returns structured JSON containing host information, open ports, detected services, and system details. The web interface renders this data in organized tables showing ports, states, services, and versions.
-
-### OS Patch Provider
-
-The OS Patch provider checks system patch status and identifies missing security updates.
-
-**Capabilities:**
-
-- System update assessment
-- Security patch detection
-- Package version checking
-- Update recommendations
-
-**Result Format:**
-Results include patch status information, available updates, and security recommendations, displayed in a structured format for quick review.
+The **OS Patch Provider** checks system patch status and identifies missing security updates. It assesses system updates, detects security patches, checks package versions, and provides update recommendations. Results include patch status information, available updates, and security recommendations in a structured format for quick review.
 
 ## Scan Configuration
 
-When configuring a scan in the provider edit page, you can test the provider functionality directly. The scan configuration widget supports:
-
-- **Target Mode Selection**: Switch between Asset and Manual Input modes
-- **Provider Testing**: Execute test scans to verify provider configuration
-- **Result Preview**: View scan output before saving configurations
+When configuring a scan in the provider edit page, you can test the provider functionality directly. The scan configuration widget lets you switch between Asset and Manual Input modes for target selection, execute test scans to verify provider configuration, and view scan output before saving configurations.
 
 ## API Integration
 
-Scans support programmatic access through REST APIs:
+Scans support programmatic access through REST APIs. Use `GET /get-scans` to retrieve all scans with pagination, or `GET /get-scan` to fetch a specific scan by ID. The `POST /add-scan` endpoint creates a new scan, while `POST /update-scan` modifies scan configuration and `POST /delete-scan` removes a scan.
 
-- `GET /get-scans`: Retrieve all scans with pagination
-- `GET /get-scan`: Get a specific scan by ID
-- `POST /add-scan`: Create a new scan
-- `POST /update-scan`: Update scan configuration
-- `POST /delete-scan`: Remove a scan
-- `POST /scan-asset`: Execute a scan against an asset
+The `POST /scan-asset` API performs on-demand scanning and returns results without creating a persistent scan record, making it useful for quick assessments.
 
-The `/scan-asset` API performs on-demand scanning and returns results without creating a persistent scan record, useful for quick assessments.
+## Working with Scans
 
-## Best Practices
+For cloud-based virtual machines, Asset Mode automatically resolves the correct public IP address, ensuring scans reach the intended target even as infrastructure changes. Schedule regular scans to maintain visibility into your security posture, but consider the impact on target systems when determining frequency.
 
-**Target Selection**
-
-For cloud-based virtual machines, use Asset Mode to automatically resolve the correct public IP address. This ensures scans reach the intended target even as infrastructure changes.
-
-**Scan Frequency**
-
-Schedule regular scans to maintain current security posture visibility. Consider scan impact on target systems when determining frequency.
-
-**Result Analysis**
-
-Review both structured and raw results. The structured view provides quick insights, while raw output offers complete details for in-depth analysis.
-
-**Provider Choice**
-
-Select the appropriate provider for your scanning needs:
-
-- Use Nmap for network discovery and port scanning
-- Use OS Patch for security update assessment
+When analyzing results, review both the structured and raw formats. The structured view provides quick insights, while raw output offers complete details for in-depth analysis. Choose Nmap for network discovery and port scanning, or OS Patch for security update assessment depending on what you need to learn about your systems.
