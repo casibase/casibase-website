@@ -41,7 +41,7 @@ The Access Key should have permissions to call:
 2. Click the `Add` button
 3. Fill in the configuration:
    - **Name**: A descriptive name for this provider
-   - **Type**: Select "Aliyun"
+   - **Type**: Select "Aliyun" (this is the internal identifier for Alibaba Cloud)
    - **Category**: Select "Public Cloud"
    - **Client ID**: Paste your Access Key ID
    - **Client Secret**: Paste your Access Key Secret
