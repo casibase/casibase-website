@@ -1,0 +1,71 @@
+---
+title: Public Cloud Providers
+description: Public Cloud Overview
+keywords: [Casibase, Public Cloud, Alibaba Cloud, Asset Management]
+authors: [hsluoyz]
+---
+
+```mdx-code-block
+import styles from "../../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+import DocCardList from '@theme/DocCardList';
+```
+
+## Introduction
+
+Public Cloud Providers enable Casibase to connect to and scan cloud infrastructure across major cloud platforms. The system automatically discovers and catalogs cloud resources, providing centralized visibility and management of your cloud assets.
+
+When configured, Casibase can scan resources like virtual machines, storage volumes, and network components, enriching each asset with detailed configuration information through multi-level API calls.
+
+## Supported Cloud Platform
+
+Casibase currently supports Alibaba Cloud for complete asset discovery including ECS instances, disks, VPCs, and other resources. Additional cloud platforms are planned for future releases.
+
+## Add a Public Cloud Provider
+
+Navigate to the Providers page and click `Add` to create a new provider.
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
+
+### Configuration
+
+Select "Aliyun" (Alibaba Cloud) as the provider type and fill in the required credentials:
+
+- **Type**: Select "Aliyun" (Alibaba Cloud)
+- **Client ID**: Your Alibaba Cloud Access Key ID
+- **Client Secret**: Your Alibaba Cloud Access Key Secret
+- **Region**: The cloud region to scan (e.g., cn-hangzhou)
+
+Click `Save & Exit` to complete the configuration.
+
+## Asset Scanning
+
+After adding a public cloud provider, Casibase can scan and catalog your cloud resources. The scanning process:
+
+1. Connects to the cloud platform using provided credentials
+2. Discovers resources using the SearchResources API
+3. Enriches resource details through secondary API calls
+4. Stores asset information with full configuration details
+
+### Scanned Resources
+
+For Alibaba Cloud, the following resource types are automatically discovered:
+
+- ECS instances with CPU, memory, IP addresses, and OS details
+- Disk volumes with size, type, and attachment information
+- VPC networks with CIDR blocks and routing configuration
+- Security groups and network interfaces
+
+## Viewing Assets
+
+After scanning, view discovered assets in the Assets page. Each asset displays:
+
+- Resource ID and display name
+- Resource type and region
+- Current state
+- Tags and metadata
+- Detailed properties specific to the resource type
+
+More configuration details:
+
+<DocCardList />

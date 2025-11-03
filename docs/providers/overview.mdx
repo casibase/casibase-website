@@ -10,7 +10,9 @@ import styles from "../styles.module.css";
 import CasdoorCard from "@site/src/components/CasdoorCard";
 ```
 
-Casibase is an open source AI knowledge base system designed to provide efficient and flexible knowledge management and dialogue solutions for enterprises. One of its core features is Providers, which allow users to integrate multiple AI models and storage services to enhance the functionality and performance of the system: Providers are classified into three main categories: Model Providers, Embedding Providers, and Storage Providers, where Model Providers and Embedding Providers are collectively referred to as AI Providers, which, together with Storage Providers, are responsible for handling the AI models and data storage, respectively.
+Casibase is an open source AI knowledge base system designed to provide efficient and flexible knowledge management and dialogue solutions for enterprises. One of its core features is Providers, which allow users to integrate multiple AI models, storage services, and infrastructure management capabilities. These integrations enhance the functionality and performance of the system.
+
+Providers span several categories including AI Providers (Model and Embedding), Storage Providers, Cloud Providers, and Scan Providers, each serving distinct roles in the system. The provider list interface includes filtering capabilities, allowing you to quickly locate providers by category or type through dedicated filter controls.
 
 ## 1. Model Providers
 
@@ -63,3 +65,15 @@ We support uploading files to the local system.
 ### Cloud
 
 We support AWS S3, Azure Blob Storage, MinIO, Alibaba Cloud OSS, Tencent Cloud COS, and we are constantly adding more Cloud storage services.
+
+## 6. Cloud Providers
+
+Cloud Providers enable Casibase to connect to and manage infrastructure across private and public cloud platforms. These providers allow centralized visibility and control of cloud resources.
+
+**Private Cloud Providers** connect to containerized environments like Docker and Kubernetes, enabling container lifecycle management and orchestration directly from Casibase.
+
+**Public Cloud Providers** scan and catalog cloud infrastructure resources across major platforms. They automatically discover virtual machines, storage volumes, network components, and other cloud assets, enriching each with detailed configuration information through multi-level API discovery.
+
+## 7. Scan Providers
+
+Scan Providers perform network and security scanning operations. The Nmap scan provider enables network discovery and security auditing by scanning IP ranges and detecting open ports, services, and system information on network hosts.

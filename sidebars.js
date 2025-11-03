@@ -103,6 +103,18 @@ module.exports = {
             "providers/private-cloud/kubernetes-configuration",
           ],
         },
+        {
+          type: "category",
+          label: "Public Cloud Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/public-cloud/overview",
+          },
+          items: [
+            "providers/public-cloud/alibaba-cloud-configuration",
+          ],
+        },
       ],
     },
     {
@@ -185,6 +197,14 @@ module.exports = {
         "node/overview",
         "node/rdp",
         "node/vnc",
+      ],
+    },
+    {
+      type: "category",
+      label: "Graphs",
+      link: {type: "generated-index"},
+      items: [
+        "graphs/overview",
       ],
     },
     // {
