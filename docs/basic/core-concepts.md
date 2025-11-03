@@ -137,3 +137,9 @@ Embedding is the process of transforming various types of data, such as text and
 - Casibase's default embedding method is provided by OpenAI at a rate of up to three calls per minute. We recommend minimizing coupling between knowledge files to facilitate embedding and further processing.
 
 :::
+
+## Scans
+
+Scans represent network and security scanning operations executed against infrastructure assets. The Scan object enables automated discovery, security auditing, and system assessment through integrated scan providers.
+
+Each scan targets a specific asset (such as a virtual machine) or IP address, executes using a configured scan provider (like Nmap or OS Patch), and captures results in both raw and structured formats. Scans integrate with the asset inventory to automatically resolve target addresses and maintain historical scanning records for security analysis.
