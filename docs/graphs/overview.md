@@ -2,7 +2,7 @@
 title: Graphs
 description: Graph Visualization in Casibase
 keywords: [Casibase, Graphs, Visualization, Network Graph]
-authors: [Copilot]
+authors: [hsluoyz]
 ---
 
 ## Overview

@@ -2,7 +2,7 @@
 title: Alibaba Cloud Configuration
 description: Configure Alibaba Cloud asset scanning
 keywords: [Casibase, Alibaba Cloud, Aliyun, Asset Scanning, ECS, VPC]
-authors: [Copilot]
+authors: [hsluoyz]
 ---
 
 ## Overview
