@@ -17,7 +17,7 @@ Start by navigating to the Scans page and creating a new scan instance. You'll n
 
 When selecting your target, you can use **Asset Mode** to pick an existing asset from your inventory, or **Manual Mode** to enter an IP address or hostname directly. For Virtual Machine assets, the system automatically uses the public IP address from the asset properties.
 
-Click the "Start" button to initiate the scan. The scan provider performs the configured operation against your target and returns results. These results appear in two formats: a **Structured View** with organized tables and formatted data, and the **Raw Output** showing complete text from the scan tool. Both formats are stored in the database for historical reference.
+Click the "Start" button to initiate the scan. The scan provider performs the configured operation against your target and returns results. These results appear in two formats: a **Structured View** with organized tables and formatted data, and the **Raw Output** showing complete text from the scan tool. Both formats are stored in the database for historical reference, allowing you to review previous scans and track changes over time.
 
 ## Scan Providers
 
