@@ -78,6 +78,7 @@ module.exports = {
         "providers/storage-providers",
         "providers/text-to-speech-providers",
         "providers/speech-to-text-providers",
+        "providers/scan-providers",
         {
           type: "category",
           label: "Blockchain Providers",
