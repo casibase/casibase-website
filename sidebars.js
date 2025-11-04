@@ -22,6 +22,7 @@ module.exports = {
         "basic/try-with-docker",
         "basic/try-with-helm",
         "basic/public-api",
+        "basic/system-info",
         "basic/container-cloud",
         {
           type: "category",
