@@ -261,17 +261,13 @@ Global administrators can access the system monitoring dashboard through the **S
 
 ### Available Metrics
 
-**CPU Usage**
-Displays the current CPU utilization percentage for each processor core. This helps identify if the system is experiencing high computational load.
+**CPU Usage**: Displays the current CPU utilization percentage for each processor core. This helps identify if the system is experiencing high computational load.
 
-**Memory Usage**
-Shows the memory consumption of the Casibase process relative to total system memory. Monitor this to ensure sufficient memory is available for smooth operation.
+**Memory Usage**: Shows the memory consumption of the Casibase process relative to total system memory. Monitor this to ensure sufficient memory is available for smooth operation.
 
-**Disk Usage**
-Tracks the storage space used by Casibase's data directory. This metric helps you monitor growth and plan for storage capacity.
+**Disk Usage**: Tracks the storage space used by Casibase's data directory. This metric helps you monitor growth and plan for storage capacity.
 
-**Network Usage**
-Displays cumulative network I/O for the Casibase process, including bytes sent, received, and total throughput. This helps track data transfer patterns and identify potential network bottlenecks.
+**Network Usage**: Displays cumulative network I/O for the Casibase process, including bytes sent, received, and total throughput. This helps track data transfer patterns and identify potential network bottlenecks.
 
 ### API Performance Metrics
 
