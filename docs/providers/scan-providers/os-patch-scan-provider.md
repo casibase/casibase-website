@@ -15,11 +15,21 @@ Create an OS Patch Scan Provider by navigating to Providers and adding a new pro
 
 The provider evaluates system patch status by connecting to target systems and querying package managers for update information. It identifies the current patch level, finds missing security updates, and compares installed software versions against available updates. The assessment generates prioritized recommendations for patches that should be installed.
 
+The scan results include three views: **All Patches** (default), showing both available and installed patches in one unified view, **Available Patches** for updates ready to install, and **Installed Patches** for currently applied updates. The All Patches view displays available patches first, making it easy to identify pending updates at a glance.
+
 ## Running Scans
 
-Execute OS Patch scans against Linux-based virtual machines and servers. Target systems must be accessible from Casibase and have package management tools properly configured. The scan analyzes available updates but makes no changes to the target system.
+Execute OS Patch scans against Linux-based virtual machines and servers. Target systems must be accessible from Casibase and have package management tools properly configured.
 
 From the Scans page, create a new scan and select the OS Patch provider. Choose your target asset from the inventory or enter system details manually. The provider edit page also includes a test widget for verifying connectivity and functionality before running production scans.
+
+### Remote Scanning
+
+For distributed deployments, Casibase supports remote patch scanning across multiple machines. Deploy Casibase instances on each asset machine with a shared database. When a scan is created for a specific asset (matched by hostname to asset.displayName), the Casibase instance on that machine automatically detects and executes the scan. Results are saved to the shared database, allowing all instances to view scan progress and results in real-time.
+
+### Installing Patches
+
+The scan interface includes patch installation capabilities directly from the scan results. Click the install button next to any available patch to initiate installation on the target system. The interface displays installation progress and status, updating in real-time as the patch is applied. Installation requires appropriate permissions on the target system.
 
 ## Scan Results
 
