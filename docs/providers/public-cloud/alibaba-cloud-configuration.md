@@ -9,6 +9,8 @@ authors: [hsluoyz]
 
 Alibaba Cloud integration enables comprehensive asset discovery and management for your cloud infrastructure. Casibase automatically scans resources across your Alibaba Cloud account, collecting detailed configuration information.
 
+When using Alibaba Cloud as a model provider, the integration supports advanced features including web search capabilities during chat conversations, allowing the AI to retrieve real-time information from the internet.
+
 ## Prerequisites
 
 Before configuring the Alibaba Cloud provider, you need:

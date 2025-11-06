@@ -13,6 +13,8 @@ Global administrators can access the system monitoring dashboard through the **S
 
 ## Available Metrics
 
+The system monitoring dashboard displays key metrics in an organized layout that spans the full page width for better visibility.
+
 **CPU Usage**: Displays the current CPU utilization percentage for each processor core. This helps identify if the system is experiencing high computational load.
 
 **Memory Usage**: Shows the memory consumption of the Casibase process relative to total system memory. Monitor this to ensure sufficient memory is available for smooth operation.
