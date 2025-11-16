@@ -56,7 +56,7 @@ module.exports = {
           position: "left",
         },
         {
-          label: "Help",
+          label: "关于我们",
           to: "/help",
           position: "left",
         },
@@ -176,7 +176,7 @@ var _hmt = _hmt || [];
         href: "https://casibase.org/",
         width: 50,
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Casibase contributors.`,
+      copyright: `版权所有 © ${new Date().getFullYear()} 北京卡思宾科技有限公司`,
     },
     prism: {
       additionalLanguages: ["nginx", "java", "properties", "groovy", "ruby"],

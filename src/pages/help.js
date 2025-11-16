@@ -8,7 +8,8 @@ function Help() {
     <Layout title="Help" description="Help Page" styles={{padding: "19px"}}>
       <div className="container text--center">
         <br /><br />
-        <h1><Translate>Need help?</Translate></h1>
+        <h1><Translate>本公司微信小程序：</Translate></h1>
+        <img alt={"miniapp"} src={"/img/miniapp.jpg"} width="200px" /><br /><br />
         <Translate>If you need help with Casibase, you can try one of the mechanisms below.</Translate>
         <br /><br /><br /><br />
         <div className="row">
