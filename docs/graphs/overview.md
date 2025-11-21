@@ -50,11 +50,11 @@ Graphs use a JSON format with two main components:
 
 The graph visualization provides several interactive capabilities:
 
-**Node Selection**: Click any node to view its details in a floating panel. Selected nodes are highlighted with a distinct visual style. The detail panel displays node metadata including all custom properties defined in the asset or node configuration.
+**Node Selection**: Click any node to view its details in a floating panel. Selected nodes are highlighted with a distinct visual style. The detail panel displays node metadata including all custom properties defined in the asset or node configuration, and shows related scan results when available. For assets with associated scans, you can review the scan history and results directly from the node detail view.
 
 **Canvas Navigation**: Drag anywhere on the canvas to pan the view. The graph supports full directional movement for exploring large networks.
 
-**Visual Feedback**: Nodes display custom icons and labels. Links connect at node edges rather than centers for cleaner visualization.
+**Visual Feedback**: Nodes display custom icons and labels. Links connect at node edges rather than centers for cleaner visualization. When assets have associated scan results, the node displays a notification badge showing the scan count. The badge appears as a red pill-shaped indicator with white text, similar to iOS app notifications, making it immediately obvious which nodes have scan data available without needing to click through each one.
 
 ### Layout Controls
 
@@ -84,6 +84,8 @@ Each node can have custom properties:
 - **Properties**: Additional metadata shown in the detail panel
 
 When viewing node details, the panel shows comprehensive information about the selected node. For asset-derived graphs, this includes all metadata from the original asset such as IP addresses, resource IDs, locations, and other cloud-specific properties. Property values are displayed in an organized format with proper label formatting. Long text values are automatically truncated with ellipsis for readability.
+
+For assets with scan results, the detail panel includes a dedicated section showing related scans. You can view scan execution history, status information, and access the full scan results without leaving the graph view. This integration provides immediate visibility into the security and operational status of your infrastructure assets as you explore the topology.
 
 ## Error Handling
 
