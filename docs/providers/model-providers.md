@@ -52,7 +52,8 @@ Casibase supports many model providers, including:
   - Supports all Azure OpenAI models and features
 - [Alibaba Cloud](https://www.alibabacloud.com/)
   - Integrated with official SDK
-  - Supports web search functionality for real-time information
+  - Supports web search functionality for real-time information retrieval
+  - Search results are displayed inline with AI responses in the chat interface
 
 :::
 
