@@ -31,13 +31,17 @@ Casibase supports multiple scan provider types, each optimized for specific scan
 
 The **Nmap Scan Provider** performs network discovery and security auditing by scanning ports, detecting services, and identifying system information. It handles port scanning with customizable ranges, service version detection, operating system fingerprinting, and network topology mapping. Results come back as structured JSON containing host information, open ports, detected services, and system details, which the web interface renders in organized tables.
 
-The **OS Patch Provider** checks system patch status and identifies missing security updates. The provider uses efficient local cache queries to list installed patches, ensuring fast scan performance without querying online update services. When listing available patches for installation, the system does query Windows Update online to identify new updates. This hybrid approach balances speed and accuracy, providing quick status checks while enabling comprehensive update discovery when needed. Results include patch status information, available updates, and security recommendations in a structured format for quick review.
+The **OS Patch Provider** checks system patch status and identifies missing security updates. The provider uses efficient local cache queries to list installed patches, ensuring fast scan performance without querying online update services. When listing available patches for installation, the system does query Windows Update online to identify new updates.
+
+This hybrid approach balances speed and accuracy, providing quick status checks while enabling comprehensive update discovery when needed. Results include patch status information, available updates, and security recommendations in a structured format for quick review.
 
 ## Scan Configuration
 
 When configuring a scan in the provider edit page, you can test the provider functionality directly. The scan configuration widget automatically selects the first available provider to streamline setup, and lets you switch between Asset and Manual Input modes for target selection, execute test scans to verify provider configuration, and view scan output before saving configurations. The system saves both the scan configuration and provider settings to the database before initiating scan execution, ensuring all settings are persisted.
 
-For Manual Input mode, the target matching logic intelligently routes scans to the appropriate runner instance. When you specify a hostname as the target, the system matches it against each runner instance's hostname to ensure the scan executes on the correct machine. For IP address targets (excluding localhost), the scan routes to the instance whose network interfaces include that IP address, checking both private and public IPs. Localhost and loopback addresses like 127.0.0.1 can be claimed by any instance, allowing flexible local scanning. This ensures distributed scan deployments work correctly, with each instance claiming scans intended for its specific machine.
+For Manual Input mode, the target matching logic intelligently routes scans to the appropriate runner instance. When you specify a hostname as the target, the system matches it against each runner instance's hostname to ensure the scan executes on the correct machine. For IP address targets (excluding localhost), the scan routes to the instance whose network interfaces include that IP address, checking both private and public IPs.
+
+Localhost and loopback addresses like 127.0.0.1 can be claimed by any instance, allowing flexible local scanning. This ensures distributed scan deployments work correctly, with each instance claiming scans intended for its specific machine.
 
 ## API Integration
 
