@@ -51,3 +51,14 @@ Follow these steps to setup Casdoor for casibase:
 ![configure-user](/img/configure-user-1.png)
 
 ![configure-user](/img/configure-user-2.png)
+
+## Transaction Tracking Integration
+
+Casibase integrates with Casdoor's transaction system to track AI token usage and costs. When users interact with AI models, Casibase automatically creates transaction records in Casdoor that capture:
+
+- Chat and message identifiers for traceability
+- Token consumption and associated costs
+- Model provider information (OpenAI, Claude, etc.)
+- Organization context for multi-tenant billing
+
+This integration enables centralized billing management across all your Casdoor applications. Transaction records use a structured format where the `Type` field stores the chat ID, the `Subtype` field stores the message ID, and the `Provider` field identifies the AI model provider. This ensures accurate cost attribution and simplifies usage reporting.

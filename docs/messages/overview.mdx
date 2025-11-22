@@ -14,6 +14,8 @@ In this section, we introduce the functionality of message in Casibase.
 
 ## Messages
 
-The messages module manages all the messages in our sessions, it shows the creation time of each message, the chat it belongs to, the parent message, the number of tokens, the price, the text message of the reply, the vectors, the suggestions and so on.
+The messages module manages all the messages in our sessions. Each message displays detailed metadata including creation time, associated chat, parent message references, token usage, pricing information, and the AI model provider that generated the response.
+
+Token usage and pricing are automatically calculated based on the model provider's pricing structure, ensuring accurate cost tracking for each conversation. The model provider field identifies which AI service (OpenAI, Claude, etc.) processed each message, helping you understand usage patterns across different providers.
 
 ![messages.png](/img/messages/messages.png)
