@@ -48,7 +48,15 @@ The store always uses its own vectors automatically. You only need to specify ad
 
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
-## 2.Support Multi-store
+## 2.Store Isolation for Users
+
+Casibase lets you restrict users to specific stores through Casdoor's Homepage field. When a user's Homepage matches a store name, they become bound to that store and work within it exclusively - perfect for multi-tenant setups where teams need separate knowledge bases.
+
+Bound users see their assigned store locked in the top bar selector. They can view and query only that store's data, and API calls to other stores fail with an error. They also cannot add, delete, or rename stores, keeping their workspace stable and isolated.
+
+To bind a user, edit their Casdoor profile and set the Homepage field to the exact store name (case-sensitive). The binding activates on their next login. Users with an empty Homepage or one that doesn't match any store keep full access to all stores, so you can mix restricted and unrestricted users easily.
+
+## 3.Support Multi-store
 
 The multi-store mode provides users with different models, suggestions, and more within each distinct store.
 
