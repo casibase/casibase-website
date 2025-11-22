@@ -30,6 +30,10 @@ Click the `Save & Exit` button and return to the stores list page:
 
 Now, you can use the store to store knowledge base data, convert text to vectors, and chat with the chatbot.
 
+### Example Questions
+
+Configure example questions to help users get started with your store. These suggested queries appear when users open a new chat, providing helpful starting points for conversation. Add questions that demonstrate the store's capabilities or guide users to frequently needed information.
+
 ### Vector Stores
 
 Sometimes you need one store to search through knowledge from multiple other stores. For example, you might have separate stores for different topics or departments, but want a main store that can answer questions by searching across all of them. The **Vector stores** field makes this possible by letting a store use vectors from other stores in addition to its own.
@@ -73,3 +77,7 @@ Casibase provides a very convenient method for selecting a store.
 Just hover your mouse over "New Chat" and then you can select the Store you wish to use from the list that appears below.
 
 If you click the "New Chat" button, the system will assign you a default Store.
+
+## 3.Simplified Store View
+
+The store list page displays many AI configuration columns that may not be needed when managing stores primarily for file storage. Use the "Hide chat" toggle in the store list to show only essential columns: name, display name, is default, storage provider, state, and actions. This simplified view helps focus on file tree workflows without clutter from model, embedding, and voice provider settings. Your preference is saved automatically and persists across sessions.

@@ -20,17 +20,13 @@ Once we have configured the store, we can have a dialogue with the AI. This is s
 
 ### Web Search
 
-The chat interface includes a web search toggle button that enables real-time internet search during conversations. When activated, the AI can search the web for current information to provide more accurate and up-to-date responses. This is particularly useful for queries about recent events, current data, or information that may not be in the model's training data.
+The chat interface includes a web search toggle that enables real-time internet search during conversations. When activated, the AI searches the web for current information and displays both the search results and final response. Search results appear inline with source URLs and timestamps, making it easy to verify information from recent events or data not in the model's training.
 
-Web search is only available when using compatible model providers. Currently, OpenAI and Alibaba Cloud models support web search functionality. When using other model providers, the web search toggle will be disabled automatically.
+Web search is available with OpenAI and Alibaba Cloud model providers. The toggle is automatically disabled when using other providers.
 
-### Message Display
+### Reasoning Display
 
-Chat messages include enhanced display features:
-
-- **AI Reasoning**: When the AI uses reasoning or calls external tools (such as web search, calculations, or data retrieval), these intermediate steps appear in collapsible cards. Click to expand or collapse the reasoning details to keep the conversation focused on the final responses.
-- **Tool Messages**: Tool execution results are displayed with improved styling, making it easier to distinguish between user messages, AI responses, and tool outputs.
-- **Theme Integration**: Message cards automatically adapt to light and dark themes for comfortable viewing.
+OpenAI reasoning models (like o1 and o1-mini) show their internal reasoning process before providing answers. The reasoning steps appear in expandable sections within the chat, allowing you to understand how the model arrived at its conclusions. This transparency helps verify the logic behind complex answers and builds trust in AI-generated responses.
 
 ## 2. Chats (Chat management)
 
