@@ -19,7 +19,16 @@ Navigate to the Graphs section and click `Add` to create a new graph. Configure 
 
 - **Name**: Unique identifier for the graph
 - **Display Name**: Human-readable name shown in the UI
+- **Category**: Select the graph category (Assets, Chats, etc.)
 - **Data**: JSON structure defining nodes and links
+
+### Graph Categories
+
+Casibase supports different graph categories for various data types:
+
+**Assets**: Visualize cloud infrastructure and network topology. Define nodes and links manually or generate them automatically from asset data.
+
+**Chats**: Analyze chat conversations with word cloud visualization. Select a store and time range to filter conversations, then generate word clouds from message content. The system automatically processes chat messages, removes stop words, and creates visualizations showing frequently used terms.
 
 ### Graph Data Structure
 
@@ -61,7 +70,19 @@ The graph visualization provides several interactive capabilities:
 Graphs support multiple layout algorithms to organize nodes:
 
 - **Force-directed layout**: Nodes automatically arrange based on their connections, creating organic-looking graphs where connected nodes pull together while maintaining spacing.
+- **Word Cloud layout**: Available for Chats category graphs, displays words sized by frequency for visual analysis of conversation topics.
 - **None layout**: Positions nodes based on provided coordinates, useful when you want manual control over the exact placement.
+
+### Chat Analysis with Word Clouds
+
+For Chats category graphs, Casibase provides specialized visualization through word clouds. Configure these graphs by:
+
+1. **Selecting a Store**: Choose which chat store to analyze
+2. **Setting Time Range**: Define start and end times to focus on specific periods
+3. **Viewing Chat Data**: Review the filtered chats and messages in table format
+4. **Generating Visualizations**: The system automatically creates word clouds from message content
+
+The word cloud generation process extracts text from all messages in the selected time range, removes common stop words (in English and Chinese), and calculates word frequencies. Words appear larger based on how often they occur in the conversations, making it easy to identify key topics and themes.
 
 ### Density Control
 

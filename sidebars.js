@@ -90,6 +90,10 @@ module.exports = {
           items: [
             "providers/scan-providers/nmap-scan-provider",
             "providers/scan-providers/os-patch-scan-provider",
+            "providers/scan-providers/nuclei-scan-provider",
+            "providers/scan-providers/zap-scan-provider",
+            "providers/scan-providers/subfinder-scan-provider",
+            "providers/scan-providers/httpx-scan-provider",
           ],
         },
         {
