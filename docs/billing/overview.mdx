@@ -1,0 +1,35 @@
+---
+title: Overview
+description: Billing and Usage Tracking
+keywords: [Casibase, billing, transactions, token usage, pricing]
+authors: [hsluoyz]
+---
+
+```mdx-code-block
+import styles from "../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+```
+
+Casibase tracks AI token usage and costs automatically through its integration with Casdoor. Every conversation with an AI model generates transaction records that capture consumption details for billing and analytics.
+
+## How It Works
+
+When you send a message to an AI model, Casibase calculates the token count and associated costs based on the provider's pricing. This information flows through the system:
+
+**Chat → Message → Transaction**
+
+Each chat session maintains a running total of tokens used and costs incurred. Individual messages record their own token consumption, and transactions are created in Casdoor immediately after the costs are calculated. This ensures accurate billing records and enables usage monitoring across your organization.
+
+## Token Tracking
+
+Token usage is tracked at multiple levels:
+
+- **Chats** display total tokens used and cumulative price for the entire conversation
+- **Messages** show tokens consumed for each AI response
+- **Transactions** record the billing details in Casdoor for centralized accounting
+
+The model provider field identifies which AI service (OpenAI, Claude, etc.) handled each interaction, making it easy to understand usage patterns across different providers.
+
+## Price Calculation
+
+Costs are calculated using proper decimal handling to prevent floating-point precision loss. The system automatically applies the correct pricing model based on the provider and model being used, ensuring accurate billing for all token usage.

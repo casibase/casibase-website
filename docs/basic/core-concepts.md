@@ -138,6 +138,14 @@ Embedding is the process of transforming various types of data, such as text and
 
 :::
 
+## Transactions
+
+Transactions track AI token usage and costs through Casdoor integration. Each message generates a transaction record for billing and usage monitoring. See [Billing & Usage](/docs/billing/overview) for details.
+
+## Records
+
+Records support data aggregation through a `Count` field, allowing consolidated logging without storing individual entries. See [Records](/docs/records/overview) for more information.
+
 ## Scans
 
 Scans represent network and security scanning operations executed against infrastructure assets. The Scan object enables automated discovery, security auditing, and system assessment through integrated scan providers.
