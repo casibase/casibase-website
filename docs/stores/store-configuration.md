@@ -28,11 +28,11 @@ Click the `Save & Exit` button and return to the stores list page:
 
 ![Casibase-stores-view](/img/walkthrough-guides/casibase-stores-view.png)
 
+The store list shows many columns for AI configurations like model providers, embedding providers, and voice settings. If you're mainly using stores for file management, toggle "Hide chat" at the top of the list to simplify the view and show only the essentials: name, storage provider, and status.
+
 Now, you can use the store to store knowledge base data, convert text to vectors, and chat with the chatbot.
 
-### Example Questions
-
-Configure example questions to help users get started with your store. These suggested queries appear when users open a new chat, providing helpful starting points for conversation. Add questions that demonstrate the store's capabilities or guide users to frequently needed information.
+When configuring your store, consider adding example questions that appear when users start a new chat. These suggestions help users discover what they can ask and get them started quickly. You can also configure which other stores this one should search through using the **Vector stores** field - useful when you want one store to pull knowledge from multiple sources.
 
 ### Vector Stores
 
@@ -77,7 +77,3 @@ Casibase provides a very convenient method for selecting a store.
 Just hover your mouse over "New Chat" and then you can select the Store you wish to use from the list that appears below.
 
 If you click the "New Chat" button, the system will assign you a default Store.
-
-## 3.Simplified Store View
-
-The store list page displays many AI configuration columns that may not be needed when managing stores primarily for file storage. Use the "Hide chat" toggle in the store list to show only essential columns: name, display name, is default, storage provider, state, and actions. This simplified view helps focus on file tree workflows without clutter from model, embedding, and voice provider settings. Your preference is saved automatically and persists across sessions.
