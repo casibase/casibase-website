@@ -50,27 +50,11 @@ In the next section, we will learn how to chat with the chatbot in Casibase.
 
 ## 2.Store Isolation for Users
 
-Casibase allows administrators to restrict users to specific stores by setting the user's Homepage field in Casdoor. When a user's Homepage matches a store name, that user becomes bound to that store and can only access data within it.
+Casibase lets you restrict users to specific stores through Casdoor's Homepage field. When a user's Homepage matches a store name, they become bound to that store and work within it exclusively - perfect for multi-tenant setups where teams need separate knowledge bases.
 
-This feature is particularly useful for multi-tenant environments where different teams or departments need isolated access to their own knowledge bases. A bound user experiences the system as if they've permanently selected their assigned store - they cannot switch to other stores or see data from them.
+Bound users see their assigned store locked in the top bar selector. They can view and query only that store's data, and API calls to other stores fail with an error. They also cannot add, delete, or rename stores, keeping their workspace stable and isolated.
 
-### How Store Isolation Works
-
-Store isolation is configured through Casdoor's user management. When you set a user's Homepage field to match a store name (for example, "marketing-store"), the following restrictions automatically apply:
-
-**Data Access**: The user can only view and interact with data from their assigned store. API calls attempting to access other stores will be rejected with an error message.
-
-**Store Selector**: In the top bar, the store selector is automatically set to the user's assigned store and becomes disabled - they cannot change it.
-
-**Store Management**: Bound users cannot perform administrative actions on stores. They cannot add new stores, delete existing stores, or rename their assigned store. This prevents them from accidentally breaking their isolation.
-
-If the Homepage field is empty or doesn't match any existing store, the user has full access to all stores as normal. This makes it easy to maintain both restricted and unrestricted users in the same system.
-
-### Setting Up Store Isolation
-
-To bind a user to a store, open the user's profile in Casdoor and set their Homepage field to the exact name of the target store. The binding takes effect immediately upon the user's next login or page refresh. Make sure the store name matches exactly - case matters.
-
-When managing users, you can assign them to different stores by changing their Homepage field at any time. This flexibility allows you to reorganize team access without modifying the stores themselves.
+To bind a user, edit their Casdoor profile and set the Homepage field to the exact store name (case-sensitive). The binding activates on their next login. Users with an empty Homepage or one that doesn't match any store keep full access to all stores, so you can mix restricted and unrestricted users easily.
 
 ## 3.Support Multi-store
 
