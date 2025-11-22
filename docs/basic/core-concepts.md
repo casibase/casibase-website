@@ -140,15 +140,11 @@ Embedding is the process of transforming various types of data, such as text and
 
 ## Transactions
 
-Transactions track token usage and associated costs when interacting with AI models. Each transaction records the consumption details from chat messages, enabling billing and usage monitoring.
-
-When you send a message to an AI model, Casibase automatically creates a transaction that captures the token count, pricing, and provider information. This helps organizations track AI usage costs and maintain audit records of model interactions.
+Transactions track AI token usage and costs through Casdoor integration. Each message generates a transaction record for billing and usage monitoring. See [Billing & Usage](/docs/billing/overview) for details.
 
 ## Records
 
-Records are used for logging and analytics, supporting data aggregation through a `Count` field. When uploading consolidated data (such as summarized logs), you can set the count to represent multiple underlying records without storing each individually.
-
-For example, if you have 100 similar log entries, you can create a single record with `count: 100` instead of inserting 100 separate records. This approach reduces storage overhead while maintaining accurate statistics for reporting and analysis.
+Records support data aggregation through a `Count` field, allowing consolidated logging without storing individual entries. See [Records](/docs/records/overview) for more information.
 
 ## Scans
 

@@ -48,7 +48,6 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "developer-guide/swagger",
-        "developer-guide/api-updates",
       ],
     },
     {
@@ -185,6 +184,23 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "messages/overview",
+      ],
+    },
+    {
+      type: "category",
+      label: "Billing & Usage",
+      link: {type: "generated-index"},
+      items: [
+        "billing/overview",
+        "billing/transactions",
+      ],
+    },
+    {
+      type: "category",
+      label: "Records",
+      link: {type: "generated-index"},
+      items: [
+        "records/overview",
       ],
     },
     {
