@@ -47,7 +47,7 @@ Casibase supports many model providers, including:
   - gpt-3.5-turbo
   - gpt-4
   - ......
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)
   - Uses the official OpenAI SDK for enhanced compatibility
   - Supports all Azure OpenAI models and features
 - [Alibaba Cloud](https://www.alibabacloud.com/)
