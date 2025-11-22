@@ -52,14 +52,6 @@ Follow these steps to setup Casdoor for casibase:
 
 ![configure-user](/img/configure-user-2.png)
 
-## User Store Binding
-
-The Homepage field in Casdoor user profiles controls store access in Casibase. When you set a user's Homepage to a store name, that user becomes bound to that specific store and cannot access data from other stores.
-
-This binding creates an isolated workspace for the user. The store selector in Casibase automatically locks to their assigned store, and they cannot add, delete, or rename stores. All their API interactions are restricted to their assigned store's data. Users without a Homepage value (or with a value that doesn't match any store) retain full multi-store access.
-
-To bind a user to a store, edit their profile in Casdoor and enter the exact store name in the Homepage field. The binding activates on their next login. For more details about store isolation, see the [Store Configuration](/docs/stores/store-configuration) documentation.
-
 ## Billing Integration
 
 Casibase integrates with Casdoor's transaction system for AI usage billing. When users interact with AI models, transaction records are automatically created in Casdoor to track token consumption and costs. This enables centralized billing management across all your applications. For details on how transactions work, see the [Billing & Usage](/docs/billing/overview) section.
