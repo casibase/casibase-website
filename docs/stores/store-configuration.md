@@ -28,7 +28,11 @@ Click the `Save & Exit` button and return to the stores list page:
 
 ![Casibase-stores-view](/img/walkthrough-guides/casibase-stores-view.png)
 
+The store list shows many columns for AI configurations like model providers, embedding providers, and voice settings. If you're mainly using stores for file management, toggle "Hide chat" at the top of the list to simplify the view and show only the essentials: name, storage provider, and status.
+
 Now, you can use the store to store knowledge base data, convert text to vectors, and chat with the chatbot.
+
+When configuring your store, consider adding example questions that appear when users start a new chat. These suggestions help users discover what they can ask and get them started quickly. You can also configure which other stores this one should search through using the **Vector stores** field - useful when you want one store to pull knowledge from multiple sources.
 
 ### Vector Stores
 

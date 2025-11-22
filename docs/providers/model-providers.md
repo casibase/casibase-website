@@ -43,17 +43,15 @@ Casibase supports many model providers, including:
   - openai/gpt-4
   - ......
 - [OpenAI](https://openai.com/)
-  - text-davinci-003
-  - gpt-3.5-turbo
-  - gpt-4
-  - ......
+  - gpt-3.5-turbo, gpt-4, o1, o1-mini
+  - Supports web search for real-time information retrieval
+  - Reasoning models (o1 series) display step-by-step reasoning process
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)
   - Uses the official OpenAI SDK for enhanced compatibility
   - Supports all Azure OpenAI models and features
 - [Alibaba Cloud](https://www.alibabacloud.com/)
   - Integrated with official SDK
-  - Supports web search functionality for real-time information retrieval
-  - Search results are displayed inline with AI responses in the chat interface
+  - Supports web search functionality with inline search results
 
 :::
 

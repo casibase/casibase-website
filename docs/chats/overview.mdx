@@ -18,19 +18,7 @@ Once we have configured the store, we can have a dialogue with the AI. This is s
 
 ![chat.png](/img/chat/chat.png)
 
-### Web Search
-
-The chat interface includes a web search toggle button that enables real-time internet search during conversations. When activated, the AI can search the web for current information to provide more accurate and up-to-date responses. This is particularly useful for queries about recent events, current data, or information that may not be in the model's training data.
-
-Web search is only available when using compatible model providers. Currently, OpenAI and Alibaba Cloud models support web search functionality. When using other model providers, the web search toggle will be disabled automatically.
-
-### Message Display
-
-Chat messages include enhanced display features:
-
-- **AI Reasoning**: When the AI uses reasoning or calls external tools (such as web search, calculations, or data retrieval), these intermediate steps appear in collapsible cards. Click to expand or collapse the reasoning details to keep the conversation focused on the final responses.
-- **Tool Messages**: Tool execution results are displayed with improved styling, making it easier to distinguish between user messages, AI responses, and tool outputs.
-- **Theme Integration**: Message cards automatically adapt to light and dark themes for comfortable viewing.
+The chat interface adapts to different AI capabilities. When using OpenAI or Alibaba Cloud providers, you'll see a web search toggle that lets the AI fetch current information from the internet. Search results appear inline with the response, complete with source URLs and timestamps for verification. For OpenAI's reasoning models (o1 and o1-mini), the chat displays the model's step-by-step thinking process in expandable sections, letting you follow along as it works through complex problems.
 
 ## 2. Chats (Chat management)
 
