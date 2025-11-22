@@ -51,3 +51,7 @@ Follow these steps to setup Casdoor for casibase:
 ![configure-user](/img/configure-user-1.png)
 
 ![configure-user](/img/configure-user-2.png)
+
+## Billing Integration
+
+Casibase integrates with Casdoor's transaction system for AI usage billing. When users interact with AI models, transaction records are automatically created in Casdoor to track token consumption and costs. This enables centralized billing management across all your applications. For details on how transactions work, see the [Billing & Usage](/docs/billing/overview) section.

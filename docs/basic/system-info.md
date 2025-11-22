@@ -2,7 +2,7 @@
 title: System Info
 description: Monitor system resources and performance
 keywords: [system monitoring, performance, metrics, CPU, memory, disk, network]
-authors: [copilot]
+authors: [hsluoyz]
 ---
 
 Casibase provides real-time system monitoring to help administrators track resource usage and performance. The System Info page displays key metrics about your Casibase instance.

@@ -188,6 +188,23 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Billing & Usage",
+      link: {type: "generated-index"},
+      items: [
+        "billing/overview",
+        "billing/transactions",
+      ],
+    },
+    {
+      type: "category",
+      label: "Records",
+      link: {type: "generated-index"},
+      items: [
+        "records/overview",
+      ],
+    },
+    {
+      type: "category",
       label: "Scans",
       link: {type: "generated-index"},
       items: [
