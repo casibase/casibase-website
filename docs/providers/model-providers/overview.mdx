@@ -1,0 +1,57 @@
+---
+title: Model Providers
+description: AI model providers for Casibase
+keywords: [Casibase, Model Provider, LLM, AI, Local Model]
+authors: [casibase]
+---
+
+```mdx-code-block
+import styles from "../../styles.module.css";
+import CasdoorCard from "@site/src/components/CasdoorCard";
+import DocCardList from '@theme/DocCardList';
+```
+
+## Introduction
+
+Model Providers enable AI capabilities in Casibase by integrating various large language models (LLMs) and AI services. These providers allow you to chat with AI, analyze documents, generate embeddings, and perform other intelligent tasks.
+
+Casibase supports a wide range of model providers, from major cloud services like OpenAI and Azure OpenAI to local and custom model deployments. This flexibility lets you choose the right model for your use case, whether you prioritize performance, cost, privacy, or specific capabilities.
+
+Refer to the [Core Concepts](../../basic/core-concepts) section for more information about providers in general.
+
+## Add a New Model Provider
+
+Model providers are used to integrate LLM capabilities into Casibase. You can add them by following these steps:
+
+Click the `Providers` button on the page.
+
+![Casibase-home-providers](/img/walkthrough-guides/casibase-home-providers.png)
+
+### Add a Model Provider
+
+Click the `Add` button to add a new model provider.
+
+![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
+
+#### Fill in Model Provider Details
+
+Fill in the required configuration, setting the Category to "Model" and selecting the appropriate Type. Then click the `Save & Exit` button to save.
+
+More information about specific model provider types can be found below:
+
+<DocCardList />
+
+:::tip
+
+Casibase supports multiple model provider types:
+
+- **OpenAI**: Access GPT models including GPT-3.5, GPT-4, and o1 series with features like web search and reasoning
+- **Azure OpenAI**: Use OpenAI models through Azure's infrastructure with official SDK integration
+- **Alibaba Cloud**: Access Qwen models with web search capabilities
+- **Hugging Face**: Connect to open-source models hosted on Hugging Face
+- **OpenRouter**: Access multiple AI models through a unified API
+- **Local**: Connect to self-hosted models or custom providers with OpenAI-compatible APIs
+
+:::
+
+After adding a model provider, you can use it for chatting, document analysis, question answering, and other AI-powered features in Casibase.
