@@ -81,6 +81,18 @@ module.exports = {
         "providers/speech-to-text-providers",
         {
           type: "category",
+          label: "Model Providers",
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "providers/model-providers/overview",
+          },
+          items: [
+            "providers/model-providers/local-model-provider",
+          ],
+        },
+        {
+          type: "category",
           label: "Scan Providers",
           collapsed: true,
           link: {
