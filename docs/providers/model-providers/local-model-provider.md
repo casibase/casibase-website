@@ -27,7 +27,7 @@ When adding a Local model provider, configure these essential fields:
 
 **Type**: Select `Local` from the dropdown.
 
-**Sub type**: This field is automatically set to `custom-model` and cannot be changed. It identifies the provider as a custom implementation.
+**Subtype**: This field is automatically set to `custom-model` and cannot be changed. It identifies the provider as a custom implementation.
 
 **Compatible provider**: Enter the actual provider name or model type you're connecting to. This is a free-text field where you can specify identifiers like `ollama`, `vllm`, `llama-cpp`, or your custom service name. This helps you identify the provider in logs and UI.
 
