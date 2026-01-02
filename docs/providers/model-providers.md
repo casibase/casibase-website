@@ -26,21 +26,16 @@ Fill in the model provider details and click the `Save & Exit` button.
 
 ![Casibase-model-openai](/img/walkthrough-guides/casibase-model-openai.png)
 
-:::tip Supported Providers
+### Supported Providers
 
-**[OpenAI](https://openai.com/)** — Access GPT-3.5-turbo, GPT-4, and o1 models. The o1 series shows its reasoning steps in the chat interface, while all models support web search to pull in real-time information.
-
-**[Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)** — Run OpenAI models through Azure's infrastructure using the official SDK.
-
-**[Alibaba Cloud](https://www.alibabacloud.com/)** — Connect to Qwen models and DeepSeek's latest releases (v3, v3.1, v3.2, R1). Web search works here too, with results appearing inline in chat responses.
-
-**[DeepSeek](https://www.deepseek.com/)** — Direct access to DeepSeek's v3.x series and R1 models for reasoning-focused tasks.
-
-**[Hugging Face](https://huggingface.co/)** — Connect to open-source models like Llama-2, ChatGLM2, Baichuan2, and thousands of others.
-
-**[OpenRouter](https://openrouter.ai/)** — One API to access Claude, PaLM, GPT-4, and other models from different providers.
-
-:::
+| Provider | Models & Features |
+|----------|-------------------|
+| [OpenAI](https://openai.com/) | GPT-3.5-turbo, GPT-4, o1 series. Reasoning models show step-by-step thinking. Web search available for real-time information. |
+| [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/) | Access OpenAI models through Azure infrastructure with official SDK support. |
+| [Alibaba Cloud](https://www.alibabacloud.com/) | Qwen models and DeepSeek (v3, v3.1, v3.2, R1). Web search with inline results. |
+| [DeepSeek](https://www.deepseek.com/) | DeepSeek v3.x series and R1 for reasoning-focused tasks. |
+| [Hugging Face](https://huggingface.co/) | Open-source models including Llama-2, ChatGLM2, Baichuan2, and thousands more. |
+| [OpenRouter](https://openrouter.ai/) | Unified API access to Claude, PaLM, GPT-4, and other providers. |
 
 :::caution Configuration Notes
 
