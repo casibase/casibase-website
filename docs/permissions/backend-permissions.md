@@ -2,7 +2,6 @@
 title: Backend Permissions
 description: Backend permission utilities in Casibase
 keywords: [backend, permissions, Go, access control, authorization]
-authors: [Copilot]
 ---
 
 Casibase's Go backend centralizes permission checking through utility functions in `util/permission.go`. These functions provide consistent role validation across controllers, routers, and service layers.

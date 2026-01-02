@@ -2,7 +2,6 @@
 title: Permissions Overview
 description: Understanding Casibase's permission system
 keywords: [permissions, roles, access control, admin, chat-admin]
-authors: [Copilot]
 ---
 
 Casibase uses a role-based permission system to control access to features and resources. The system distinguishes between different user types, each with specific capabilities and access levels.

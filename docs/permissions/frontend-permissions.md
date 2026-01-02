@@ -2,7 +2,6 @@
 title: Frontend Permissions
 description: Frontend permission utilities in Casibase
 keywords: [frontend, permissions, Setting.js, React, access control]
-authors: [Copilot]
 ---
 
 Casibase's React frontend uses centralized utility functions to check user permissions. These functions are defined in `web/src/Setting.js` and ensure consistent permission checking across all components.
