@@ -185,16 +185,18 @@ If you downloaded a pre-built binary, extract the archive and run Casibase direc
 For Linux/macOS:
 
 ```bash
-tar -xzf casibase_*.tar.gz
-cd casibase_*
+# Example for Linux x86_64
+tar -xzf casibase_Linux_x86_64.tar.gz
+cd casibase
 ./casibase
 ```
 
 For Windows:
 
 ```bash
-unzip casibase_*.zip
-cd casibase_*
+# Example for Windows x86_64
+unzip casibase_Windows_x86_64.zip
+cd casibase
 casibase.exe
 ```
 

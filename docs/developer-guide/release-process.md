@@ -7,7 +7,7 @@ authors: [copilot]
 
 ## Automated Releases
 
-Casibase uses GitHub Actions and GoReleaser to automate the release process. When a new version tag is pushed, the CI automatically builds binaries for multiple platforms and publishes them to GitHub Releases.
+The main [Casibase repository](https://github.com/casibase/casibase) uses GitHub Actions and GoReleaser to automate the release process. When a new version tag is pushed, the CI automatically builds binaries for multiple platforms and publishes them to [GitHub Releases](https://github.com/casibase/casibase/releases).
 
 ### Supported Platforms
 
@@ -41,7 +41,7 @@ This means you can download a binary and run it immediately without building the
 
 ### GoReleaser Configuration
 
-The release configuration is defined in `.goreleaser.yaml` at the root of the repository. Key settings:
+The release configuration is defined in [`.goreleaser.yaml`](https://github.com/casibase/casibase/blob/master/.goreleaser.yaml) in the main Casibase repository. Key settings:
 
 ```yaml
 builds:
