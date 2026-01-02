@@ -52,6 +52,12 @@ Follow these steps to setup Casdoor for casibase:
 
 ![configure-user](/img/configure-user-2.png)
 
+## User Data Synchronization
+
+Casibase automatically keeps user information synchronized with Casdoor. When a user's account is accessed through the application, Casibase fetches the latest user data directly from Casdoor rather than relying on cached session data. This ensures that any updates to user profiles in Casdoor—such as changes to name, email, avatar, or permissions—are immediately reflected in Casibase without requiring users to log out and log back in.
+
+This real-time synchronization happens transparently in the background whenever the application needs to access the current user's account information.
+
 ## Billing Integration
 
 Casibase integrates with Casdoor's transaction system for AI usage billing. When users interact with AI models, transaction records are automatically created in Casdoor to track token consumption and costs. This enables centralized billing management across all your applications. For details on how transactions work, see the [Billing & Usage](/docs/billing/overview) section.
