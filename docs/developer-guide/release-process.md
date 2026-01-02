@@ -21,10 +21,10 @@ Each release includes pre-built binaries for:
 
 ### Release Workflow
 
-The release is triggered when code is pushed to the master branch. The workflow performs these steps:
+The release workflow is triggered automatically on pushes to the master branch. It performs these steps:
 
 1. Builds the frontend React application
-2. Runs semantic versioning to determine the next version
+2. Runs semantic-release to automatically determine and create a new version tag
 3. Executes GoReleaser to build binaries for all supported platforms
 4. Publishes binaries and artifacts to GitHub Releases
 

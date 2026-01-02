@@ -191,13 +191,13 @@ cd casibase
 ./casibase
 ```
 
-For Windows:
+For Windows (PowerShell):
 
-```bash
+```powershell
 # Example for Windows x86_64
-unzip casibase_Windows_x86_64.zip
+Expand-Archive casibase_Windows_x86_64.zip -DestinationPath .
 cd casibase
-casibase.exe
+.\casibase.exe
 ```
 
 The server will start on port 14000 by default.
