@@ -48,7 +48,32 @@ The store always uses its own vectors automatically. You only need to specify ad
 
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
-## 2.Store Isolation for Users
+## 2.File Management
+
+### Automatic Vector Generation
+
+When you upload files to a store, Casibase automatically generates vector embeddings in the background. Each file goes through several states that you can track in the file list:
+
+- **Pending**: File uploaded, waiting for embedding to start
+- **Processing**: Currently generating vectors from the file content
+- **Finished**: Vector generation completed successfully
+- **Error**: Something went wrong during embedding (check the error text for details)
+
+This happens without any manual intervention - just upload your files and let Casibase handle the rest. The system splits your documents into chunks, generates embeddings for each chunk, and stores them for fast retrieval during chat.
+
+### File Status Tracking
+
+Navigate to the Files page to see all uploaded files across your stores. Each file shows its current status and token count. Files in the "Error" state display detailed error messages so you can troubleshoot issues like unsupported file formats or provider configuration problems.
+
+When you delete a file from storage, Casibase automatically removes its associated vectors from the database. This keeps your vector database clean and prevents outdated information from appearing in chat responses.
+
+### Re-embedding Individual Files
+
+Sometimes you need to regenerate vectors for a specific file - perhaps you've changed the embedding model or fixed a previous error. The "Refresh Vectors" button in the file list lets you re-embed individual files without affecting other content in the store.
+
+Click the button next to any file to delete its existing vectors and generate fresh ones. The file status updates in real-time as processing completes, and the token count reflects the newly generated embeddings. This targeted approach saves time compared to refreshing the entire store when you only need to update a few files.
+
+## 3.Store Isolation for Users
 
 Casibase lets you restrict users to specific stores through Casdoor's Homepage field. When a user's Homepage matches a store name, they become bound to that store and work within it exclusively - perfect for multi-tenant setups where teams need separate knowledge bases.
 
@@ -56,7 +81,7 @@ Bound users see their assigned store locked in the top bar selector. They can vi
 
 To bind a user, edit their Casdoor profile and set the Homepage field to the exact store name (case-sensitive). The binding activates on their next login. Users with an empty Homepage or one that doesn't match any store keep full access to all stores, so you can mix restricted and unrestricted users easily.
 
-## 3.Support Multi-store
+## 4.Support Multi-store
 
 The multi-store mode provides users with different models, suggestions, and more within each distinct store.
 
