@@ -19,7 +19,7 @@ Besides, this guide assumes that you have already added a storage provider, a mo
 
 Stores are used to integrate storage, model, and embedding providers into Casibase. You can add them by following these steps:
 
-Click the `Stores` button on the home page and then click the `Add` button to add a store.
+Click the `Stores` button on the home page and then click the `Add` button to add a store. You'll be redirected to the store edit page.
 
 ![Casibase-stores-add](/img/walkthrough-guides/casibase-stores-add.png)
 
@@ -27,7 +27,7 @@ Click the `Stores` button on the home page and then click the `Add` button to ad
 
 Select the storage provider, model provider, and embedding provider you added before.
 
-Fill in the store details and click the `Save & Exit` button.
+Fill in the store details and click the `Save & Exit` button. If you change your mind, click **Cancel** to discard the new store.
 
 ![Casibase-stores-select](/img/walkthrough-guides/casibase-stores-select.png)
 

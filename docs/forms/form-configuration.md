@@ -20,11 +20,14 @@ Forms can be accessed through the Casibase admin interface:
 To create a new form:
 
 1. Click the **Add** button on the Forms list page
-2. Fill in the basic form information:
+2. You'll be redirected to the form edit page where you can configure your new form
+3. Fill in the basic form information:
    - **Organization**: Select the organization (typically your organization name)
    - **Name**: Enter a unique identifier for the form
    - **Display Name**: Provide a human-readable name
    - **Position**: Set the position or order (optional)
+
+If you decide not to create the form, click **Cancel** to discard it and return to the forms list. The Cancel button appears only when creating new forms.
 
 ### Step 2: Select Form Category
 
@@ -114,6 +117,7 @@ Arrange columns in your preferred order:
 2. The preview shows how your form will appear in the actual list page
 3. Click on the preview to open the full list page in a new window
 4. Once satisfied, click **Save & Exit** to apply your changes
+5. For new forms, you can also click **Cancel** to discard the form without saving
 
 ## Editing Existing Forms
 

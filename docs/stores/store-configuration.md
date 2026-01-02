@@ -16,7 +16,7 @@ Click the `Stores` button on the home page and then click the `Add` button to ad
 
 ### Fill in Store Details
 
-Fill in the store details and click the `Save & Exit` button.
+You'll be redirected to the store edit page. Fill in the store details and click the `Save & Exit` button.
 
 ![Casibase-stores-form-preview](/img/walkthrough-guides/casibase-stores-form-preview.png)
 
@@ -27,6 +27,8 @@ Select the storage provider, model provider, embedding provider, text-to-speech 
 Click the `Save & Exit` button and return to the stores list page:
 
 ![Casibase-stores-view](/img/walkthrough-guides/casibase-stores-view.png)
+
+When creating a new store, you can click **Cancel** if you decide not to proceed. This removes the store and returns you to the stores list.
 
 The store list shows many columns for AI configurations like model providers, embedding providers, and voice settings. If you're mainly using stores for file management, toggle "Hide chat" at the top of the list to simplify the view and show only the essentials: name, storage provider, and status.
 

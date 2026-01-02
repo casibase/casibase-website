@@ -27,13 +27,13 @@ Click the `Providers` button on the home page.
 
 #### Step 2.1: Add a Model Provider
 
-Click the `Add` button to add a model provider.
+Click the `Add` button to add a model provider. You'll be redirected to the provider edit page.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
 
 #### Step 2.2: Fill in Model Provider Details
 
-Fill in the model provider details and click the `Save & Exit` button.
+Fill in the model provider details and click the `Save & Exit` button. If you decide not to proceed, click **Cancel** to remove the provider.
 
 ![Casibase-model-openai](/img/walkthrough-guides/casibase-model-openai.png)
 

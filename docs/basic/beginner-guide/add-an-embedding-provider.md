@@ -29,13 +29,13 @@ Click the `Providers` button on the home page.
 
 #### Step 2.1: Add an Embedding Provider
 
-Click the `Add` button to add an embedding provider.
+Click the `Add` button to add an embedding provider. This redirects you to the provider edit page.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
 
 #### Step 2.2: Fill in Embedding Provider Details
 
-Fill in the embedding provider details and click the `Save & Exit` button.
+Fill in the embedding provider details and click the `Save & Exit` button. You can click **Cancel** to discard the new provider if needed.
 
 ![Casibase-embedding](/img/walkthrough-guides/casibase-embedding-form.png)
 
