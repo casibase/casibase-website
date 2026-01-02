@@ -51,7 +51,7 @@ By default, Ollama runs on `http://localhost:11434`.
 
 **Type**: Select `Ollama` from the dropdown.
 
-**Sub type**: Choose the specific model you've pulled with Ollama (e.g., `llama3.2`, `qwen2.5`, `mistral`, `deepseek-r1`). This should match the model name used when you ran `ollama pull`.
+**Sub type**: Choose the specific model you've pulled with Ollama (e.g., `llama3.2`, `qwen2.5`, `mistral`). This should match the model name used when you ran `ollama pull`.
 
 **Provider URL**: The endpoint where Ollama is running. Common configurations:
 
@@ -77,7 +77,7 @@ Ollama supports a wide range of open-source models. Popular options include:
 
 - **Llama family**: llama3.2, llama3.1, llama2
 - **Qwen**: qwen2.5, qwen2.5-coder
-- **DeepSeek**: deepseek-r1, deepseek-coder
+- **DeepSeek**: deepseek-v3, deepseek-coder, deepseek-r1
 - **Mistral**: mistral, mixtral
 - **Gemma**: gemma2, gemma
 - **Phi**: phi3, phi3.5
