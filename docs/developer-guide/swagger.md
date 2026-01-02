@@ -70,11 +70,6 @@ if !util.IsAdminOrChatAdmin(user) {
 if util.IsChatAdmin(user) {
     // Grant chat admin privileges
 }
-
-// Check for video user role
-if util.IsVideoNormalUser(user) {
-    // Apply video user permissions
-}
 ```
 
-The role constants `UserTypeChatAdmin` and `UserTypeVideoNormalUser` are defined in the same package. Avoid hardcoding role strings elsewhere in the codebase to prevent maintenance issues.
+Additional role checks are available for other features (e.g., `IsVideoNormalUser` for video-related permissions). The role constants `UserTypeChatAdmin` and `UserTypeVideoNormalUser` are defined in the same package. Avoid hardcoding role strings elsewhere in the codebase to prevent maintenance issues.
