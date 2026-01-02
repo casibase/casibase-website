@@ -42,12 +42,14 @@ Casdoor supports many storage providers, including:
 
 ##### Add an Aliyun OSS storage provider
 
-:::caution
+:::info Configuration Fields
 
-- Client ID: The AccessKey ID of your Aliyun OSS account.
-- Client Secret: The AccessKey Secret of your Aliyun OSS account.
+When configuring storage providers, you'll encounter these authentication fields:
 
-`****` is the placeholder for your Aliyun OSS account information.
+- **Client ID**: The AccessKey ID of your cloud storage account
+- **Secret key**: Your authentication credential (e.g., AccessKey Secret for Aliyun OSS). This field is masked by default for security protection.
+
+Note: `****` is the placeholder shown for masked credential fields.
 
 ![Casdoor-providers-form-filling-alioss](/img/walkthrough-guides/casdoor-providers-form-filling-alioss.png)
 

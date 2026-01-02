@@ -54,6 +54,12 @@ Same as the [Model Provider](./add-a-model-provider) section, Casibase supports 
 
 :::
 
+:::info
+
+The API key field is masked by default to protect your credentials. Click the visibility icon if you need to reveal the key during configuration.
+
+:::
+
 Return providers list page:
 
 ![Casibase-embedding-view](/img/walkthrough-guides/casibase-embedding-view.png)
