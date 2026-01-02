@@ -10,7 +10,7 @@ Bot Providers enable Casibase to integrate with enterprise messaging platforms. 
 
 These integrations allow teams to access Casibase's AI knowledge base capabilities directly from their familiar messaging applications without switching contexts or opening separate interfaces.
 
-### Add a New Bot Provider
+### Adding a Bot Provider
 
 Bot providers connect Casibase to enterprise messaging platforms. Follow these steps to configure one:
 
@@ -18,13 +18,9 @@ Click the `Providers` button on the page.
 
 ![Casibase-home-providers](/img/walkthrough-guides/casibase-home-providers.png)
 
-#### Add a Bot Provider
-
 Click the `Add` button to add a new provider.
 
 ![Casibase-providers-add](/img/walkthrough-guides/casibase-providers-add.png)
-
-#### Configure Bot Provider
 
 Select "Bot" as the category and fill in the provider details, then click `Save & Exit`.
 
@@ -34,13 +30,11 @@ The WeCom Bot Provider integrates Casibase with WeCom (WeChat Work), enabling AI
 
 ### Configuration
 
-To configure a WeCom Bot Provider, you need:
+To configure a WeCom Bot Provider, you need three credentials from the WeCom Admin Console:
 
-- **Bot ID**: The unique identifier for your WeCom bot (also called `aibotid`)
-- **Token**: The verification token configured in WeCom's bot settings
-- **AES Key**: The encoding AES key for message encryption/decryption
-
-These credentials are obtained from the WeCom Admin Console when you create or configure a bot application.
+- **Bot ID**: The unique identifier for your WeCom bot (also called `aibotid`). Found in the bot application details page.
+- **Token**: The verification token you set when configuring the bot's callback settings in WeCom.
+- **AES Key**: The encoding AES key (EncodingAESKey) you set for message encryption/decryption in the callback configuration.
 
 ### How It Works
 
