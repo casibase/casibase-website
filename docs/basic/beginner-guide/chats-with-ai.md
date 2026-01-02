@@ -55,6 +55,8 @@ Let's **chat with the chatbot in the knowledge base**.
 
 ![Casibase-chats-get-answer](/img/walkthrough-guides/casibase-chats-get-answer.png)
 
+When the AI responds using your knowledge base, you'll see a "Knowledge sources" button showing how many document fragments were referenced. Click it to view each source with its relevance score, and click any source to navigate directly to that document in your store.
+
 Compare the results with **non-knowledge base chat**:
 
 ![Casibase-chats-answer-wrong-casdoor](/img/walkthrough-guides/casibase-chats-answer-wrong-casdoor.png)
