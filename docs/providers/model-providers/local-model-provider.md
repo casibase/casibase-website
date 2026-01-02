@@ -88,7 +88,9 @@ When the provider is in use, Casibase sends requests to your configured Provider
 
 ## Reasoning Models
 
-Local providers support reasoning models that provide step-by-step thinking processes. When using models with reasoning capabilities (such as o1, o1-mini, DeepSeek R1, or similar), the chat interface automatically detects and displays the model's internal reasoning in expandable sections. This lets you follow the model's thought process as it works through complex problems, providing transparency into how it arrives at answers. The reasoning content appears separately from the final response, making it easy to review the logic without cluttering the conversation.
+Local providers support reasoning models that provide step-by-step thinking processes. When you use models with reasoning capabilities (such as o1, o1-mini, DeepSeek R1, or similar), the chat interface automatically detects and displays the model's internal reasoning.
+
+The reasoning appears in expandable sections, letting you follow the model's thought process as it works through complex problems. This provides transparency into how the model arrives at answers. The reasoning content appears separately from the final response, making it easy to review the logic without cluttering the conversation.
 
 ## Troubleshooting
 
