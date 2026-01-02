@@ -48,6 +48,7 @@ module.exports = {
       link: {type: "generated-index"},
       items: [
         "developer-guide/swagger",
+        "developer-guide/release-process",
       ],
     },
     {

@@ -60,6 +60,20 @@ docker run -d --name guacd -p 4822:4822 guacamole/guacd
 
 ## Download
 
+Casibase can be installed using pre-built binaries or by building from source.
+
+### Pre-built Binaries
+
+For production deployments, we recommend using pre-built binaries. Download the latest release from the [GitHub Releases page](https://github.com/casibase/casibase/releases). Casibase provides binaries for:
+
+- **Linux**: x86_64 (amd64) and ARM64
+- **Windows**: x86_64 (amd64) and ARM64  
+- **macOS**: x86_64 (amd64) and ARM64
+
+Extract the downloaded archive and you'll find the Casibase binary along with the web frontend and configuration files ready to use.
+
+### Build from Source
+
 The source code of Casibase is hosted at GitHub: <https://github.com/casibase/casibase>. Both the Go backend code and React frontend code are inside the single repository.
 
 | Name     | Description                      | Language              | Source code                                          |
@@ -154,8 +168,6 @@ casdoorApplication = <Your Casdoor application name>
 
 ## Run
 
-There are currently two methods to start, you can choose one according to your own situation.
-
 :::caution
 
 **Casibase** requires **Casdoor** to provide access control and some back-end services, so you must make sure **Casdoor** is running properly before running **Casibase**.
@@ -165,6 +177,28 @@ How to install and run Casdoor:
 - [Casdoor Installation](https://casdoor.org/docs/basic/server-installation)
 
 :::
+
+### Using Pre-built Binary
+
+If you downloaded a pre-built binary, extract the archive and run Casibase directly. The binary already includes the compiled frontend.
+
+For Linux/macOS:
+
+```bash
+tar -xzf casibase_*.tar.gz
+cd casibase_*
+./casibase
+```
+
+For Windows:
+
+```bash
+unzip casibase_*.zip
+cd casibase_*
+casibase.exe
+```
+
+The server will start on port 14000 by default.
 
 ### Development mode
 
@@ -188,7 +222,9 @@ yarn install
 yarn start
 ```
 
-### Production mode
+### Building from Source
+
+If you're building from source, follow these steps to create a production build.
 
 #### Backend
 
