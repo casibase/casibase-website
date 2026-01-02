@@ -46,7 +46,7 @@ The Access Key should have permissions to call:
    - **Type**: Select "Aliyun" (this is the internal identifier for Alibaba Cloud)
    - **Category**: Select "Public Cloud"
    - **Client ID**: Paste your Access Key ID
-   - **API key**: Paste your Access Key Secret (this field is masked for security)
+   - **API key**: Paste your Access Key Secret
    - **Region**: Enter the target region (e.g., cn-hangzhou, cn-beijing)
 4. Click `Save & Exit`
 

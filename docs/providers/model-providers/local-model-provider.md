@@ -50,7 +50,7 @@ When adding a Local model provider, configure these essential fields:
 
 The endpoint should implement the `/chat/completions` path that accepts OpenAI format requests.
 
-**API key**: If your model service requires authentication, provide the API key or token here. Leave empty if your service doesn't require authentication (common for local deployments). The key is masked for security and sent in the Authorization header as `Bearer <key>`.
+**API key**: If your model service requires authentication, provide the API key or token here. Leave empty if your service doesn't require authentication (common for local deployments). The key is sent in the Authorization header as `Bearer <key>`.
 
 ### Pricing Configuration
 

@@ -19,9 +19,9 @@ When configuring a ChainMaker provider in Casibase, you need to fill in several 
 - `orgId`: The organization ID in the ChainMaker network.
 - `ChainId`: The chain ID of the ChainMaker blockchain.
 - `AuthType`: The account mode. Currently, only `permissionedwithcert` is supported.
-- `User key`: The user's private key for authentication in the ChainMaker server (masked for security).
+- `User key`: The user's private key for authentication in the ChainMaker server.
 - `User cert`: The user's certificate for authentication in the ChainMaker server.
-- `Sign key`: The user's private key for signing transactions in the ChainMaker server (masked for security).
+- `Sign key`: The user's private key for signing transactions in the ChainMaker server.
 - `Sign cert`: The user's certificate for signing transactions in the ChainMaker server.
 - `Node address`: The address of the ChainMaker node to connect to.
 - `Contract name`: The name of the smart contract to interact with.
