@@ -39,6 +39,7 @@ module.exports = {
             "basic/beginner-guide/chats-with-ai",
           ],
         },
+        "basic/casdoor-sso",
       ],
     },
     {
@@ -49,7 +50,6 @@ module.exports = {
         "permissions/overview",
         "permissions/frontend-permissions",
         "permissions/backend-permissions",
-        "permissions/casdoor-sso",
       ],
     },
     {

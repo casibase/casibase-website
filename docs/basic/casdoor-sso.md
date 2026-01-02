@@ -6,7 +6,7 @@ authors: [palp1tate]
 ---
 
 ```mdx-code-block
-import styles from '../styles.module.css';
+import styles from '.././styles.module.css';
 import CasdoorCard from "@site/src/components/CasdoorCard";
 ```
 
