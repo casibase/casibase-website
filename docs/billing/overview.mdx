@@ -14,11 +14,13 @@ Casibase tracks AI token usage and costs automatically through its integration w
 
 ## How It Works
 
-When you send a message to an AI model, Casibase calculates the token count and associated costs based on the provider's pricing. This information flows through the system:
+When you send a message to an AI model, Casibase validates your balance before generating the response. The system estimates the token cost, checks if you have sufficient funds, and only proceeds if validation succeeds. This prevents situations where you receive an AI response but can't pay for it.
 
-**Chat → Message → Transaction**
+**Chat → Balance Check → Message → Transaction**
 
-Each chat session maintains a running total of tokens used and costs incurred. Individual messages record their own token consumption, and transactions are created in Casdoor immediately after the costs are calculated. This ensures accurate billing records and enables usage monitoring across your organization.
+The validation happens in two steps. First, Casibase estimates the cost by asking the model provider how many tokens your question will likely consume. It then validates this estimated cost against your balance using a dry run transaction. If you have insufficient funds, you'll see an error immediately—no AI processing occurs. If validation succeeds, the AI generates your answer and the actual transaction records the real cost.
+
+Each chat session maintains a running total of tokens used and costs incurred. Individual messages record their own token consumption, and transactions are created in Casdoor after the AI completes its response. This ensures accurate billing records and enables usage monitoring across your organization.
 
 ## Token Tracking
 
