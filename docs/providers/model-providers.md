@@ -43,14 +43,12 @@ Fill in the model provider details and click the `Save & Exit` button.
 When adding a provider, you'll need to set:
 
 - **Category**: Choose `Model` for language models or `Embedding` for text vectorization
-- **Type**: Select the specific provider (OpenAI, Hugging Face, etc.)
-- **SecretKey**: Your API key or access token from the provider
+- **Type**: Select the specific provider (OpenAI, Hugging Face, Ollama, etc.)
+- **SecretKey**: Your API key or access token from the provider (not required for Ollama and some other local providers)
 
 **Example: Adding OpenAI**
 
 ![Casibase-model-select](/img/walkthrough-guides/casibase-model-select.png)
-
-**Note**: Ollama doesn't require a SecretKey since it runs locally without authentication. When configuring Ollama, simply leave the SecretKey field empty.
 
 :::
 
