@@ -52,6 +52,16 @@ Casibase supports many model providers, including:
 - [Alibaba Cloud](https://www.alibabacloud.com/)
   - Integrated with official SDK
   - Supports web search functionality with inline search results
+- [Claude](https://claude.ai/)
+  - Latest models including claude-opus-4-5, claude-opus-4-1, claude-sonnet-4
+  - Offers different context windows and pricing tiers
+- [DeepSeek](https://www.deepseek.com/)
+  - deepseek-chat for general conversation
+  - deepseek-reasoner for advanced reasoning tasks
+- [Moonshot (Kimi)](https://platform.moonshot.cn/)
+  - Multiple context sizes: moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k
+  - Next-gen Kimi-v2 models with thinking capabilities
+  - kimi-latest provides automatic tier selection
 
 :::
 
