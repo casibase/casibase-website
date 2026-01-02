@@ -44,6 +44,16 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Permissions",
+      link: {type: "generated-index"},
+      items: [
+        "permissions/overview",
+        "permissions/frontend-permissions",
+        "permissions/backend-permissions",
+      ],
+    },
+    {
+      type: "category",
       label: "Developer Guide",
       link: {type: "generated-index"},
       items: [
