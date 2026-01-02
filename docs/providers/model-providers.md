@@ -52,6 +52,7 @@ Casibase supports many model providers, including:
 - [Alibaba Cloud](https://www.alibabacloud.com/)
   - Integrated with official SDK
   - Supports web search functionality with inline search results
+  - Provides access to Qwen and DeepSeek models (including v3.2)
 
 :::
 

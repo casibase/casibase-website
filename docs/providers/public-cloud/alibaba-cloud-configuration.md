@@ -9,7 +9,7 @@ authors: [hsluoyz]
 
 Alibaba Cloud integration enables comprehensive asset discovery and management for your cloud infrastructure. Casibase automatically scans resources across your Alibaba Cloud account, collecting detailed configuration information.
 
-When using Alibaba Cloud as a model provider, the integration supports advanced features including web search capabilities during chat conversations, allowing the AI to retrieve real-time information from the internet.
+When using Alibaba Cloud as a model provider, the integration supports advanced features including web search capabilities during chat conversations, allowing the AI to retrieve real-time information from the internet. Alibaba Cloud provides access to various models including Qwen series and DeepSeek models (v3, v3.1, v3.2, R1) through their Model Studio platform.
 
 ## Prerequisites
 
