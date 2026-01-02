@@ -53,6 +53,9 @@ Casibase supports many model providers, including:
   - Integrated with official SDK
   - Supports web search functionality with inline search results
   - Provides access to Qwen and DeepSeek models (including v3.2)
+- [Ollama](https://ollama.com/)
+  - Run models locally without API keys
+  - Supports llama3.2, qwen2.5, deepseek-r1, mistral, and more
 
 :::
 

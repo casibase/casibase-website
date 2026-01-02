@@ -88,6 +88,7 @@ module.exports = {
             id: "providers/model-providers/overview",
           },
           items: [
+            "providers/model-providers/ollama-model-provider",
             "providers/model-providers/local-model-provider",
           ],
         },
