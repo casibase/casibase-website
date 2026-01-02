@@ -7,9 +7,9 @@ authors: [hsluoyz]
 
 ## Overview
 
-Alibaba Cloud integration enables comprehensive asset discovery and management for your cloud infrastructure. Casibase automatically scans resources across your Alibaba Cloud account, collecting detailed configuration information.
+The Alibaba Cloud provider serves dual purposes in Casibase. For model integration, it connects you to Qwen's language models and DeepSeek's reasoning-focused models (v3, v3.1, v3.2, and R1) through Alibaba's Model Studio platform. When chatting with these models, you can enable web search to have the AI fetch current information from the internet—results appear inline with citations.
 
-When using Alibaba Cloud as a model provider, the integration supports advanced features including web search capabilities during chat conversations, allowing the AI to retrieve real-time information from the internet. Alibaba Cloud provides access to various models including Qwen series and DeepSeek models (v3, v3.1, v3.2, R1) through their Model Studio platform.
+For infrastructure management, the same provider scans your Alibaba Cloud resources, discovering ECS instances, disks, VPCs, and other assets across your deployment.
 
 ## Prerequisites
 

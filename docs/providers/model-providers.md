@@ -6,11 +6,11 @@ authors: [IsAurora6]
 
 ## Introduction
 
-Adding a model provider to Casibase enables you to enhance its functionality by incorporating machine learning models and AI capabilities. Model providers allow you to analyze and process data within your knowledge base system, making it more intelligent and efficient.
+Model providers connect AI capabilities to your Casibase instance. They power everything from chatbots to document analysis by integrating large language models (LLMs) directly into your knowledge base workflows.
 
 ### Add a Model Provider
 
-Model providers are used to integrate LLM into Casibase. You can add them by following these steps:
+Adding a model provider takes just a few clicks:
 
 Click the `Providers` button on the home page.
 
@@ -26,62 +26,42 @@ Fill in the model provider details and click the `Save & Exit` button.
 
 ![Casibase-model-openai](/img/walkthrough-guides/casibase-model-openai.png)
 
-:::tip
+:::tip Supported Providers
 
-Casibase supports many model providers, including:
+**[OpenAI](https://openai.com/)** — Access GPT-3.5-turbo, GPT-4, and o1 models. The o1 series shows its reasoning steps in the chat interface, while all models support web search to pull in real-time information.
 
-- [Hugging Face](https://huggingface.co/)
-  - meta-llama/Llama-2-7b
-  - THUDM/chatglm2-6b
-  - baichuan-inc/Baichuan2-13B-chat
-  - gpt2
-  - ......
-- [OpenRouter](https://openrouter.ai/)
-  - anthropic/claude-2
-  - palm-2-chat-bison
-  - palm-2-codechat-bison
-  - openai/gpt-4
-  - ......
-- [OpenAI](https://openai.com/)
-  - gpt-3.5-turbo, gpt-4, o1, o1-mini
-  - Supports web search for real-time information retrieval
-  - Reasoning models (o1 series) display step-by-step reasoning process
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)
-  - Uses the official OpenAI SDK for enhanced compatibility
-  - Supports all Azure OpenAI models and features
-- [Alibaba Cloud](https://www.alibabacloud.com/)
-  - Integrated with official SDK
-  - Supports web search functionality with inline search results
-  - Provides access to Qwen and DeepSeek models (including v3.2)
+**[Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)** — Run OpenAI models through Azure's infrastructure using the official SDK.
+
+**[Alibaba Cloud](https://www.alibabacloud.com/)** — Connect to Qwen models and DeepSeek's latest releases (v3, v3.1, v3.2, R1). Web search works here too, with results appearing inline in chat responses.
+
+**[DeepSeek](https://www.deepseek.com/)** — Direct access to DeepSeek's v3.x series and R1 models for reasoning-focused tasks.
+
+**[Hugging Face](https://huggingface.co/)** — Connect to open-source models like Llama-2, ChatGLM2, Baichuan2, and thousands of others.
+
+**[OpenRouter](https://openrouter.ai/)** — One API to access Claude, PaLM, GPT-4, and other models from different providers.
 
 :::
 
-:::caution
+:::caution Configuration Notes
 
-- Category: The first-level category of the model provider. For example, `Model` and `Embedding`.
-- Type: The second-level category of the model provider. For example, `OpenAI` and `Hugging Face`.
-- SecretKey: The secret key of your OpenAI account.
+When adding a provider, you'll need to set:
 
-**Example**
+- **Category**: Choose `Model` for language models or `Embedding` for text vectorization
+- **Type**: Select the specific provider (OpenAI, Hugging Face, etc.)
+- **SecretKey**: Your API key or access token from the provider
 
-##### Add an OpenAI model provider
+**Example: Adding OpenAI**
 
 ![Casibase-model-select](/img/walkthrough-guides/casibase-model-select.png)
 
 :::
 
-:::caution
+:::caution Streaming Support
 
-Some models don't support **streaming-output**. Known models that support streaming-output include:
-
-- `gpt-3.5-turbo-0613`
+Not all models support streaming output (showing responses as they're generated). GPT-3.5-turbo and most modern models do, but if you're using older or custom models, check with your provider.
 
 :::
 
-After adding a model provider, you can use it to analyze and process data in Casibase using chatbots, question answering, and other AI capabilities.
-
-Return to the model provider list page:
+Once configured, your model provider powers Casibase's chat interface, document Q&A, and other AI features. You can switch between providers anytime to compare results or optimize for cost and performance.
 
 ![Casibase-providers-view](/img/walkthrough-guides/casibase-model-view.png)
-
-Now that you've added a model provider, you can use it to analyze and process data in Casibase using chatbots, question answering, and other AI capabilities.
