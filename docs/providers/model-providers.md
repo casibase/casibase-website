@@ -33,7 +33,9 @@ Fill in the model provider details and click the `Save & Exit` button.
 | [OpenAI](https://openai.com/) | GPT-3.5-turbo, GPT-4, o1 series. Reasoning models show step-by-step thinking. Web search available for real-time information. |
 | [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/) | Access OpenAI models through Azure infrastructure with official SDK support. |
 | [Alibaba Cloud](https://www.alibabacloud.com/) | Qwen models and DeepSeek (v3, v3.1, v3.2, R1). Web search with inline results. |
-| [DeepSeek](https://www.deepseek.com/) | DeepSeek v3.x series and R1 for reasoning-focused tasks. |
+| [DeepSeek](https://www.deepseek.com/) | DeepSeek V3.2 with chat and reasoner variants for advanced reasoning. Updated pricing for improved affordability. |
+| [Claude](https://www.anthropic.com/) | Anthropic's Claude family including the new Opus 4.5 for complex tasks, plus Sonnet and Haiku variants for balanced performance and speed. |
+| [Moonshot (Kimi)](https://www.moonshot.cn/) | Moonshot v1 series (8k, 32k, 128k context) and Kimi K2 models with preview, turbo, and thinking variants. Auto-tier pricing with kimi-latest. |
 | [Hugging Face](https://huggingface.co/) | Open-source models including Llama-2, ChatGLM2, Baichuan2, and thousands more. |
 | [OpenRouter](https://openrouter.ai/) | Unified API access to Claude, PaLM, GPT-4, and other providers. |
 | [Ollama](https://ollama.com/) | Run models like Llama, Mistral, and Phi locally on your machine. No API key needed. |
