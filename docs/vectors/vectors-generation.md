@@ -10,7 +10,7 @@ Vectors are actually the result of embedding, which is the process of converting
 
 ## 1. Refresh Vectors
 
-The Refresh Vectors action is set as a button on each store data under the stores menu. In stores, since we will be setting up storage providers, it will provide us with a file tree for storing user files, so after configuring stores, save the configuration and return to the home page and you will see the file tree for the storage providers.
+The Refresh Vectors action is set as a button on each store data under the stores menu. After configuring stores with storage providers, navigate to the `Stores` page to view the file tree for the storage providers.
 
 By clicking on the Refresh Vectors button for a particular stores, it will generate the corresponding vectors for all the files in the file tree for that stores by embedding them. The following figure shows the page and the operation.
 

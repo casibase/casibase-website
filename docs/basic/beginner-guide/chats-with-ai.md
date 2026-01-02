@@ -15,9 +15,9 @@ Refer to the [Add a Store](add-a-store.md) section of our previous documentation
 
 Now, let's implement AI chat functionality in Casibase.
 
-### Step 1: Add a New Chat
+### Step 1: Access the Chat Interface
 
-Click the `Chats` button on the home page and then click the `New Chat` button to add a chat.
+When you log in to Casibase, you'll land directly on the chat interface. This gives you immediate access to start conversations with AI. If you need to create a new chat session, click the `New Chat` button.
 
 ![Casibase-chats-add](/img/walkthrough-guides/casibase-chats-add.png)
 
