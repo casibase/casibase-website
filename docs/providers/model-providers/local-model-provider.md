@@ -39,7 +39,7 @@ When adding a Local model provider, configure these essential fields:
 
 **Subtype**: This field is automatically set to `custom-model` and cannot be changed. It identifies the provider as a custom implementation.
 
-**Compatible provider**: Specify the actual model type being connected, such as deepseek-v3.2.
+**Compatible provider**: Enter the model name you want to use. You can either select from the dropdown suggestions or type any model name directly.
 
 **Provider URL**: The HTTP(S) endpoint where your model service is running. This is the base URL that Casibase will use to make requests. For example:
 
@@ -66,7 +66,7 @@ These fields help track usage costs when using paid services or for internal bil
 
 **OpenAI-compatible service**:
 
-- Compatible provider: Any model you prefer (e.g., `deepseek-v3.2`)
+- Compatible provider: Any model you prefer
 - Provider URL: Service endpoint URL
 - API key: Your service API key
 - Input/Output price: According to the service pricing
