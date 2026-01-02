@@ -65,7 +65,7 @@ Casibase supports many model providers, including:
 
 - Category: The first-level category of the model provider. For example, `Model` and `Embedding`.
 - Type: The second-level category of the model provider. For example, `OpenAI` and `Hugging Face`.
-- SecretKey: The secret key of your OpenAI account.
+- API key: Your API key from the provider.
 
 **Example**
 

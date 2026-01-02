@@ -100,7 +100,7 @@ You can obtain your private key from various sources:
 - **Ethereum Clients**: Generate a new account using Ethereum clients like Geth.
 
 :::info
-Casibase will use *** to replace the private key on the frontend after the submission.
+The private key field is automatically masked as a password field.
 :::
 
 ### 2.3 Invoke Method and Contract Address Configuration
