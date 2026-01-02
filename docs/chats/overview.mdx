@@ -12,6 +12,18 @@ import CasdoorCard from "@site/src/components/CasdoorCard";
 
 In this section, we introduce the most central part of Casibase: chat and its management.
 
+## User Roles & Permissions
+
+Casibase implements role-based access control for chats and messages. Users fall into three categories:
+
+**Regular Users** can create and access their own chat sessions and messages. They see only their personal conversation history.
+
+**Chat Admins** (`chat-admin` role) have expanded privileges, gaining full access to all chats and messages across the system for moderation and support purposes. They can view, edit, and manage any user's conversations.
+
+**System Administrators** possess complete system-wide access, including all chat admin capabilities plus additional control over system configuration and user management.
+
+When navigating the Chats or Messages pages, your view automatically adjusts based on your role—regular users see their own content, while admins see everything.
+
 ## 1. Chat
 
 Once we have configured the store, we can have a dialogue with the AI. This is shown in the image below:
@@ -26,7 +38,7 @@ We can manage our chat sessions from the Chats menu.
 
 ![chat.png](/img/chat/chats.png)
 
-This page allows the user to view the information of the created chats, and the user can also click on Edit to view or edit them. Regular users can access and view their own chat sessions, while administrators have full access to all chats in the system for management purposes. They display the following information:
+This page displays all accessible chat sessions based on your role (see [User Roles & Permissions](#user-roles--permissions) above). Click Edit on any chat to view or modify its details. The page shows:
 
 - `Name`: The name of the created chat.
 - `Updated time`: The time when the chat is Updated.

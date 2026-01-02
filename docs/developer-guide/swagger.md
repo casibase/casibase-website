@@ -55,3 +55,26 @@ APIs with the same "@Tag" labels will be put into the same group.
     Notably: We only accept a comma `,` as the separator when multiple tags/apis provided.
 
 Then you will find that the new swagger files are generated.
+
+## Permission System Architecture
+
+Casibase centralizes permission checks in the `util/permission.go` package to maintain consistency across the codebase. When implementing new controllers or routes that need permission validation, use these utility functions:
+
+```go
+// Check if user is system admin or chat admin
+if !util.IsAdminOrChatAdmin(user) {
+    // Deny access
+}
+
+// Check specifically for chat admin role
+if util.IsChatAdmin(user) {
+    // Grant chat admin privileges
+}
+
+// Check for video user role
+if util.IsVideoNormalUser(user) {
+    // Apply video user permissions
+}
+```
+
+The role constants `UserTypeChatAdmin` and `UserTypeVideoNormalUser` are defined in the same package. Avoid hardcoding role strings elsewhere in the codebase to prevent maintenance issues.
