@@ -66,31 +66,16 @@ These fields help track usage costs when using paid services or for internal bil
 
 **OpenAI-compatible service**:
 
-- Compatible provider: Enter the model name (e.g., `deepseek-v3.2`, `qwen-plus`, `mistral-large`)
+- Compatible provider: Any model you prefer
 - Provider URL: Service endpoint URL
 - API key: Your service API key
 - Input/Output price: According to the service pricing
-
-**Reasoning model service**:
-
-- Compatible provider: The reasoning model name (e.g., `deepseek-r1`, `o1-mini`)
-- Provider URL: Service endpoint supporting reasoning models
-- API key: Your service API key
-- Input/Output price: According to the service pricing
-
-The chat interface will automatically display the model's reasoning process when available.
 
 ## Using the Provider
 
 After saving your Local model provider, you can use it just like any other provider in Casibase. Select it when creating chats, configuring stores for RAG, or any other feature that requires a model provider.
 
 When the provider is in use, Casibase sends requests to your configured Provider URL using the OpenAI Chat Completion format. Your service should respond with compatible JSON responses.
-
-## Reasoning Models
-
-Local providers support reasoning models that provide step-by-step thinking processes. When you use models with reasoning capabilities (such as o1, o1-mini, DeepSeek R1, or similar), the chat interface automatically detects and displays the model's internal reasoning.
-
-The reasoning appears in expandable sections, letting you follow the model's thought process as it works through complex problems. This provides transparency into how the model arrives at answers. The reasoning content appears separately from the final response, making it easy to review the logic without cluttering the conversation.
 
 ## Troubleshooting
 
