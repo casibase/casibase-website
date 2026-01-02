@@ -39,7 +39,7 @@ When adding a Local model provider, configure these essential fields:
 
 **Subtype**: This field is automatically set to `custom-model` and cannot be changed. It identifies the provider as a custom implementation.
 
-**Compatible provider**: Specify the actual model type being connected, such as deepseek-v3.2.
+**Compatible provider**: Enter the model name you want to use. You can either select from the dropdown suggestions or type any model name directly. This flexibility allows you to use any model available from your service, including newly released models that may not yet be in Casibase's predefined list. For example: `deepseek-v3.2`, `qwen-plus`, or `llama-3.1-70b`.
 
 **Provider URL**: The HTTP(S) endpoint where your model service is running. This is the base URL that Casibase will use to make requests. For example:
 
@@ -66,16 +66,29 @@ These fields help track usage costs when using paid services or for internal bil
 
 **OpenAI-compatible service**:
 
-- Compatible provider: Any model you prefer (e.g., `deepseek-v3.2`)
+- Compatible provider: Enter the model name (e.g., `deepseek-v3.2`, `qwen-plus`, `mistral-large`)
 - Provider URL: Service endpoint URL
 - API key: Your service API key
 - Input/Output price: According to the service pricing
+
+**Reasoning model service**:
+
+- Compatible provider: The reasoning model name (e.g., `deepseek-r1`, `o1-mini`)
+- Provider URL: Service endpoint supporting reasoning models
+- API key: Your service API key
+- Input/Output price: According to the service pricing
+
+The chat interface will automatically display the model's reasoning process when available.
 
 ## Using the Provider
 
 After saving your Local model provider, you can use it just like any other provider in Casibase. Select it when creating chats, configuring stores for RAG, or any other feature that requires a model provider.
 
 When the provider is in use, Casibase sends requests to your configured Provider URL using the OpenAI Chat Completion format. Your service should respond with compatible JSON responses.
+
+## Reasoning Models
+
+Local providers support reasoning models that provide step-by-step thinking processes. When using models with reasoning capabilities (such as o1, o1-mini, DeepSeek R1, or similar), the chat interface automatically detects and displays the model's internal reasoning in expandable sections. This lets you follow the model's thought process as it works through complex problems, providing transparency into how it arrives at answers. The reasoning content appears separately from the final response, making it easy to review the logic without cluttering the conversation.
 
 ## Troubleshooting
 
