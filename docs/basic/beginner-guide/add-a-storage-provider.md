@@ -53,9 +53,7 @@ Casdoor supports many storage providers, including:
 
 ##### Add an Aliyun OSS storage provider
 
-:::info Configuration Fields
-
-When configuring storage providers, you'll encounter these authentication fields:
+:::info
 
 - **Client ID**: The AccessKey ID of your cloud storage account
 - **Secret key**: Your authentication credential (e.g., AccessKey Secret for Aliyun OSS). This field is masked by default for security protection.

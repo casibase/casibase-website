@@ -55,13 +55,11 @@ Casibase supports many model providers, including:
 
 :::
 
-:::info Configuration Fields
-
-When adding a provider, you'll need to configure these key fields:
+:::info
 
 - **Category**: The first-level category of the model provider (`Model` or `Embedding`)
 - **Type**: The second-level category selecting your provider service (e.g., `OpenAI`, `Hugging Face`)
-- **API key**: Your authentication credential for the provider service. This field is masked by default for security - click the visibility icon if you need to reveal the key. Different provider types may label this field differently (e.g., "Secret key" for storage providers, "Private key" for blockchain providers).
+- **API key**: Your authentication credential for the provider service. This field is masked by default for security - click the visibility icon if you need to reveal the key.
 
 ##### Add an OpenAI model provider
 
