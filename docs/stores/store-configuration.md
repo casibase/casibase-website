@@ -34,7 +34,15 @@ Now, you can use the store to store knowledge base data, convert text to vectors
 
 When configuring your store, consider adding example questions that appear when users start a new chat. These suggestions help users discover what they can ask and get them started quickly. You can also configure which other stores this one should search through using the **Vector stores** field - useful when you want one store to pull knowledge from multiple sources.
 
-### Vector Stores
+## 2. File Management
+
+Each store has a file list that tracks all uploaded files and their vector generation status. When you add a file to a store, it automatically appears in the Files page with a "Pending" status. The system then processes it in the background, updating the status to "Processing" while generating embeddings, and finally to "Finished" when complete.
+
+If an error occurs during vector generation, the file status changes to "Error" and displays the error message. You can fix the issue (like updating your embedding provider) and click the Refresh Vectors button on that file to retry. The Files page also shows token counts for each file, giving you visibility into the size of your embedded content.
+
+When you delete a file from a store, Casibase automatically removes all associated vectors from the database, keeping your vector store clean and synchronized with your actual files.
+
+## 3. Vector Stores
 
 Sometimes you need one store to search through knowledge from multiple other stores. For example, you might have separate stores for different topics or departments, but want a main store that can answer questions by searching across all of them. The **Vector stores** field makes this possible by letting a store use vectors from other stores in addition to its own.
 
@@ -48,7 +56,7 @@ The store always uses its own vectors automatically. You only need to specify ad
 
 In the next section, we will learn how to chat with the chatbot in Casibase.
 
-## 2.Store Isolation for Users
+## 4. Store Isolation for Users
 
 Casibase lets you restrict users to specific stores through Casdoor's Homepage field. When a user's Homepage matches a store name, they become bound to that store and work within it exclusively - perfect for multi-tenant setups where teams need separate knowledge bases.
 
@@ -56,7 +64,7 @@ Bound users see their assigned store locked in the top bar selector. They can vi
 
 To bind a user, edit their Casdoor profile and set the Homepage field to the exact store name (case-sensitive). The binding activates on their next login. Users with an empty Homepage or one that doesn't match any store keep full access to all stores, so you can mix restricted and unrestricted users easily.
 
-## 3.Support Multi-store
+## 5. Support Multi-store
 
 The multi-store mode provides users with different models, suggestions, and more within each distinct store.
 
