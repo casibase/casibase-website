@@ -16,7 +16,7 @@ When configuring a Kubernetes provider in Casibase, you need to fill in several 
 - `Display name`: The display name shown in the UI for this provider.
 - `Category`: The type of service; here it should be `Private Cloud`.
 - `Type`: The cloud-native platform type; here it should be `Kubernetes`.
-- `Config text`: The raw text content of your `kubeconfig` file, which contains the credentials and endpoint information needed to connect to your Kubernetes cluster.
+- `Config text`: The raw text content of your `kubeconfig` file, which contains the credentials and endpoint information needed to connect to your Kubernetes cluster (masked for security).
 
 Please make sure to fill in each field accurately. The `Config text` is crucial for establishing a successful connection.
 

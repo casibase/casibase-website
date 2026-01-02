@@ -43,7 +43,9 @@ When adding a provider, you'll need to set:
 
 - **Category**: Choose `Model` for language models or `Embedding` for text vectorization
 - **Type**: Select the specific provider (OpenAI, Hugging Face, etc.)
-- **SecretKey**: Your API key or access token from the provider
+- **API key**: Your API key or access token from the provider (this field is masked for security)
+
+The API key field is automatically masked when you enter it, protecting your credentials from unauthorized viewing. You can toggle visibility using the eye icon if needed.
 
 **Example: Adding OpenAI**
 

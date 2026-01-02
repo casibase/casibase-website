@@ -20,7 +20,7 @@ When configuring an Ethereum provider in Casibase, you need to fill in several k
 - **`Display name`**: The display name shown in the UI for this provider.
 - **`Category`**: The type of service, here it should be `Blockchain`.
 - **`Type`**: The blockchain type, here it should be `Ethereum`.
-- **`Private key`**: The private key of the Ethereum account used for signing transactions.
+- **`Private key`**: The private key of the Ethereum account used for signing transactions (masked for security).
 - **`Contract Address`**: The address of the smart contract to interact with on the Ethereum blockchain.
 - **`Invoke method`**: The method name to invoke on the smart contract.
 - **`Browser URL`**: The URL for viewing the blockchain in a browser, with block number template support.
@@ -100,7 +100,7 @@ You can obtain your private key from various sources:
 - **Ethereum Clients**: Generate a new account using Ethereum clients like Geth.
 
 :::info
-Casibase will use *** to replace the private key on the frontend after the submission.
+The private key field is automatically masked for security. Casibase displays it as a password field, protecting your credentials from unauthorized viewing.
 :::
 
 ### 2.3 Invoke Method and Contract Address Configuration
