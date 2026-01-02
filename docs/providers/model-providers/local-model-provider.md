@@ -39,7 +39,7 @@ When adding a Local model provider, configure these essential fields:
 
 **Subtype**: This field is automatically set to `custom-model` and cannot be changed. It identifies the provider as a custom implementation.
 
-**Compatible provider**: Enter the model name you want to use. You can either select from the dropdown suggestions or type any model name directly. This flexibility allows you to use any model available from your service, including newly released models that may not yet be in Casibase's predefined list. For example: `deepseek-v3.2`, `qwen-plus`, or `llama-3.1-70b`.
+**Compatible provider**: Enter the model name you want to use. You can either select from the dropdown suggestions or type any model name directly.
 
 **Provider URL**: The HTTP(S) endpoint where your model service is running. This is the base URL that Casibase will use to make requests. For example:
 
