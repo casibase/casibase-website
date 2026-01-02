@@ -40,11 +40,13 @@ Fill in the model provider details and click the `Save & Exit` button.
 
 :::caution Configuration Notes
 
-When adding a provider, you'll need to set:
+When adding a provider, configure these fields:
 
 - **Category**: Choose `Model` for language models or `Embedding` for text vectorization
 - **Type**: Select the specific provider (OpenAI, Hugging Face, Ollama, etc.)
-- **SecretKey**: Your API key or access token from the provider (not required for Ollama and some other local providers)
+- **SecretKey**: Your API key or access token
+  - Required for cloud providers like OpenAI, Azure OpenAI, DeepSeek
+  - Not needed for Ollama (runs locally without authentication)
 
 **Example: Adding OpenAI**
 
