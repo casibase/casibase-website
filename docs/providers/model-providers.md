@@ -49,10 +49,20 @@ Casibase supports many model providers, including:
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/)
   - Uses the official OpenAI SDK for enhanced compatibility
   - Supports all Azure OpenAI models and features
+- [Claude](https://www.anthropic.com/)
+  - claude-opus-4-5, claude-opus-4-1, claude-sonnet-4
+  - Advanced reasoning and analysis capabilities
 - [Alibaba Cloud](https://www.alibabacloud.com/)
   - Integrated with official SDK
   - Supports web search functionality with inline search results
   - Provides access to Qwen and DeepSeek models (including v3.2)
+- [DeepSeek](https://www.deepseek.com/)
+  - deepseek-chat (v3.2), deepseek-reasoner
+  - Cost-effective models with competitive performance
+- [Moonshot](https://www.moonshot.cn/)
+  - moonshot-v1 series (8k, 32k, 128k context)
+  - Kimi-v2 models with advanced features (kimi-k2-thinking, kimi-k2-turbo-preview)
+  - kimi-latest with automatic tier selection
 
 :::
 
