@@ -89,6 +89,7 @@ module.exports = {
         "providers/storage-providers",
         "providers/text-to-speech-providers",
         "providers/speech-to-text-providers",
+        "providers/bot-providers",
         {
           type: "category",
           label: "Model Providers",
