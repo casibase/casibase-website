@@ -92,7 +92,7 @@ git clone https://github.com/casibase/casibase
 
 ### Configure Casdoor
 
-Please refer to [Casdoor-SSO](/docs/basic/casdoor-sso) section to configure Casdoor.
+Please refer to [Casdoor-SSO](/docs/permissions/casdoor-sso) section to configure Casdoor.
 
 Remember your `clientId`,`clientSecret`,`organization`,`application` and so on in Casdoor configuration, we will use them later.
 
