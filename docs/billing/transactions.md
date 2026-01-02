@@ -18,9 +18,15 @@ Transactions use a structured format to track chat interactions:
 
 This structure provides complete traceability from billing records back to the original conversations and messages. Organizations can use this data for cost analysis, usage reporting, and budget tracking across teams.
 
+## Balance Validation
+
+Before any AI processing begins, Casibase validates that you have sufficient balance to cover the estimated cost. The system asks the model provider to calculate how many tokens your question will likely consume, then checks this amount against your balance using a dry run transaction—a temporary validation that doesn't actually deduct funds.
+
+If the validation fails, you'll receive an error message right away and the AI won't process your request. This saves you from waiting for an AI response only to discover you can't afford it. Once validation succeeds, the AI generates your answer and a real transaction records the actual cost, which may differ slightly from the estimate based on the final response length.
+
 ## Automatic Creation
 
-Transactions are created immediately after token costs are calculated, ensuring that billing records stay synchronized with actual usage. You don't need to manually track or create transaction records - the system handles this automatically for every AI interaction.
+Transactions are created after the AI completes your answer, ensuring that billing records stay synchronized with actual usage. You don't need to manually track or create transaction records - the system handles this automatically for every AI interaction.
 
 ## Integration with Casdoor
 
