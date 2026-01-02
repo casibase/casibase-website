@@ -84,7 +84,7 @@ Refer to [Step 2: Add a New Storage Provider](#step-2-add-a-new-storage-provider
 
 ![Casibase-stores-form-filling](/img/walkthrough-guides/casibase-stores-form-filling.png)
 
-Save the configuration, return to the home page, and you'll see the file-tree of the storage provider.
+Save the configuration and navigate to the `Stores` page to see the file-tree of the storage provider.
 
 ![Casibase-home-filetree](/img/walkthrough-guides/casibase-home-filetree.png)
 
