@@ -41,7 +41,7 @@ This dual-layer approach provides defense in depth - the frontend offers a smoot
 
 ## Authentication Integration
 
-Casibase integrates with [Casdoor](/docs/permissions/casdoor-sso) for user authentication and SSO. User roles and permissions are managed through Casdoor and synchronized automatically with Casibase.
+Casibase integrates with [Casdoor](/docs/basic/casdoor-sso) for user authentication and SSO. User roles and permissions are managed through Casdoor and synchronized automatically with Casibase.
 
 ## Implementation
 
