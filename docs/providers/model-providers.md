@@ -36,6 +36,7 @@ Fill in the model provider details and click the `Save & Exit` button.
 | [DeepSeek](https://www.deepseek.com/) | DeepSeek v3.x series and R1 for reasoning-focused tasks. |
 | [Hugging Face](https://huggingface.co/) | Open-source models including Llama-2, ChatGLM2, Baichuan2, and thousands more. |
 | [OpenRouter](https://openrouter.ai/) | Unified API access to Claude, PaLM, GPT-4, and other providers. |
+| [Ollama](https://ollama.com/) | Run models like Llama, Mistral, and Phi locally on your machine. No API key needed. |
 
 :::caution Configuration Notes
 
@@ -48,6 +49,8 @@ When adding a provider, you'll need to set:
 **Example: Adding OpenAI**
 
 ![Casibase-model-select](/img/walkthrough-guides/casibase-model-select.png)
+
+**Note**: Ollama doesn't require a SecretKey since it runs locally without authentication. When configuring Ollama, simply leave the SecretKey field empty.
 
 :::
 

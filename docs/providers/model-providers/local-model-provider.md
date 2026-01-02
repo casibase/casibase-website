@@ -19,7 +19,7 @@ Many modern LLM services implement this standard interface for compatibility, ma
 
 **Self-hosted or Local Models**:
 
-The Local provider is also suitable when running your own models in local or private environments. This includes popular frameworks such as vLLM, LocalAI, LM Studio, llama.cpp, or any custom deployment that supports the OpenAI Chat Completion format.
+The Local provider is also suitable when running your own models in local or private environments. This includes popular frameworks such as Ollama, vLLM, LocalAI, LM Studio, llama.cpp, or any custom deployment that supports the OpenAI Chat Completion format.
 
 By using the Local provider, all data remains within your own infrastructure, making it ideal for sensitive workloads, regulatory compliance, and development or testing environments.
 
@@ -63,6 +63,15 @@ These fields help track usage costs when using paid services or for internal bil
 **Currency**: The currency for pricing. This is used for cost tracking and reporting.
 
 ## Configuration Example
+
+**Ollama (local deployment)**:
+
+Ollama makes running models like Llama, Mistral, and others incredibly simple on your local machine. Once Ollama is installed and running, configure the provider with:
+
+- Compatible provider: The model you're running (e.g., `llama3.2`, `mistral`)
+- Provider URL: `http://localhost:11434/v1` (Ollama's default endpoint with OpenAI-compatible API)
+- API key: Leave empty (Ollama doesn't require authentication by default)
+- Input/Output price: Set to `0` for local models
 
 **OpenAI-compatible service**:
 
