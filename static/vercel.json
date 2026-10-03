@@ -236,6 +236,11 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/stores/:path*/",
+      "destination": "https://www.openagentai.org/docs/basic/stores",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/stores",
       "destination": "https://www.openagentai.org/docs/basic/stores",
       "statusCode": 301
@@ -247,6 +252,11 @@
     },
     {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/vectors/:path*",
+      "destination": "https://www.openagentai.org/docs/knowledge-base/vectors",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/vectors/:path*/",
       "destination": "https://www.openagentai.org/docs/knowledge-base/vectors",
       "statusCode": 301
     },
@@ -282,6 +292,11 @@
     },
     {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/model-providers/:path*",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/model-providers/:path*/",
       "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
       "statusCode": 301
     },
@@ -377,6 +392,11 @@
     },
     {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/billing/:path*",
+      "destination": "https://www.openagentai.org/docs/admin/ai-usage",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/billing/:path*/",
       "destination": "https://www.openagentai.org/docs/admin/ai-usage",
       "statusCode": 301
     },
