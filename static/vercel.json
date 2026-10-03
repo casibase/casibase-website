@@ -206,7 +206,12 @@
       "statusCode": 301
     },
     {
-      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?",
+      "source": "/",
+      "destination": "https://www.openagentai.org/",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)",
       "destination": "https://www.openagentai.org/",
       "statusCode": 301
     },
