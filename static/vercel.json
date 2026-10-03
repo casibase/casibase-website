@@ -6,7 +6,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/overview/",
+      "destination": "https://www.openagentai.org/docs/introduction",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/core-concepts",
+      "destination": "https://www.openagentai.org/docs/introduction",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/core-concepts/",
       "destination": "https://www.openagentai.org/docs/introduction",
       "statusCode": 301
     },
@@ -16,7 +26,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/server-installation/",
+      "destination": "https://www.openagentai.org/docs/install",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/try-with-docker",
+      "destination": "https://www.openagentai.org/docs/install",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/try-with-docker/",
       "destination": "https://www.openagentai.org/docs/install",
       "statusCode": 301
     },
@@ -26,7 +46,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/try-with-helm/",
+      "destination": "https://www.openagentai.org/docs/install",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/deployment/deploy-casdoor-and-casibase",
+      "destination": "https://www.openagentai.org/docs/install",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/deployment/deploy-casdoor-and-casibase/",
       "destination": "https://www.openagentai.org/docs/install",
       "statusCode": 301
     },
@@ -36,7 +66,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/deployment/",
+      "destination": "https://www.openagentai.org/docs/install",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/casdoor-sso",
+      "destination": "https://www.openagentai.org/docs/admin/enterprise-sso",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/casdoor-sso/",
       "destination": "https://www.openagentai.org/docs/admin/enterprise-sso",
       "statusCode": 301
     },
@@ -46,7 +86,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/system-info/",
+      "destination": "https://www.openagentai.org/docs/admin/system-info",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/public-api",
+      "destination": "https://www.openagentai.org/docs/admin/swagger",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/public-api/",
       "destination": "https://www.openagentai.org/docs/admin/swagger",
       "statusCode": 301
     },
@@ -56,7 +106,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/developer-guide/swagger/",
+      "destination": "https://www.openagentai.org/docs/admin/swagger",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/developer-guide",
+      "destination": "https://www.openagentai.org/docs/admin/swagger",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/developer-guide/",
       "destination": "https://www.openagentai.org/docs/admin/swagger",
       "statusCode": 301
     },
@@ -66,7 +126,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-a-model-provider/",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-an-embedding-provider",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/embedding-providers",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-an-embedding-provider/",
       "destination": "https://www.openagentai.org/docs/connectors/providers/embedding-providers",
       "statusCode": 301
     },
@@ -76,7 +146,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-a-storage-provider/",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/storage-providers",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-a-speech-to-text-provider",
+      "destination": "https://www.openagentai.org/docs/chat/voice-input",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-a-speech-to-text-provider/",
       "destination": "https://www.openagentai.org/docs/chat/voice-input",
       "statusCode": 301
     },
@@ -86,7 +166,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/add-a-store/",
+      "destination": "https://www.openagentai.org/docs/basic/stores",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/chats-with-ai",
+      "destination": "https://www.openagentai.org/docs/build-a-chat-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/basic/beginner-guide/chats-with-ai/",
       "destination": "https://www.openagentai.org/docs/build-a-chat-assistant",
       "statusCode": 301
     },
@@ -96,7 +186,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/beginner-guide/",
+      "destination": "https://www.openagentai.org/docs/build-a-chat-assistant",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/chats/overview",
+      "destination": "https://www.openagentai.org/docs/basic/chats",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/chats/overview/",
       "destination": "https://www.openagentai.org/docs/basic/chats",
       "statusCode": 301
     },
@@ -106,12 +206,27 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/chats/",
+      "destination": "https://www.openagentai.org/docs/basic/chats",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/messages/overview",
       "destination": "https://www.openagentai.org/docs/basic/messages",
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/messages/overview/",
+      "destination": "https://www.openagentai.org/docs/basic/messages",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/messages",
+      "destination": "https://www.openagentai.org/docs/basic/messages",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/messages/",
       "destination": "https://www.openagentai.org/docs/basic/messages",
       "statusCode": 301
     },
@@ -126,6 +241,11 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/stores/",
+      "destination": "https://www.openagentai.org/docs/basic/stores",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/vectors/:path*",
       "destination": "https://www.openagentai.org/docs/knowledge-base/vectors",
       "statusCode": 301
@@ -136,12 +256,27 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/vectors/",
+      "destination": "https://www.openagentai.org/docs/knowledge-base/vectors",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/textsplitters/overview",
       "destination": "https://www.openagentai.org/docs/add-a-knowledge-base",
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/textsplitters/overview/",
+      "destination": "https://www.openagentai.org/docs/add-a-knowledge-base",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/textsplitters",
+      "destination": "https://www.openagentai.org/docs/add-a-knowledge-base",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/textsplitters/",
       "destination": "https://www.openagentai.org/docs/add-a-knowledge-base",
       "statusCode": 301
     },
@@ -156,7 +291,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/model-providers/",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/embedding-providers",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/embedding-providers",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/embedding-providers/",
       "destination": "https://www.openagentai.org/docs/connectors/providers/embedding-providers",
       "statusCode": 301
     },
@@ -166,7 +311,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/storage-providers/",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/storage-providers",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/speech-to-text-providers",
+      "destination": "https://www.openagentai.org/docs/chat/voice-input",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/speech-to-text-providers/",
       "destination": "https://www.openagentai.org/docs/chat/voice-input",
       "statusCode": 301
     },
@@ -176,7 +331,17 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/bot-providers/",
+      "destination": "https://www.openagentai.org/docs/connectors/pipes",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/overview",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/providers/overview/",
       "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
       "statusCode": 301
     },
@@ -186,12 +351,27 @@
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/providers/",
+      "destination": "https://www.openagentai.org/docs/connectors/providers/model-providers",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/records/overview",
       "destination": "https://www.openagentai.org/docs/auditing-logs/logs",
       "statusCode": 301
     },
     {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/records/overview/",
+      "destination": "https://www.openagentai.org/docs/auditing-logs/logs",
+      "statusCode": 301
+    },
+    {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/records",
+      "destination": "https://www.openagentai.org/docs/auditing-logs/logs",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/records/",
       "destination": "https://www.openagentai.org/docs/auditing-logs/logs",
       "statusCode": 301
     },
@@ -202,6 +382,11 @@
     },
     {
       "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/billing--usage",
+      "destination": "https://www.openagentai.org/docs/admin/ai-usage",
+      "statusCode": 301
+    },
+    {
+      "source": "/:locale(es|fr|de|zh|ja|ko|uk|ar)?/docs/category/billing--usage/",
       "destination": "https://www.openagentai.org/docs/admin/ai-usage",
       "statusCode": 301
     },
